@@ -45,7 +45,7 @@ export default function AboutPage() {
 				</div>
 				<div className='lg:w-1/4 flex justify-center items-center xl:mb-0'>
 					<Image
-						src='/images/about-img.jpg'
+						src='/about-img.png'
 						alt='me'
 						width={250}
 						height={250}

@@ -10,12 +10,12 @@ export default function WorksLoading() {
 					'bg-gradient-to-t from-neutral-50 to-transparent dark:from-black'
 				)}
 			></div>
-			<div className='sticky top-[60px] md:top-[120px] flex items-enter justify-center'>
+			<div className='max-w-[34rem] lg:max-w-full mx-auto sticky top-[10%] flex items-enter justify-center'>
 				<div
 					className={cn(
 						'flex lg:flex-row flex-col items-start relative',
 						'border-2 border-[#ebebeb] dark:border-[#333]',
-						'bg-white dark:bg-[#0a0a0a] shadow-[0 4px 6px #0000000a] transition-all',
+						'bg-white dark:bg-neutral-950 shadow-[0 4px 6px #0000000a] transition-all',
 						'min-h-[450px] md:min-h-[0px] w-full overflow-hidden mx-auto my-14 rounded-lg'
 					)}
 				>
@@ -53,7 +53,7 @@ export default function WorksLoading() {
 					className={cn(
 						'flex lg:flex-row flex-col items-start relative',
 						'border-2 border-[#ebebeb] dark:border-[#333]',
-						'bg-white dark:bg-[#0a0a0a] shadow-[0 4px 6px #0000000a] transition-all',
+						'bg-white dark:bg-neutral-950 shadow-[0 4px 6px #0000000a] transition-all',
 						'min-h-[450px] md:min-h-[0px] w-full overflow-hidden mx-auto my-14 rounded-lg'
 					)}
 				>
