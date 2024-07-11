@@ -1,9 +1,16 @@
+import Image from 'next/image';
 import './styles/loader.scss';
 
 export default function Loading() {
 	return (
 		<div className='flex items-center justify-center min-h-[80dvh] w-full'>
-			<div className='loader'>
+			<Image
+				src='/loader.gif'
+				alt='loader'
+				width={250}
+				height={250}
+			/>
+			{/* <div className='loader'>
 				<svg viewBox='0 0 80 80'>
 					<circle
 						id='test'
@@ -30,7 +37,7 @@ export default function Loading() {
 						height='64'
 					></rect>
 				</svg>
-			</div>
+			</div> */}
 		</div>
 	);
 }
