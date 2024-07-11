@@ -43,7 +43,7 @@ export default function ThemSwitch() {
 					)}
 				</Button>
 			</DropdownTrigger>
-			<DropdownMenu className='min-w-[6rem] bg-white shadow-sm dark:bg-[#0a0a0a] border-2 border-[#ebebeb] dark:border-[#333] rounded-lg p-1'>
+			<DropdownMenu className='min-w-[6rem] bg-white shadow-sm dark:bg-neutral-950 border-2 border-[#ebebeb] dark:border-[#333] rounded-lg p-1'>
 				<DropdownItem
 					key='light'
 					className='text-sm py-1 pl-2 rounded-md hover:bg-[#f5f5f5] dark:hover:bg-[#26262a]'

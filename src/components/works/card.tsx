@@ -13,12 +13,12 @@ function Card({ i, l, progress, range, targetScale }: TCard) {
 	return (
 		<div
 			ref={container}
-			className={`sticky top-[60px] md:top-[120px] flex items-enter justify-center`}
+			className={`max-w-[34rem] lg:max-w-full mx-auto sticky top-[10%] flex items-enter justify-center`}
 		>
 			<motion.div
 				style={{ scale, top: `calc(5vh + ${i * 1.5}rem)` }}
 				className={cn(
-					'relative bg-white dark:bg-[#0a0a0a]',
+					'relative bg-white dark:bg-neutral-950',
 					'flex lg:flex-row flex-col items-start',
 					'w-full min-h-[450px] md:min-h-[0px] mx-auto my-8',
 					'rounded-lg shadow-[0 4px 6px #0000000a]',

@@ -10,7 +10,7 @@ type Prop = {
 export default function RootLayout({ children }: Prop) {
 	return (
 		<>
-			<div className='pb-8 animate-fadeIn [--fadeIn-delay:1000ms] opacity-0'>
+			<div className='max-w-3xl pb-8 animate-fadeIn [--fadeIn-delay:1000ms] opacity-0'>
 				<Link
 					href='/works'
 					className={cn(

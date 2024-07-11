@@ -57,11 +57,11 @@ export const worksMeta = [
 		images: [
 			{
 				src: '/images/webwise/webwise.jpeg',
-				alt: 'WebWise',
+				alt: 'WebWise in Desktop',
 			},
 			{
 				src: '/images/webwise/webwise2.webp',
-				alt: 'WebWise',
+				alt: 'Mobile view pages compilation',
 			},
 		],
 	},
@@ -104,11 +104,11 @@ export const worksMeta = [
 		images: [
 			{
 				src: '/images/techodyssey/techno1.jpg',
-				alt: 'Techno Odyssey',
+				alt: 'Home page',
 			},
 			{
 				src: '/images/techodyssey/techno2.jpg',
-				alt: 'Techno Odyssey',
+				alt: 'Articles page',
 			},
 			// {
 			// 	src: "/images/techodyssey/techno3.jpg",
@@ -116,7 +116,7 @@ export const worksMeta = [
 			// },
 			{
 				src: '/images/techodyssey/techno4.jpg',
-				alt: 'Techno Odyssey',
+				alt: 'Innovations page',
 			},
 			// {
 			// 	src: "/images/techodyssey/techno5.jpg",
@@ -124,7 +124,7 @@ export const worksMeta = [
 			// },
 			{
 				src: '/images/techodyssey/techno6.jpg',
-				alt: 'Techno Odyssey',
+				alt: 'About page',
 			},
 			// {
 			// 	src: "/images/techodyssey/techno7.jpg",
@@ -132,7 +132,7 @@ export const worksMeta = [
 			// },
 			{
 				src: '/images/techodyssey/techno8.jpg',
-				alt: 'Techno Odyssey',
+				alt: 'Reach us page',
 			},
 		],
 	},
@@ -181,15 +181,15 @@ export const worksMeta = [
 		images: [
 			{
 				src: '/images/classdirectory/sumbsit1a1.webp',
-				alt: 'Class Directory',
+				alt: 'Home page',
 			},
 			{
 				src: '/images/classdirectory/sumbsit1a2.webp',
-				alt: 'Class Directory',
+				alt: 'Class Officers page',
 			},
 			{
 				src: '/images/classdirectory/sumbsit1a3.webp',
-				alt: 'Class Directory',
+				alt: 'Schedules page',
 			},
 		],
 	},
@@ -239,19 +239,19 @@ export const worksMeta = [
 		images: [
 			{
 				src: '/images/shoepee/shoepee.webp',
-				alt: 'Shoepee products',
+				alt: 'Landing page',
 			},
 			{
 				src: '/images/shoepee/shoepee1.webp',
-				alt: 'Shoepee product information',
+				alt: 'Product info page',
 			},
 			{
 				src: '/images/shoepee/shoepee2.webp',
-				alt: 'Shoepee bag list',
+				alt: 'Bag list page',
 			},
 			{
 				src: '/images/shoepee/shoepee3.webp',
-				alt: 'Shoepee product search',
+				alt: 'Search resutls page',
 			},
 		],
 	},
@@ -306,23 +306,23 @@ export const worksMeta = [
 		images: [
 			{
 				src: '/images/sts/sts.webp',
-				alt: 'STS landingpage',
+				alt: 'Landing page',
 			},
 			{
 				src: '/images/sts/sts2.webp',
-				alt: 'STS Students List',
+				alt: 'Students list',
 			},
 			{
 				src: '/images/sts/sts3.webp',
-				alt: 'STS Add Student Page',
+				alt: 'Add student page',
 			},
 			{
 				src: '/images/sts/sts4.webp',
-				alt: 'STS Student Information',
+				alt: 'Student’s Informations page',
 			},
 			{
 				src: '/images/sts/sts5.webp',
-				alt: 'STS Edit Information',
+				alt: 'Edit Informations page',
 			},
 		],
 	},

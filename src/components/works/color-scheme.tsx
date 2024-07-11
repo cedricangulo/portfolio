@@ -53,7 +53,8 @@ export default function ColorScheme({ content, color, textColor }: IColorScheme)
 				onClick={handleCopy}
 				className={cn(
 					color,
-					'relative h-8 w-16 cursor-pointer group flex items-center justify-center'
+					'flex items-center justify-center',
+					'relative h-8 w-full cursor-pointer group'
 				)}
 			>
 				{copied ? <CheckIcon color={textColor} /> : <CopyIcon color={textColor} />}
