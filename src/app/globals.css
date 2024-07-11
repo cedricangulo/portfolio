@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #8400ff50;
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #b667ff;
+}
+
+.highlight {
+	@apply px-1 rounded transition-all text-purple-800 bg-purple-200 dark:text-purple-300 dark:bg-[#35006180];
+}
+
+.paragraph {
+	@apply text-base font-normal leading-relaxed;
+}
+
+.skeleton {
+	@apply bg-gray-300/60 dark:bg-gray-500/25 animate-skeleton;
+}
+
+.pri-text {
+	@apply text-[#171717] dark:text-[#ededed];
+}
+
+.sec-text {
+	@apply text-[#666] dark:text-[#a1a1a1];
+}
+
+.tooltip {
+	@apply text-[#7820bc] dark:text-[#f9f1fe] dark:bg-[#2e1938] bg-[#f9f1fe] rounded-md px-2 text-sm font-light;
+}
+
+.tag {
+	@apply leading-none rounded-lg sec-text border border-gray-400 hover:text-purple-500 hover:bg-purple-200 hover:border-purple-600 dark:border-gray-500 dark:hover:border-purple-500 dark:hover:text-purple-300 dark:hover:bg-purple-600/20 transition-all;
+}
+
+.tag:hover {
+	transform: scale(1.035);
+}
+
+.tag:active {
+	transform: scale(0.99);
+}
+
+.menu_toggle {
+	display: flex;
+	gap: 0.75rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.menu_toggle::before {
+	content: '';
+	display: block;
+	height: 1.5px;
+	width: 24px;
+	transform: translateY(-4px) rotate(0deg);
+	transition: all 600ms cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.menu_toggle::after {
+	content: '';
+	display: block;
+	height: 1.5px;
+	width: 24px;
+	transform: translateY(4px) rotate(0deg);
+	transition: all 600ms cubic-bezier(0.76, 0, 0.24, 1);
+}
