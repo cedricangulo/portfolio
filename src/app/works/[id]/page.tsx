@@ -75,9 +75,11 @@ function worksDetails({ params }: IDynamicParam) {
 			</div>
 			<div className='mx-auto w-full xl:w-2/4 flex flex-col gap-8 items-center overflow-hidden'>
 				{work?.images.map((image, index) => (
-					<figure className='my-4 text-center'>
+					<figure
+						key={index}
+						className='my-4 text-center'
+					>
 						<ImageRender
-							key={index}
 							src={image.src}
 							alt={image.alt}
 							className='w-dvw shadow-md'
