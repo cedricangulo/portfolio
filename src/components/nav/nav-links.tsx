@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 import { INavLink } from './interface/nav';
 import styles from './styles/style.module.scss';
 
-export default function NavLink({ key, href, className, setSidebarOpen, children }: INavLink) {
+export default function NavLink({ i, href, className, setSidebarOpen, children }: INavLink) {
 	return (
 		<motion.div
 			exit='exit'
-			custom={key}
+			custom={i}
 			animate='enter'
 			variants={slide}
 			initial='initial'

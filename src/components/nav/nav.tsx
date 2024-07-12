@@ -85,17 +85,14 @@ export default function NavBar() {
 					)}
 				</AnimatePresence>
 
-				<ul className='hidden md:flex flex-col items-center justify-around md:2-auto md:flex-row md:space-x-8 md:border-0 md:bg-transparent'>
+				<ul className='hidden md:flex items-center justify-around md:space-x-8 md:border-0 md:bg-transparent'>
 					{navLinks.map((data, index) => {
 						const isActive =
 							pathname === data.href || (data.href === '/works' && pathname.startsWith('/works'));
 
-						let style =
-							'sec-text hover:text-purple-600 md:dark:hover:text-purple-200 dark:hover:text-purple-300';
+						let style = 'sec-text hover:text-purple-400 dark:hover:text-purple-300';
 
-						isActive
-							? (style = 'text-purple-500 hover:text-purple-500 dark:hover:text-purple-300')
-							: '';
+						isActive ? (style = 'text-purple-500 hover:text-purple-400') : '';
 
 						return (
 							<li
@@ -109,7 +106,6 @@ export default function NavBar() {
 										'md:inline',
 										'uppercase text-6xl md:text-sm font-medium',
 										'rounded-lg md:rounded-none py-2 px-3 md:p-0',
-										'hover:bg-purple-300/60 dark:hover:bg-purple-800/70 md:hover:bg-transparent md:dark:hover:bg-transparent transition-all',
 										style
 									)}
 								>

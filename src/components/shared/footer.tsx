@@ -27,13 +27,12 @@ export default function Footer() {
 					<FacebookIcon className='fill-current h-6 1-6' />
 				</Link>
 			</div>
-			{/* <p className='sec-text leading-normal'>Built by Cedric Angulo</p> */}
 			<div className='flex flex-col items-center gap-1'>
 				<p className='leading-normal pri-text'>Powered by </p>
 				<Link
 					target='_blank'
 					href='https://nextjs.org/'
-					className='h-[18px] w-[60px] grid place-items-center'
+					className='w-auto h-auto grid place-items-center'
 				>
 					<Image
 						width={60}

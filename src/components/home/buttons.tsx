@@ -20,7 +20,7 @@ function buttons() {
 			<Link
 				href='/works'
 				className={cn(
-					'bg-purple-500 dark:bg-purple-500 hover:bg-purple-500 dark:hover:bg-purple-700 active:bg-purple-700 dark:active:bg-purple-800',
+					'bg-purple-400 dark:bg-purple-500 hover:bg-purple-500 dark:hover:bg-purple-700 active:bg-purple-700 dark:active:bg-purple-800',
 					'hover:scale-[1.015] dark:active:text-purple-200 active:scale-[.98] rounded-lg transition-all duration-[300ms]',
 					'text-xs sm:text-sm tracking-wider grid place-items-center',
 					'text-purple-50',

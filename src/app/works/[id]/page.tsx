@@ -82,7 +82,7 @@ function worksDetails({ params }: IDynamicParam) {
 						<ImageRender
 							src={image.src}
 							alt={image.alt}
-							className='w-dvw shadow-md'
+							className='w-auto h-auto shadow-md'
 							width={570}
 							height={325}
 						/>

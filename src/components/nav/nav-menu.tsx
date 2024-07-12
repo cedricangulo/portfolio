@@ -40,6 +40,7 @@ function NavMenu({ sidebarOpen, setSidebarOpen }: INavMenu) {
 					return (
 						<NavLink
 							key={index}
+							i={index}
 							href={data.href}
 							className={cn(
 								currentPath(isActive),

@@ -27,6 +27,10 @@
 	@apply bg-gray-300/60 dark:bg-gray-500/25 animate-skeleton;
 }
 
+.pri-color {
+	@apply text-purple-400 dark:text-purple-300
+}
+
 .pri-text {
 	@apply text-[#171717] dark:text-[#ededed];
 }

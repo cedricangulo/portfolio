@@ -6,7 +6,7 @@ export interface INavMenu {
 }
 
 export interface INavLink {
-	key: number;
+	i: number;
 	href: string;
 	className: string;
 	setSidebarOpen: Dispatch<SetStateAction<boolean>>;
