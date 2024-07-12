@@ -50,7 +50,7 @@ export default function NavBar() {
 				>
 					<Logo
 						state={sidebarOpen}
-						className=''
+						className='size-10'
 					/>
 				</Link>
 				<button

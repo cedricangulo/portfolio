@@ -9,6 +9,7 @@ export default function Loading() {
 				alt='loader'
 				width={250}
 				height={250}
+				unoptimized
 			/>
 			{/* <div className='loader'>
 				<svg viewBox='0 0 80 80'>

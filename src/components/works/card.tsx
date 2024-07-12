@@ -36,7 +36,7 @@ function Card({ i, l, progress, range, targetScale }: TCard) {
 					<div className='w-full gap-4 flex items-start justify-between'>
 						<div>
 							<h4
-								className={`${lexend.className} pri-text font-semibold tracking-wider text-3xl mb-2 leading-7`}
+								className={`${lexend.className} pri-text font-semibold text-3xl mb-2 leading-7`}
 							>
 								{l?.title}
 							</h4>

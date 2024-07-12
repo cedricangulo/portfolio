@@ -9,7 +9,7 @@ function buttons() {
 				target='_blank'
 				className={cn(
 					'hover:scale-[1.015] dark:active:text-gray-300 active:scale-[.98] rounded-lg transition-all duration-[300ms]',
-					'text-gray-600 dark:text-gray-200 hover:bg-purple-200/50 dark:hover:bg-purple-900/50',
+					'sec-text hoverLtext-gray-600 hover:dark:text-gray-200 hover:bg-purple-200/50 dark:hover:bg-purple-900/50',
 					'border border-gray-800/30 dark:border-gray-700',
 					'text-sm sm:text-base tracking-wider',
 					'py-2 px-3'
