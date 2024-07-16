@@ -20,11 +20,11 @@ export const WorkList = [
 		title: 'Techno Odyssey',
 		text: 'My entry in CICT Technoday 2024.',
 		github: 'https://github.com/bryan308/technodyssey',
-		href: '',
+		href: 'https://technodyssey.vercel.app/',
 		tags: ['competition-entry', 'innovations', 'latest-tech', 'static'],
 	},
 	{
-		src: '/images/classdirectory/sumbsit1a1.webp',
+		src: '/images/classdirectory/sumbsit1a.jpg',
 		title: 'Class Directory',
 		text: 'A static website for class information.',
 		github: 'https://github.com/bryan308/sumbsit1a',
