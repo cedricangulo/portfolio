@@ -32,7 +32,7 @@ export default function Footer() {
 				<Link
 					target='_blank'
 					href='https://nextjs.org/'
-					className='w-auto h-auto grid place-items-center'
+					className='w-full h-full grid place-items-center'
 				>
 					<Image
 						width={60}
