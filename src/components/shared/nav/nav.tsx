@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Logo from '../icons/logo';
+import Logo from '../../icons/logo';
 import { cn } from '@/lib/utils';
 import ThemeSwitch from './theme-switcher';
 import { useEffect, useState } from 'react';

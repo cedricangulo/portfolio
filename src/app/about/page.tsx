@@ -1,26 +1,13 @@
 import Image from 'next/image';
-import { Metadata } from 'next';
 import { cn } from '@/lib/utils';
 import { lexend } from '@/lib/fonts';
 import Timeline from '@/components/about/timeline';
 import Highlight from '@/components/about/highlight';
 import FeaturedSkills from '@/components/about/skills';
 
-export const metadata: Metadata = { title: 'About' };
-
 export default function AboutPage() {
 	return (
-		<section className='min-h-dvh max-w-[1000px] mt-[72px] md:mt-[88px] mb-20 w-full'>
-			<div className='lg:min-w-[1000px] w-full h-[120px] pt-8 animate-fadeIn [--fadeIn-delay:300ms] opacity-0'>
-				<h1
-					className={`${lexend.className} text-center lg:text-left m-auto text-5xl font-extrabold tracking-tight leading-none pri-text uppercase`}
-				>
-					About
-				</h1>
-				<p className='text-center lg:text-left text-xl sec-text font-normal'>
-					A little bit about me
-				</p>
-			</div>
+		<>
 			<div
 				className={cn(
 					'w-full mx-auto md:py-0 my-16 lg:my-4',
@@ -71,6 +58,6 @@ export default function AboutPage() {
 				</h2>
 				<Timeline />
 			</div>
-		</section>
+		</>
 	);
 }
