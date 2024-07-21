@@ -2,7 +2,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { geistsans } from '@/lib/fonts';
-import NavBar from '@/components/nav/nav';
+import NavBar from '@/components/shared/nav/nav';
 import Footer from '@/components/shared/footer';
 import Providers from '@/components/shared/theme-provider';
 
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 	},
 	metadataBase: new URL('https://cdrcangulo.vercel.app'),
 	description:
-		'Aspiring Web Developer and Incoming sophomore student at NEUST, based in Nueva Ecija, Philippines.',
+		'Aspiring web developer and a second year student at NEUST, based in Nueva Ecija, Philippines.',
 	openGraph: {
 		title: 'Cedric Angulo’s Portfolio',
 		description:
-			'Aspiring Web Developer and Incoming sophomore student at NEUST, based in Nueva Ecija, Philippines.',
+			'Aspiring web developer and a second year student at NEUST, based in Nueva Ecija, Philippines.',
 		images: [`https://cdrcangulo.vercel.app/metaimg.jpg`],
 	},
 };
