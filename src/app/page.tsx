@@ -7,7 +7,7 @@ import GridBackground from '@/components/home/grid-background';
 
 export default function HomePage() {
 	return (
-		<section className='relative h-dvh flex items-center justify-between max-w-[1000px] w-full'>
+		<section className='relative h-dvh flex items-center justify-between max-w-[62.5rem] w-full'>
 			<GridBackground />
 			<div className='h-screen flex mx-0 sm:mx-auto'>
 				<div className='w-full flex sm:items-center justify-center flex-col gap-2'>
@@ -28,7 +28,7 @@ export default function HomePage() {
 						>
 							<span
 								className={cn(
-									'text-purple-500 dark:text-purple-300 hover:text-purple-600 dark:hover:text-purple-400',
+									'accent200 hover:text-purple-600 dark:hover:text-purple-400',
 									'underline underline-offset-2 decoration-1 transition-all'
 								)}
 							>

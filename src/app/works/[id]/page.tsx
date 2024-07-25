@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils';
 import { Info } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import { lexend, playfair } from '@/lib/fonts';
@@ -19,14 +18,7 @@ function worksDetails({ params }: IDynamicParam) {
 	!work && notFound();
 
 	return (
-		<section
-			className={cn(
-				'my-0 mx-auto',
-				'min-h-screen w-full',
-				'flex flex-col lg:flex-row gap-16 md:gap-12 justify-center',
-				'animate-fadeIn [--fadeIn-delay:0ms] opacity-0'
-			)}
-		>
+		<div className='details-container'>
 			<div className='mx-auto w-full xl:w-2/4'>
 				<h2 className={`${lexend.className} text-left text-3xl mb-8 font-medium pri-text`}>
 					{work?.title}
@@ -39,13 +31,7 @@ function worksDetails({ params }: IDynamicParam) {
 						{paragraph}
 					</p>
 				))}
-				<div
-					className={cn(
-						'rounded-lg shadow-[0 4px 6px #0000000a]',
-						'mt-16 p-4 bg-white dark:bg-neutral-950',
-						'border-2 border-[#ebebeb] dark:border-[#333] overflow-hidden transition-all'
-					)}
-				>
+				<div className='details-wrapper'>
 					<div className='flex flex-col sm:flex-row gap-8 sm:gap-4'>
 						<div className='w-2/4'>
 							{work?.fontFamily.map((f, index) => (
@@ -57,7 +43,7 @@ function worksDetails({ params }: IDynamicParam) {
 								</p>
 							))}
 						</div>
-						<div className='flex flex-nowrap w-full sm:w-2/4'>
+						<div className='colorscheme-wrapper'>
 							{work?.colorScheme.map((color, index) => (
 								<ColorScheme
 									key={index}
@@ -68,12 +54,12 @@ function worksDetails({ params }: IDynamicParam) {
 							))}
 						</div>
 					</div>
-					<div className='mt-8 flex gap-2 flex-wrap w-full sm:w-3/4'>
+					<div className='lang-wrapper'>
 						<LangList lang={work?.langs} />
 					</div>
 				</div>
 			</div>
-			<div className='mx-auto w-full xl:w-2/4 flex flex-col gap-8 items-center overflow-hidden'>
+			<div className='image-wrapper'>
 				{work?.images.map((image, index) => (
 					<figure
 						key={index}
@@ -86,21 +72,13 @@ function worksDetails({ params }: IDynamicParam) {
 							width={570}
 							height={325}
 						/>
-						<figcaption className={cn('sec-text mt-4 text-sm italic', playfair.className)}>
+						<figcaption className={`${playfair.className} fig-caption sec-text`}>
 							{image.alt}
 						</figcaption>
 					</figure>
 				))}
 				{work?.id === 5 && (
-					<span
-						className={cn(
-							'inline-flex items-center gap-2',
-							'text-sm text-yellow-800 dark:text-yellow-50',
-							'border border-yellow-500 dark:border-yellow-500',
-							'bg-yellow-300/50   dark:bg-yellow-950',
-							'p-4 rounded-lg'
-						)}
-					>
+					<span className='note'>
 						<Info
 							strokeWidth={1.5}
 							className='w-6 h-6 text-yellow-600 dark:text-yellow-200'
@@ -109,7 +87,7 @@ function worksDetails({ params }: IDynamicParam) {
 					</span>
 				)}
 			</div>
-		</section>
+		</div>
 	);
 }
 

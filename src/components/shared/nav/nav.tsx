@@ -40,7 +40,7 @@ export default function NavBar() {
 				className={cn(
 					'relative',
 					'flex flex-wrap items-center justify-between',
-					'max-w-[1000px] w-full px-4 py-4 lg:px-0 md:py-6'
+					'max-w-[62.5rem] w-full px-4 py-4 lg:px-0 md:py-6'
 				)}
 			>
 				<Link
@@ -70,7 +70,7 @@ export default function NavBar() {
 							'after:bg-gray-800 dark:after:bg-gray-200',
 							'before:bg-gray-800 dark:before:bg-gray-200',
 							sidebarOpen
-								? 'before:rotate-45 before:translate-y-[7px] after:-rotate-45 after:translate-y-[-6px]'
+								? 'before:rotate-45 before:translate-y-[0.438rem] after:-rotate-45 after:translate-y-[-0.375rem]'
 								: 'before:rotate-0 after:rotate-0'
 						)}
 					></div>
@@ -92,7 +92,7 @@ export default function NavBar() {
 
 						let style = 'sec-text hover:text-purple-400 dark:hover:text-purple-300';
 
-						isActive ? (style = 'text-purple-500 hover:text-purple-400') : '';
+						isActive ? (style = 'accent200 hover:text-purple-400') : '';
 
 						return (
 							<li

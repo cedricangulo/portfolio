@@ -39,12 +39,7 @@ function Timeline() {
 					key={index}
 				>
 					<div className='absolute w-3 h-3 rounded-full mt-1.5 -start-[.45rem] bg-purple-300 dark:bg-purple-500'></div>
-					<time
-						className={cn(
-							lexend.className,
-							'mb-1 text-sm font-normal leading-none text-purple-400'
-						)}
-					>
+					<time className={cn(lexend.className, 'mb-1 text-sm font-normal leading-none accent100')}>
 						{list.time}
 					</time>
 					<h3 className={cn(lexend.className, 'pri-text text-lg font-medium')}>{list.title}</h3>

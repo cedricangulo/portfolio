@@ -16,10 +16,10 @@ export default function WorksLoading() {
 						'flex lg:flex-row flex-col items-start relative',
 						'border-2 border-[#ebebeb] dark:border-[#333]',
 						'bg-white dark:bg-neutral-950 shadow-[0 4px 6px #0000000a] transition-all',
-						'min-h-[450px] md:min-h-[0px] w-full overflow-hidden mx-auto my-14 rounded-lg'
+						'min-h-[28.125rem] md:min-h-[0rem] w-full overflow-hidden mx-auto my-14 rounded-lg'
 					)}
 				>
-					<div className='h-[280px] w-full skeleton [--pulse-delay:300ms]'></div>
+					<div className='h-[17.5rem] w-full skeleton [--pulse-delay:300ms]'></div>
 					<div className='z-10 p-4 grid gap-4 w-full'>
 						<div className='w-full gap-4 flex items-start justify-between'>
 							<div className='w-3/4'>
@@ -31,33 +31,33 @@ export default function WorksLoading() {
 								{Array.from({ length: 3 }, (_, i) => (
 									<div
 										key={i}
-										className='size-[20px] rounded-full skeleton [--pulse-delay:500ms]'
+										className='size-[1.25rem] rounded-full skeleton [--pulse-delay:500ms]'
 									></div>
 								))}
 							</div>
 						</div>
 						<div className='flex gap-2 flex-wrap'>
-							<span className='w-20 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-32 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-20 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-20 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-32 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-32 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-20 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-20 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-32 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-20 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-20 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-32 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-32 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-20 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className='sticky top-[60px] md:top-[120px] flex items-enter justify-center'>
+			<div className='sticky top-[3.75rem] md:top-[7.5rem] flex items-enter justify-center'>
 				<div
 					className={cn(
 						'flex lg:flex-row flex-col items-start relative',
 						'border-2 border-[#ebebeb] dark:border-[#333]',
 						'bg-white dark:bg-neutral-950 shadow-[0 4px 6px #0000000a] transition-all',
-						'min-h-[450px] md:min-h-[0px] w-full overflow-hidden mx-auto my-14 rounded-lg'
+						'min-h-[28.125rem] md:min-h-[0rem] w-full overflow-hidden mx-auto my-14 rounded-lg'
 					)}
 				>
-					<div className='min-h-[270px] w-full skeleton [--pulse-delay:300ms]'></div>
+					<div className='min-h-[16.875rem] w-full skeleton [--pulse-delay:300ms]'></div>
 					<div className='z-10 p-4 grid gap-4 w-full'>
 						<div className='w-full gap-4 flex items-start justify-between'>
 							<div className='w-3/4'>
@@ -69,16 +69,16 @@ export default function WorksLoading() {
 								{Array.from({ length: 2 }, (_, i) => (
 									<div
 										key={i}
-										className='size-[20px] rounded-full skeleton [--pulse-delay:500ms]'
+										className='size-[1.25rem] rounded-full skeleton [--pulse-delay:500ms]'
 									></div>
 								))}
 							</div>
 						</div>
 						<div className='flex gap-2 flex-wrap'>
-							<span className='w-20 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-16 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-32 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
-							<span className='w-14 h-[16px] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-20 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-16 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-32 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
+							<span className='w-14 h-[1rem] rounded-lg skeleton [--pulse-delay:1100ms]'></span>
 						</div>
 					</div>
 				</div>
