@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { lexend } from '@/lib/fonts';
-import Timeline from '@/components/about/timeline';
-import Highlight from '@/components/about/highlight';
-import FeaturedSkills from '@/components/about/skills';
+import { FeaturedSkills, Highlight, Timeline } from '@/components/about/about';
 
 export default function AboutPage() {
 	return (
