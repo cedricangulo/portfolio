@@ -30,10 +30,6 @@
 	@apply flex flex-col gap-4 w-full lg:w-3/4;
 }
 
-.image-wrapper {
-	@apply lg:w-1/4 flex justify-center items-center xl:mb-0;
-}
-
 .featured-wrapper {
 	@apply flex flex-col items-center gap-4 max-w-6xl w-full mx-auto text-center my-16 animate-fadeIn [--fadeIn-delay:900ms] opacity-0;
 }

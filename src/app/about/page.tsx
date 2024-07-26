@@ -18,11 +18,11 @@ export default function AboutPage() {
 						Right now, I’m learning <Highlight>ReactJS</Highlight> and getting better at front-end
 						skills with <Highlight>TailwindCSS</Highlight> and <Highlight>NextJS</Highlight>. Before
 						my second year starts, I want to get better at <Highlight>C++</Highlight> and learn more
-						about <Highlight>Object-Oriented Programming</Highlight> subject. Even though I mostly
+						about <Highlight>DSA</Highlight> and <Highlight>OOP</Highlight> subject. Even though I mostly
 						focus on front-end development, I also want to try back-end development someday.
 					</p>
 				</div>
-				<div className='image-wrapper'>
+				<div className='lg:w-1/4 flex justify-center items-center xl:mb-0'>
 					<Image
 						src='/about-img.png'
 						alt='me'

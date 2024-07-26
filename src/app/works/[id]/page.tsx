@@ -5,6 +5,7 @@ import { worksMeta } from '../data/worksdetails';
 import LangList from '@/components/works/lang-list';
 import ColorScheme from '@/components/works/color-scheme';
 import ImageRender from '@/components/shared/image-render';
+import AnnButton from '@/components/works/announcement-btn';
 import { IDynamicParam } from '../../../components/works/interface/dynamic-param';
 
 export function generateStaticParams() {
@@ -32,6 +33,7 @@ function worksDetails({ params }: IDynamicParam) {
 					</p>
 				))}
 				<div className='details-wrapper'>
+					{work?.id === 2 && <AnnButton />}
 					<div className='flex flex-col sm:flex-row gap-8 sm:gap-4'>
 						<div className='w-2/4'>
 							{work?.fontFamily.map((f, index) => (
