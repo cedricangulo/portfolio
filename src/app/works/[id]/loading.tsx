@@ -22,7 +22,7 @@ function Loading() {
 	}, []);
 
 	return (
-		<div className='min-h-screen max-w-[1000px] w-full'>
+		<div className='min-h-screen max-w-[62.5rem] w-full'>
 			<div
 				className={cn(
 					'my-0 mx-auto',
@@ -32,7 +32,7 @@ function Loading() {
 				)}
 			>
 				<div className='mx-auto w-full xl:w-2/4'>
-					<div className='rounded-md w-2/4 h-8 md:h-[36px] skeleton [--pulse-delay:500ms]'></div>
+					<div className='rounded-md w-2/4 h-8 md:h-[2.25rem] skeleton [--pulse-delay:500ms]'></div>
 					<div className='rounded-md my-8 h-5 w-1/4 skeleton [--pulse-delay:700ms]'></div>
 					{randomWidthElements.map(({ key, widthClass, animationDelay }) => (
 						<div
@@ -105,8 +105,8 @@ function Loading() {
 					</div>
 				</div>
 				<div className='mx-auto w-full xl:w-2/4 flex flex-col gap-8 items-center overflow-hidden'>
-					<div className='min-h-[325px] my-4 w-full skeleton [--pulse-delay:500ms]'></div>
-					<div className='min-h-[325px] my-4 w-full skeleton [--pulse-delay:900ms]'></div>
+					<div className='min-h-[20.313rem] my-4 w-full skeleton [--pulse-delay:500ms]'></div>
+					<div className='min-h-[20.313rem] my-4 w-full skeleton [--pulse-delay:900ms]'></div>
 				</div>
 			</div>
 		</div>

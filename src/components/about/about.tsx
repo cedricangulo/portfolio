@@ -1,5 +1,7 @@
+import React from 'react';
 import { cn } from '@/lib/utils';
 import { lexend } from '@/lib/fonts';
+import { GeistMono } from 'geist/font/mono';
 import { TTimeline } from './interface/about';
 
 const timeline: TTimeline = [
@@ -30,29 +32,55 @@ const timeline: TTimeline = [
 	},
 ];
 
-function Timeline() {
-	return (
-		<ol className='relative border-s-2 border-purple-400/50'>
-			{timeline.map((list, index) => (
-				<li
-					className='mb-10 ms-4'
-					key={index}
-				>
-					<div className='absolute w-3 h-3 rounded-full mt-1.5 -start-[.45rem] bg-purple-300 dark:bg-purple-500'></div>
-					<time
-						className={cn(
-							lexend.className,
-							'mb-1 text-sm font-normal leading-none text-purple-400'
-						)}
-					>
-						{list.time}
-					</time>
-					<h3 className={cn(lexend.className, 'pri-text text-lg font-medium')}>{list.title}</h3>
-					<p className='mb-4 paragraph sec-text'>{list.text}</p>
-				</li>
-			))}
-		</ol>
-	);
-}
+const Skills: string[] = [
+	'HTML',
+	'CSS',
+	'JavaScript',
+	'C++',
+	'PHP',
+	'Mysql',
+	'TailwindCSS',
+	'Mobile Responsive',
+	'Visual Basic',
+	'Git',
+	'GitHub',
+];
 
-export default Timeline;
+const Highlight = ({ children }: { children: React.ReactNode }) => (
+	<span className={`${GeistMono.className} highlight`}>{children}</span>
+);
+
+const FeaturedSkills = () => (
+	<div className='flex max-w-3xl gap-4 flex-wrap items-center justify-center'>
+		{Skills.map((text: string, index: number) => {
+			return (
+				<span
+					key={index}
+					className='cursor-pointer tag py-2 px-4 sec-text'
+				>
+					{text}
+				</span>
+			);
+		})}
+	</div>
+);
+
+const Timeline = () => (
+	<ol className='relative border-s-2 border-purple-400/50'>
+		{timeline.map((list, index) => (
+			<li
+				className='mb-10 ms-4'
+				key={index}
+			>
+				<div className='absolute w-3 h-3 rounded-full mt-1.5 -start-[.45rem] bg-purple-300 dark:bg-purple-500'></div>
+				<time className={cn(lexend.className, 'mb-1 text-sm font-normal leading-none accent100')}>
+					{list.time}
+				</time>
+				<h3 className={cn(lexend.className, 'pri-text text-lg font-medium')}>{list.title}</h3>
+				<p className='mb-4 paragraph sec-text'>{list.text}</p>
+			</li>
+		))}
+	</ol>
+);
+
+export { Highlight, FeaturedSkills, Timeline };

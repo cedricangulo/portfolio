@@ -20,7 +20,7 @@ export const WorkList = [
 		title: 'Techno Odyssey',
 		text: 'My entry in CICT Technoday 2024.',
 		github: 'https://github.com/bryan308/technodyssey',
-		href: 'https://technodyssey.vercel.app/',
+		href: '',
 		tags: ['competition-entry', 'innovations', 'latest-tech', 'static'],
 	},
 	{

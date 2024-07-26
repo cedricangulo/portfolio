@@ -22,7 +22,7 @@ export default function Buttons({ i, l }: TButton) {
 					<span className='sr-only'>GitHub link</span>
 					<GitHubIcon
 						strokeWidth={0}
-						className='size-[20px] sec-text transition-all'
+						className='size-[1.25rem] sec-text transition-all'
 					/>
 				</Link>
 			</Tooltip>
@@ -42,7 +42,7 @@ export default function Buttons({ i, l }: TButton) {
 						<span className='sr-only'>Link</span>
 						<LinkIcon
 							strokeWidth={0}
-							className='size-[20px] sec-text transition-all'
+							className='size-[1.25rem] sec-text transition-all'
 						/>
 					</Link>
 				</Tooltip>
@@ -59,7 +59,7 @@ export default function Buttons({ i, l }: TButton) {
 					<span className='sr-only'>Learn more</span>
 					<Info
 						strokeWidth={1.5}
-						className='size-[20px] sec-text transition-all'
+						className='size-[1.25rem] sec-text transition-all'
 					/>
 				</Link>
 			</Tooltip>

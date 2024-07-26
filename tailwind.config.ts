@@ -11,6 +11,11 @@ const config: Config = {
 	theme: {
 		extend: {
 			keyframes: {
+				gradient: {
+					to: {
+						backgroundPosition: 'var(--bg-size) 0',
+					},
+				},
 				skeleton: {
 					'50%': {
 						opacity: '0.5',
@@ -43,6 +48,7 @@ const config: Config = {
 				skeleton: 'skeleton 2s cubic-bezier(0.4, 0, 0.6, 1) var(--pulse-delay, 0) infinite',
 				fadeIn: 'fadeIn 1s ease var(--fadeIn-delay, 0) forwards',
 				slideIn: 'slideIn 1s ease var(--slideIn-delay, 0) forwards',
+				gradient: 'gradient 8s linear infinite',
 			},
 		},
 	},
