@@ -34,7 +34,7 @@ export default function RootLayout({ children }: Props) {
 		>
 			<body
 				className={cn(
-					'text-gray-950 dark:text-gray-200 bg-[#fafafa] dark:bg-[#000000] transition-all',
+					'text-gray-950 dark:text-gray-200 bg-neutral-50 dark:bg-black transition-all',
 					geistsans.className
 				)}
 			>

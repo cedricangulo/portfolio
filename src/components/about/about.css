@@ -53,3 +53,7 @@
 .timeline-header {
 	@apply text-center text-3xl uppercase font-medium;
 }
+
+.oldport-header {
+	@apply text-center text-3xl uppercase font-medium;
+}

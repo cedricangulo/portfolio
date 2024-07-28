@@ -2,10 +2,10 @@ import Curve from './curve';
 import NavLink from './nav-links';
 import { menuSlide } from './anim';
 import { motion } from 'framer-motion';
-import ThemeSwitch from './theme-switcher';
 import { usePathname } from 'next/navigation';
 import { INavMenu } from './interface/nav';
 import { cn } from '@/lib/utils';
+import { ThemeSwitch } from './theme-switcher';
 
 export const navLinks = [
 	{ title: 'Home', href: '/' },

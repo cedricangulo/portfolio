@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-const { nextui } = require('@nextui-org/theme');
 
 const config: Config = {
 	content: [
@@ -43,16 +42,25 @@ const config: Config = {
 						transform: 'translateY(0px)',
 					},
 				},
+				in: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				out: {
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0' },
+				},
 			},
 			animation: {
 				skeleton: 'skeleton 2s cubic-bezier(0.4, 0, 0.6, 1) var(--pulse-delay, 0) infinite',
 				fadeIn: 'fadeIn 1s ease var(--fadeIn-delay, 0) forwards',
 				slideIn: 'slideIn 1s ease var(--slideIn-delay, 0) forwards',
 				gradient: 'gradient 8s linear infinite',
+				in: 'in 0.2s ease-in-out',
+				out: 'out 0.2s ease-in-out',
 			},
 		},
 	},
-	plugins: [nextui()],
 	darkMode: 'class',
 };
 

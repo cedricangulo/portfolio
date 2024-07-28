@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { lexend } from '@/lib/fonts';
 import { FeaturedSkills, Highlight, Timeline } from '@/components/about/about';
+import AnnButton from '@/components/shared/ui/announcement-btn';
 
 export default function AboutPage() {
 	return (
@@ -18,8 +19,8 @@ export default function AboutPage() {
 						Right now, I’m learning <Highlight>ReactJS</Highlight> and getting better at front-end
 						skills with <Highlight>TailwindCSS</Highlight> and <Highlight>NextJS</Highlight>. Before
 						my second year starts, I want to get better at <Highlight>C++</Highlight> and learn more
-						about <Highlight>DSA</Highlight> and <Highlight>OOP</Highlight> subject. Even though I mostly
-						focus on front-end development, I also want to try back-end development someday.
+						about <Highlight>DSA</Highlight> and <Highlight>OOP</Highlight> subject. Even though I
+						mostly focus on front-end development, I also want to try back-end development someday.
 					</p>
 				</div>
 				<div className='lg:w-1/4 flex justify-center items-center xl:mb-0'>
@@ -45,6 +46,56 @@ export default function AboutPage() {
 			<div className='timeline-wrapper'>
 				<h2 className={`${lexend.className} timeline-header pri-text`}>Education</h2>
 				<Timeline />
+			</div>
+			<div className='max-w-xl w-full mx-auto mt-16'>
+				<h2 className={`${lexend.className} oldport-header pri-text`}>My old portfolios</h2>
+				<div className='flex items-center flex-col md:flex-row gap-0 md:gap-4 my-8'>
+					<AnnButton
+						href='https://cedbry.vercel.app/'
+						icon={
+							<Image
+								src='/me-icon.png'
+								alt='icon'
+								width={20}
+								height={20}
+							/>
+						}
+						text='@cdrcangulo'
+						from='#1a627e'
+						via='#eff6e0'
+						to='#01161eb9'
+					/>
+					<AnnButton
+						href='https://bryanangulo.vercel.app/'
+						icon={
+							<Image
+								src='/weblogo.png'
+								alt='icon'
+								width={20}
+								height={20}
+							/>
+						}
+						text='@cdrcangulo'
+						from='#ff6224'
+						via='#f09819'
+						to='#ff6224'
+					/>
+					<AnnButton
+						href='https://cedangulo.vercel.app/'
+						icon={
+							<Image
+								src='/weblogoD.png'
+								alt='icon'
+								width={20}
+								height={20}
+							/>
+						}
+						text='@cdrcangulo'
+						from='#af4edc'
+						via='#00bfff'
+						to='#af4edc'
+					/>
+				</div>
 			</div>
 		</>
 	);

@@ -1,71 +1,37 @@
 'use client';
 
+import * as React from 'react';
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 import { useTheme } from 'next-themes';
-import { Button } from '@nextui-org/button';
-import { useEffect, useState } from 'react';
-import { Moon, Sun, SunMoon } from 'lucide-react';
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from '@nextui-org/dropdown';
 
-export default function ThemSwitch() {
-	const [mounted, setmounted] = useState(false);
-	const { setTheme, resolvedTheme } = useTheme();
+import { Button } from '@/components/shared/ui/button';
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from '@/components/shared/ui/dropdown-menu';
 
-	useEffect(() => {
-		setmounted(true);
-	}, []);
-
-	if (!mounted)
-		return (
-			<Button className='border-none rounded-md p-1'>
-				<SunMoon
-					strokeWidth={1.5}
-					className='stroke-cyan-100 md:stroke-gray-400 size-10 md:size-6 transition-all'
-				/>
-			</Button>
-		);
+export function ThemeSwitch() {
+	const { setTheme } = useTheme();
 
 	return (
-		<Dropdown>
-			<DropdownTrigger>
-				<Button className='border-none rounded-md p-1'>
-					{resolvedTheme === 'light' ? (
-						<Sun
-							strokeWidth={1.5}
-							className='stroke-cyan-100 md:stroke-gray-400 size-10 md:size-6 transition-all'
-						/>
-					) : resolvedTheme === 'dark' ? (
-						<Moon
-							strokeWidth={1.5}
-							className='stroke-cyan-100 md:dark:stroke-gray-400 size-10 md:size-6 transition-all'
-						/>
-					) : (
-						''
-					)}
+		<DropdownMenu>
+			<DropdownMenuTrigger asChild>
+				<Button
+					variant='ghost'
+					size='icon'
+				>
+					<SunIcon className='text-cyan-100 md:text-gray-400 size-10 md:h-[1.2rem] md:w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
+					<MoonIcon className='text-cyan-100 md:dark:text-gray-400 absolute size-10 md:h-[1.2rem] md:w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
+					<span className='sr-only'>Toggle theme</span>
 				</Button>
-			</DropdownTrigger>
-			<DropdownMenu className='min-w-[6rem] bg-white shadow-sm dark:bg-neutral-950 border-2 border-[#ebebeb] dark:border-[#333] rounded-lg p-1'>
-				<DropdownItem
-					key='light'
-					className='text-sm py-1 pl-2 rounded-md hover:bg-[#f5f5f5] dark:hover:bg-[#26262a]'
-					onClick={() => setTheme('light')}
-				>
-					Light
-				</DropdownItem>
-				<DropdownItem
-					key='dark'
-					className='text-sm py-1 pl-2 rounded-md hover:bg-[#f5f5f5] dark:hover:bg-[#26262a]'
-					onClick={() => setTheme('dark')}
-				>
-					Dark
-				</DropdownItem>
-				<DropdownItem
-					key='system'
-					className='text-sm py-1 pl-2 rounded-md hover:bg-[#f5f5f5] dark:hover:bg-[#26262a]'
-					onClick={() => setTheme('system')}
-				>
-					System
-				</DropdownItem>
-			</DropdownMenu>
-		</Dropdown>
+			</DropdownMenuTrigger>
+			<DropdownMenuContent align='end' className='bg-neutral-50 dark:bg-black'>
+				<DropdownMenuItem onClick={() => setTheme('light')}>Light</DropdownMenuItem>
+				<DropdownMenuItem onClick={() => setTheme('dark')}>Dark</DropdownMenuItem>
+				<DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
+			</DropdownMenuContent>
+		</DropdownMenu>
 	);
 }

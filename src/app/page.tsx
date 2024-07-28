@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import Buttons from '@/components/home/buttons';
 import LargeHeader from '@/components/home/large-header';
 import SmallHeader from '@/components/home/small-header';
 import GridBackground from '@/components/home/grid-background';
+import HeroButtons from '@/components/home/hero-buttons';
 
 export default function HomePage() {
 	return (
@@ -37,7 +37,7 @@ export default function HomePage() {
 						</Link>
 						, based in Nueva Ecija, Philippines
 					</p>
-					<Buttons />
+					<HeroButtons />
 				</div>
 			</div>
 		</section>
