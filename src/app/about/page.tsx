@@ -63,7 +63,7 @@ export default function AboutPage() {
 						text='@cdrcangulo'
 						from='#1a627e'
 						via='#eff6e0'
-						to='#01161eb9'
+						to='#1a627e'
 					/>
 					<AnnButton
 						href='https://bryanangulo.vercel.app/'
