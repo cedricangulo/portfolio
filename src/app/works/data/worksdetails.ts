@@ -56,8 +56,8 @@ export const worksMeta = [
 		],
 		images: [
 			{
-				src: '/images/webwise/webwise.jpeg',
-				alt: 'WebWise in Desktop',
+				src: '/images/webwise/webwisee-mobile.jpg',
+				alt: 'WebWise in Mobile',
 			},
 			{
 				src: '/images/webwise/webwise2.webp',
@@ -102,6 +102,10 @@ export const worksMeta = [
 			},
 		],
 		images: [
+			{
+				src: '/images/techodyssey/technodyssey-mobile.jpg',
+				alt: 'Mobile view',
+			},
 			{
 				src: '/images/techodyssey/techno1.jpg',
 				alt: 'Home page',
@@ -179,6 +183,10 @@ export const worksMeta = [
 			},
 		],
 		images: [
+			{
+				src: '/images/classdirectory/sumbsit-mobile.jpg',
+				alt: 'Mobile view',
+			},
 			{
 				src: '/images/classdirectory/sumbsit1a1.webp',
 				alt: 'Home page',

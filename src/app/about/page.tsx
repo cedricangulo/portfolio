@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils';
 import { lexend } from '@/lib/fonts';
 import { FeaturedSkills, Highlight, Timeline } from '@/components/about/about';
 import AnnButton from '@/components/shared/ui/announcement-btn';
+import CarouselExample from '@/components/about/carousel-img';
 
 export default function AboutPage() {
 	return (
@@ -38,6 +39,9 @@ export default function AboutPage() {
 						priority={true}
 					/>
 				</div>
+			</div>
+			<div>
+				<CarouselExample />
 			</div>
 			<div className='featured-wrapper'>
 				<h2 className={`${lexend.className} featured-header pri-text`}>Featured skills</h2>

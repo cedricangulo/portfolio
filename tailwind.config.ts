@@ -34,7 +34,7 @@ const config: Config = {
 					from: {
 						opacity: '0',
 						filter: 'blur(2px)',
-						transform: 'translateY(-15px)',
+						transform: 'translateY(-30px)',
 					},
 					to: {
 						opacity: '1',

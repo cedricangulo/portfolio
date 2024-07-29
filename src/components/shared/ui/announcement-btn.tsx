@@ -30,7 +30,7 @@ function AnnButton({ href, icon, text, from, via, to }: AnnButtonProps) {
 				className={`absolute inset-0 block size-full animate-gradient bg-[length:var(--bg-size)_100%] [border-radius:inherit] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] p-px ![mask-composite:subtract]`}
 			></div>
 			{icon}
-			<div className='shrink-0 bg-border w-px mx-1 h-4'></div>
+			<div className='shrink-0 bg-[#666] dark:bg-[#a1a1a1] w-px mx-2 h-4'></div>
 			<span
 				className='animate-gradient bg-clip-text text-transparent inline'
 				style={{
