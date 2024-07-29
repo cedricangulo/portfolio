@@ -177,7 +177,7 @@ const Carousel = forwardRef<
 					tabIndex={0}
 					ref={ref}
 					onKeyDownCapture={handleKeyDown}
-					className={cn('grid gap-2 w-full relative focus:outline-none', className)}
+					className={cn('grid w-full relative focus:outline-none', className)}
 					dir={direction}
 				>
 					{children}

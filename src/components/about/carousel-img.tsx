@@ -11,18 +11,18 @@ const CarouselExample = () => {
 	return (
 		<Carousel
 			orientation='vertical'
-			className='flex items-center gap-2'
+			className='flex items-center rounded-lg py-1 bg-white dark:bg-neutral-950 shadow-black/10 shadow-md border-2 border-[#ebebeb] dark:border-[#333]'
 		>
-			<div className='relative basis-3/4 w-fit max-w-96'>
-				<CarouselMainContainer className='max-h-96 max-w-96'>
+			<div className='relative basis-3/4 '>
+				<CarouselMainContainer className='h-96'>
 					{Array.from({ length: 15 }).map((_, index) => (
 						<SliderMainItem
 							key={index}
-							className='border border-neutral-400 dark:border-neutral-800 flex items-center justify-center max-h-96 max-w-96 rounded-md'
+							className='flex items-center justify-center h-52 rounded-md'
 						>
 							<ImageRender
 								src={`/images/photography/${index + 1}.jpg`}
-								alt=''
+								alt={`${index}`}
 								width={384}
 								height={384}
 								className='rounded-md'
@@ -31,20 +31,22 @@ const CarouselExample = () => {
 					))}
 				</CarouselMainContainer>
 			</div>
-			<CarouselThumbsContainer className='h-96 basis-1/4'>
+			<CarouselThumbsContainer className='rounded-md h-96 basis-1/4'>
 				{Array.from({ length: 15 }).map((_, index) => (
 					<SliderThumbItem
 						key={index}
 						index={index}
-						className='border border-neutral-400 dark:border-neutral-800 rounded-md bg-transparent'
+						className='rounded-md bg-transparent'
 					>
-						<ImageRender
-							src={`/images/photography/${index + 1}.jpg`}
-							alt={`${index}`}
-							width={384}
-							height={384}
-							className='rounded-md'
-						/>
+						<span className='flex items-center justify-center h-full w-full rounded-md cursor-pointer'>
+							<ImageRender
+								src={`/images/photography/${index + 1}.jpg`}
+								alt={`${index}`}
+								width={384}
+								height={384}
+								className='rounded-md'
+							/>
+						</span>
 					</SliderThumbItem>
 				))}
 			</CarouselThumbsContainer>
