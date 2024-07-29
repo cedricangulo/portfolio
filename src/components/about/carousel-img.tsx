@@ -5,35 +5,46 @@ import {
 	SliderMainItem,
 	SliderThumbItem,
 } from '../shared/ui/carousel';
+import ImageRender from '../shared/image-render';
 
 const CarouselExample = () => {
 	return (
 		<Carousel
 			orientation='vertical'
-			className='flex items-center gap-2'
+			className='flex justify-center items-center gap-2'
 		>
-			<div className='relative basis-3/4 '>
-				<CarouselMainContainer className='h-60'>
-					{Array.from({ length: 16 }).map((_, index) => (
+			<div className='relative'>
+				<CarouselMainContainer className='h-96'>
+					{Array.from({ length: 15 }).map((_, index) => (
 						<SliderMainItem
 							key={index}
-							className='border border-muted flex items-center justify-center h-52 rounded-md'
+							className='border border-muted flex items-center justify-center size-96 rounded-md'
 						>
-							Slide {index + 1}
+							<ImageRender
+								src={`/images/photography/${index + 1}.jpg`}
+								alt=''
+								width={384}
+								height={384}
+								className='rounded-md'
+							/>
 						</SliderMainItem>
 					))}
 				</CarouselMainContainer>
 			</div>
-			<CarouselThumbsContainer className='h-60 basis-1/4'>
-				{Array.from({ length: 16 }).map((_, index) => (
+			<CarouselThumbsContainer className='h-96 basis-1/4'>
+				{Array.from({ length: 15 }).map((_, index) => (
 					<SliderThumbItem
 						key={index}
 						index={index}
 						className='rounded-md bg-transparent'
 					>
-						<span className='border border-muted flex items-center justify-center h-full w-full rounded-md cursor-pointer bg-background'>
-							Slide {index + 1}
-						</span>
+						<ImageRender
+							src={`/images/photography/${index + 1}.jpg`}
+							alt={`${index}`}
+							width={384}
+							height={384}
+							className='rounded-md'
+						/>
 					</SliderThumbItem>
 				))}
 			</CarouselThumbsContainer>

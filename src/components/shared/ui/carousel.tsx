@@ -274,13 +274,13 @@ const SliderThumbItem = forwardRef<
 			ref={ref}
 			onClick={() => onThumbClick(index)}
 			className={cn(
-				'flex min-w-0 shrink-0 grow-0 basis-1/3 bg-background p-1',
+				'flex min-w-0 shrink-0 grow-0 bg-background p-1',
 				`${orientation === 'vertical' ? 'pb-1' : 'pr-1'}`,
 				className
 			)}
 		>
 			<div
-				className={`relative aspect-square h-20 w-full opacity-40 rounded-md transition-opacity ${
+				className={`relative aspect-square h-32 w-full opacity-40 rounded-md transition-opacity ${
 					isSlideActive ? '!opacity-100' : ''
 				}`}
 			>
