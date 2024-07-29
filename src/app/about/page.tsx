@@ -57,7 +57,9 @@ export default function AboutPage() {
 					</Link>
 					, but it has been inactive for a long time.
 				</p>
-				<CarouselExample />
+				<div className='max-w-xl mx-auto mt-8'>
+					<CarouselExample />
+				</div>
 			</div>
 			<div className='featured-wrapper'>
 				<h2 className={`${lexend.className} featured-header pri-text`}>Featured skills</h2>

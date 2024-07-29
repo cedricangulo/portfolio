@@ -11,14 +11,14 @@ const CarouselExample = () => {
 	return (
 		<Carousel
 			orientation='vertical'
-			className='flex justify-center items-center gap-2'
+			className='flex items-center gap-2'
 		>
-			<div className='relative'>
-				<CarouselMainContainer className='h-96'>
+			<div className='relative basis-3/4 w-fit max-w-96'>
+				<CarouselMainContainer className='max-h-96 max-w-96'>
 					{Array.from({ length: 15 }).map((_, index) => (
 						<SliderMainItem
 							key={index}
-							className='border border-muted flex items-center justify-center size-96 rounded-md'
+							className='border border-neutral-400 dark:border-neutral-800 flex items-center justify-center max-h-96 max-w-96 rounded-md'
 						>
 							<ImageRender
 								src={`/images/photography/${index + 1}.jpg`}
@@ -36,7 +36,7 @@ const CarouselExample = () => {
 					<SliderThumbItem
 						key={index}
 						index={index}
-						className='rounded-md bg-transparent'
+						className='border border-neutral-400 dark:border-neutral-800 rounded-md bg-transparent'
 					>
 						<ImageRender
 							src={`/images/photography/${index + 1}.jpg`}
