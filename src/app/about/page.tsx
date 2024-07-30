@@ -73,6 +73,7 @@ export default function AboutPage() {
 				<h2 className={`${lexend.className} oldport-header pri-text`}>My old portfolios</h2>
 				<div className='flex items-center flex-col md:flex-row gap-0 md:gap-4 my-8'>
 					<AnnButton
+						className='my-8 md:my-0'
 						href='https://cedangulo.vercel.app/'
 						icon={
 							<Image
@@ -88,6 +89,7 @@ export default function AboutPage() {
 						to='#af4edc'
 					/>
 					<AnnButton
+						className='my-8 md:my-0'
 						href='https://bryanangulo.vercel.app/'
 						icon={
 							<Image
@@ -103,6 +105,7 @@ export default function AboutPage() {
 						to='#ff6224'
 					/>
 					<AnnButton
+						className='my-8 md:my-0'
 						href='https://cedbry.vercel.app/'
 						icon={
 							<Image
