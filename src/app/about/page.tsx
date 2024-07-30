@@ -44,10 +44,10 @@ export default function AboutPage() {
 			<div className='flex flex-col gap-4 w-full mx-auto mt-16 animate-fadeIn [--fadeIn-delay:800ms] opacity-0'>
 				<h2 className={`${lexend.className} featured-header pri-text`}>My Photography Journey</h2>
 				<p className='paragraph sec-text'>
-					I tried photography using just my phone in year 2022, but I couldn’t continue it because I
-					didn’t have enough equipment for that hobby and I also lacked confidence back then, so my
-					close friends and my relatives were the only subjects in my pictures. I even have a
-					Facebook page{' '}
+					I tried photography using just my phone in year 2022. At that time, I was living in
+					Zambales, but I couldn’t continue it because I didn’t have enough equipment for that hobby
+					and I also lacked confidence back then, so my close friends and my relatives were the only
+					subjects in my pictures. I even have a Facebook page{' '}
 					<Link
 						href='https://www.facebook.com/capicturessS?mibextid=ZbWKwL'
 						target='_blank'

@@ -61,7 +61,7 @@ export const worksMeta = [
 			},
 			{
 				src: '/images/webwise/webwise2.webp',
-				alt: 'Mobile view pages compilation',
+				alt: 'Compilation for Mobile View Pages',
 			},
 		],
 	},
