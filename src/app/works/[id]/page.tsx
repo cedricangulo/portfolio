@@ -5,7 +5,7 @@ import { worksMeta } from '../data/worksdetails';
 import LangList from '@/components/works/lang-list';
 import ColorScheme from '@/components/works/color-scheme';
 import ImageRender from '@/components/shared/image-render';
-import AnnButton from '@/components/shared/ui/announcement-btn';
+import BranchTab from '@/components/works/branch-tab';
 import { IDynamicParam } from '../../../components/works/interface/dynamic-param';
 
 export function generateStaticParams() {
@@ -33,16 +33,6 @@ function worksDetails({ params }: IDynamicParam) {
 					</p>
 				))}
 				<div className='details-wrapper'>
-					{work?.id === 2 && (
-						<AnnButton
-							href='https://technodyssey.vercel.app/'
-							icon='🎉'
-							text='Now Available in Mobile'
-							from='#ffaa40'
-							via='#9c40ff'
-							to='#ffaa40'
-						/>
-					)}
 					<div className='flex flex-col sm:flex-row gap-8 sm:gap-4'>
 						<div className='w-2/4'>
 							{work?.fontFamily.map((f, index) => (
@@ -66,7 +56,13 @@ function worksDetails({ params }: IDynamicParam) {
 						</div>
 					</div>
 					<div className='lang-wrapper'>
-						<LangList lang={work?.langs} />
+						{work?.id === 2 ? (
+							<>
+								<BranchTab />
+							</>
+						) : (
+							<LangList lang={work?.langs} />
+						)}
 					</div>
 				</div>
 			</div>

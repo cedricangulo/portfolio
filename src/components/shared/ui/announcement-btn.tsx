@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 
 interface AnnButtonProps {
+	className?: string;
 	href: string;
 	icon: React.ReactNode;
 	text: string;
@@ -10,12 +11,12 @@ interface AnnButtonProps {
 	to: string;
 }
 
-function AnnButton({ href, icon, text, from, via, to }: AnnButtonProps) {
+function AnnButton({ className, href, icon, text, from, via, to }: AnnButtonProps) {
 	return (
 		<Link
 			href={`${href}`}
 			target='_blank'
-			className='group relative mb-8 flex max-w-fit flex-row items-center justify-center rounded-md bg-white/40 dark:bg-neutral-950 px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#9c40ff20] backdrop-blur-sm transition-shadow duration-500 ease-out [--bg-size:300%] hover:shadow-[inset_0_-5px_10px_#9c40ff55] dark:bg-black/40'
+			className={`${className} group relative flex max-w-fit flex-row items-center justify-center rounded-md bg-white/40 dark:bg-neutral-950 px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#9c40ff20] backdrop-blur-sm transition-shadow duration-500 ease-out [--bg-size:300%] hover:shadow-[inset_0_-5px_10px_#9c40ff55] dark:bg-black/40`}
 		>
 			<div
 				style={{

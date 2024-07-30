@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { lexend } from '@/lib/fonts';
 import { FeaturedSkills, Highlight, Timeline } from '@/components/about/about';
 import AnnButton from '@/components/shared/ui/announcement-btn';
-import CarouselExample from '@/components/about/carousel-img';
+import Carousell from '@/components/about/carousel-img';
 import Link from 'next/link';
 
 export default function AboutPage() {
@@ -58,7 +58,7 @@ export default function AboutPage() {
 					, but it has been inactive for a long time.
 				</p>
 				<div className='max-w-xl mx-auto mt-8'>
-					<CarouselExample />
+					<Carousell />
 				</div>
 			</div>
 			<div className='featured-wrapper'>
@@ -73,19 +73,19 @@ export default function AboutPage() {
 				<h2 className={`${lexend.className} oldport-header pri-text`}>My old portfolios</h2>
 				<div className='flex items-center flex-col md:flex-row gap-0 md:gap-4 my-8'>
 					<AnnButton
-						href='https://cedbry.vercel.app/'
+						href='https://cedangulo.vercel.app/'
 						icon={
 							<Image
-								src='/me-icon.png'
+								src='/weblogoD.png'
 								alt='icon'
 								width={20}
 								height={20}
 							/>
 						}
 						text='@cdrcangulo'
-						from='#1a627e'
-						via='#eff6e0'
-						to='#1a627e'
+						from='#af4edc'
+						via='#00bfff'
+						to='#af4edc'
 					/>
 					<AnnButton
 						href='https://bryanangulo.vercel.app/'
@@ -103,19 +103,19 @@ export default function AboutPage() {
 						to='#ff6224'
 					/>
 					<AnnButton
-						href='https://cedangulo.vercel.app/'
+						href='https://cedbry.vercel.app/'
 						icon={
 							<Image
-								src='/weblogoD.png'
+								src='/me-icon.png'
 								alt='icon'
 								width={20}
 								height={20}
 							/>
 						}
 						text='@cdrcangulo'
-						from='#af4edc'
-						via='#00bfff'
-						to='#af4edc'
+						from='#1a627e'
+						via='#eff6e0'
+						to='#1a627e'
 					/>
 				</div>
 			</div>
