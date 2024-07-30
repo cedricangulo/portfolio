@@ -34,10 +34,6 @@
 	@apply flex flex-col items-center gap-4 max-w-6xl w-full mx-auto text-center my-16 animate-fadeIn [--fadeIn-delay:900ms] opacity-0;
 }
 
-.featured-header {
-	@apply text-3xl uppercase font-medium;
-}
-
 .highlight {
 	@apply px-1 rounded transition-all text-purple-800 bg-purple-200 dark:text-purple-300 dark:bg-[#35006180];
 }
@@ -50,10 +46,12 @@
 	@apply flex flex-col gap-4 max-w-xl w-full mx-auto mt-16 animate-fadeIn [--fadeIn-delay:1200ms] opacity-0;
 }
 
-.timeline-header {
-	@apply text-center text-3xl uppercase font-medium;
+.featured-header,
+.photo-header {
+	@apply text-3xl font-medium;
 }
 
+.timeline-header,
 .oldport-header {
-	@apply text-center text-3xl uppercase font-medium;
+	@apply text-center text-3xl font-medium;
 }

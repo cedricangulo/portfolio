@@ -32,24 +32,24 @@ export const worksMeta = [
 			{
 				langName: 'HTML',
 				langColor: {
-					bg: 'bg-[#dc3207] dark:bg-[#e34c26]',
-					fill: 'fill-[#dc3207] dark:fill-[#e34c26]',
+					bg: 'bg-[#e34f26]',
+					fill: 'fill-[#e34f26]',
 				},
 				langWidth: 90.6,
 			},
 			{
 				langName: 'CSS',
 				langColor: {
-					bg: 'bg-[#5a14c2] dark:bg-[#563d7c]',
-					fill: 'fill-[#5a14c2] dark:fill-[#563d7c]',
+					bg: 'bg-[#1572b6]',
+					fill: 'fill-[#1572b6]',
 				},
 				langWidth: 4.4,
 			},
 			{
 				langName: 'JavaScript',
 				langColor: {
-					bg: 'bg-[#f7df27] dark:bg[#e6cc00]',
-					fill: 'fill-[#f7df27] dark:fill-[#e6cc00]',
+					bg: 'bg-[#f7df1e]',
+					fill: 'fill-[#f7df1e]',
 				},
 				langWidth: 5.0,
 			},
@@ -87,16 +87,16 @@ export const worksMeta = [
 			{
 				langName: 'HTML',
 				langColor: {
-					bg: 'bg-[#dc3207] dark:bg-[#e34c26]',
-					fill: 'fill-[#dc3207] dark:fill-[#e34c26]',
+					bg: 'bg-[#e34f26]',
+					fill: 'fill-[#e34f26]',
 				},
 				langWidth: 67.4,
 			},
 			{
 				langName: 'CSS',
 				langColor: {
-					bg: 'bg-[#5a14c2] dark:bg-[#563d7c]',
-					fill: 'fill-[#5a14c2] dark:fill-[#563d7c]',
+					bg: 'bg-[#1572b6]',
+					fill: 'fill-[#1572b6]',
 				},
 				langWidth: 32.6,
 			},
@@ -160,24 +160,24 @@ export const worksMeta = [
 			{
 				langName: 'HTML',
 				langColor: {
-					bg: 'bg-[#dc3207] dark:bg-[#e34c26]',
-					fill: 'fill-[#dc3207] dark:fill-[#e34c26]',
+					bg: 'bg-[#e34f26]',
+					fill: 'fill-[#e34f26]',
 				},
 				langWidth: 65.2,
 			},
 			{
 				langName: 'CSS',
 				langColor: {
-					bg: 'bg-[#5a14c2] dark:bg-[#563d7c]',
-					fill: 'fill-[#5a14c2] dark:fill-[#563d7c]',
+					bg: 'bg-[#1572b6]',
+					fill: 'fill-[#1572b6]',
 				},
 				langWidth: 23,
 			},
 			{
 				langName: 'JavaScript',
 				langColor: {
-					bg: 'bg-[#f7df27] dark:bg[#e6cc00]',
-					fill: 'fill-[#f7df27] dark-fill[#e6cc00]',
+					bg: 'bg-[#f7df1e]',
+					fill: 'fill-[#f7df1e]',
 				},
 				langWidth: 11.8,
 			},
@@ -222,24 +222,24 @@ export const worksMeta = [
 			{
 				langName: 'PHP',
 				langColor: {
-					bg: 'bg-[#1e3698] dark:bg[#4F5D95]',
-					fill: 'fill-[#1e3698] dark-fill[#4F5D95]',
+					bg: 'bg-[#777bb4]',
+					fill: 'fill-[#777bb4]',
 				},
 				langWidth: 79.6,
 			},
 			{
 				langName: 'CSS',
 				langColor: {
-					bg: 'bg-[#5a14c2] dark:bg-[#563d7c]',
-					fill: 'fill-[#5a14c2] dark:fill-[#563d7c]',
+					bg: 'bg-[#1572b6]',
+					fill: 'fill-[#1572b6]',
 				},
 				langWidth: 15.8,
 			},
 			{
 				langName: 'JavaScript',
 				langColor: {
-					bg: 'bg-[#f7df27] dark:bg[#e6cc00]',
-					fill: 'fill-[#f7df27] dark-fill[#e6cc00]',
+					bg: 'bg-[#f7df1e]',
+					fill: 'fill-[#f7df1e]',
 				},
 				langWidth: 4.6,
 			},
@@ -281,32 +281,32 @@ export const worksMeta = [
 			{
 				langName: 'PHP',
 				langColor: {
-					bg: 'bg-[#1e3698] dark:bg[#4F5D95]',
-					fill: 'fill-[#1e3698] dark-fill[#4F5D95]',
+					bg: 'bg-[#777bb4]',
+					fill: 'fill-[#777bb4]',
 				},
 				langWidth: 88.6,
 			},
 			{
 				langName: 'CSS',
 				langColor: {
-					bg: 'bg-[#5a14c2] dark:bg-[#563d7c]',
-					fill: 'fill-[#5a14c2] dark:fill-[#563d7c]',
+					bg: 'bg-[#1572b6]',
+					fill: 'fill-[#1572b6]',
 				},
 				langWidth: 8.7,
 			},
 			{
 				langName: 'HTML',
 				langColor: {
-					bg: 'bg-[#dc3207] dark:bg-[#e34c26]',
-					fill: 'fill-[#dc3207] dark:fill-[#e34c26]',
+					bg: 'bg-[#e34f26]',
+					fill: 'fill-[#e34f26]',
 				},
 				langWidth: 2.1,
 			},
 			{
 				langName: 'JavaScript',
 				langColor: {
-					bg: 'bg-[#f7df27] dark:bg[#e6cc00]',
-					fill: 'fill-[#f7df27] dark-fill[#e6cc00]',
+					bg: 'bg-[#f7df1e]',
+					fill: 'fill-[#f7df1e]',
 				},
 				langWidth: 0.6,
 			},
