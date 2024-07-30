@@ -3,11 +3,11 @@
 import Link from 'next/link';
 import Logo from '../../icons/logo';
 import { cn } from '@/lib/utils';
-import ThemeSwitch from './theme-switcher';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import NavMenu, { navLinks } from './nav-menu';
 import { AnimatePresence } from 'framer-motion';
+import { ThemeSwitch } from './theme-switcher';
 
 export default function NavBar() {
 	const pathname = usePathname();

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Info } from 'lucide-react';
-import { Tooltip } from '@nextui-org/tooltip';
+// import { Tooltip } from '@nextui-org/tooltip';
 import LinkIcon from '@/components/icons/link-icon';
 import GitHubIcon from '@/components/icons/github';
 import { TButton } from '@/components/works/interface/card';
@@ -8,10 +8,10 @@ import { TButton } from '@/components/works/interface/card';
 export default function Buttons({ i, l }: TButton) {
 	return (
 		<div className='flex items-center gap-3'>
-			<Tooltip
+			{/* <Tooltip
 				content='Source Code'
 				className='tooltip'
-			>
+			> */}
 				<Link
 					href={l.github}
 					target='_blank'
@@ -25,14 +25,14 @@ export default function Buttons({ i, l }: TButton) {
 						className='size-[1.25rem] sec-text transition-all'
 					/>
 				</Link>
-			</Tooltip>
+			{/* </Tooltip> */}
 			{l.href === '' ? (
 				''
 			) : (
-				<Tooltip
-					content='Link'
-					className='tooltip'
-				>
+				// <Tooltip
+				// 	content='Link'
+				// 	className='tooltip'
+				// >
 					<Link
 						href={l.href}
 						target='_blank'
@@ -45,12 +45,12 @@ export default function Buttons({ i, l }: TButton) {
 							className='size-[1.25rem] sec-text transition-all'
 						/>
 					</Link>
-				</Tooltip>
+				// </Tooltip>
 			)}
-			<Tooltip
+			{/* <Tooltip
 				content='More info'
 				className='tooltip'
-			>
+			> */}
 				<Link
 					className='rounded-full'
 					href={`works/${i + 1}`}
@@ -62,7 +62,7 @@ export default function Buttons({ i, l }: TButton) {
 						className='size-[1.25rem] sec-text transition-all'
 					/>
 				</Link>
-			</Tooltip>
+			{/* </Tooltip> */}
 		</div>
 	);
 }

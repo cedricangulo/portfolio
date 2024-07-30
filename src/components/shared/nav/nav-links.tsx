@@ -17,7 +17,6 @@ export default function NavLink({ i, href, className, setSidebarOpen, children }
 		>
 			<Link
 				href={href}
-				scroll={false}
 				className={className}
 			>
 				{children}
