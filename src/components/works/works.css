@@ -12,37 +12,25 @@
 }
 
 .back {
-	@apply inline-flex gap-1 hover:text-purple-500 hover:gap-0
-          mt-2 text-lg items-center italic transition-all;
+	@apply inline-flex gap-1 hover:text-purple-500 hover:gap-0 mt-2 text-lg items-center italic transition-all;
 }
 
 /* cards */
 .card {
-	@apply relative bg-white dark:bg-neutral-950
-          flex lg:flex-row flex-col items-start
-          w-full min-h-[28.125rem] md:min-h-[0rem] mx-auto my-8
-          shadow-black/10 shadow-md
-          rounded-lg border-2 border-[#ebebeb] dark:border-[#333] 
-          overflow-hidden transition-all;
+	@apply relative bg-white dark:bg-neutral-950 flex lg:flex-row flex-col items-start w-full min-h-[28.125rem] md:min-h-[0rem] mx-auto my-8 shadow-black/10 shadow-md rounded-lg border-2 border-[#ebebeb] dark:border-[#333] overflow-hidden transition-all;
 }
 
 .badge {
-	@apply text-xs bg-neutral-100 dark:bg-[#1a1a1a]
-        text-gray-500 dark:text-gray-400
-        px-2 py-1 rounded-md transition-all;
+	@apply text-xs bg-neutral-100 dark:bg-[#1a1a1a] text-gray-500 dark:text-gray-400 px-2 py-1 rounded-md transition-all;
 }
 
 /* details */
 .details-container {
-	@apply my-0 mx-auto
-          min-h-screen w-full
-          flex flex-col lg:flex-row gap-16 md:gap-12 justify-center
-          animate-fadeIn [--fadeIn-delay:0ms] opacity-0;
+	@apply my-0 mx-auto min-h-screen w-full flex flex-col lg:flex-row gap-16 md:gap-12 justify-center animate-fadeIn [--fadeIn-delay:0ms] opacity-0;
 }
 
 .details-wrapper {
-	@apply rounded-lg mt-16 p-4 bg-white dark:bg-neutral-950 shadow-black/10 shadow-md 
-          border-2 border-[#ebebeb] dark:border-[#333] overflow-hidden transition-all;
+	@apply rounded-lg mt-16 p-4 bg-white dark:bg-neutral-950 shadow-black/10 shadow-md border-2 border-[#ebebeb] dark:border-[#333] overflow-hidden transition-all;
 }
 
 .colorscheme-wrapper {
@@ -62,8 +50,5 @@
 }
 
 .note {
-	@apply inline-flex items-center gap-2 text-sm p-4 rounded-lg
-          text-yellow-800 dark:text-yellow-50 
-          border border-yellow-500 dark:border-yellow-500 
-          bg-yellow-300/50 dark:bg-yellow-950;
+	@apply inline-flex items-center gap-2 text-sm p-4 rounded-lg text-yellow-800 dark:text-yellow-50 border border-yellow-500 dark:border-yellow-500 bg-yellow-300/50 dark:bg-yellow-950;
 }

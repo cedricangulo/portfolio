@@ -7,7 +7,7 @@ import {
 } from '../shared/ui/carousel';
 import ImageRender from '../shared/image-render';
 
-const CarouselExample = () => {
+const Carousell = () => {
 	return (
 		<Carousel
 			orientation='vertical'
@@ -54,4 +54,4 @@ const CarouselExample = () => {
 	);
 };
 
-export default CarouselExample;
+export default Carousell;
