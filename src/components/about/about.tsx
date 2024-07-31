@@ -39,7 +39,7 @@ const Timeline = () => (
 		{timeline.map((list, index) => (
 			<li
 				key={index}
-				className='mb-10 ms-4'
+				className='mb-6 ms-4'
 			>
 				<div className='absolute w-3 h-3 bg-purple-500 dark:bg-purple-400 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900'></div>
 				<time

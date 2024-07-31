@@ -9,22 +9,26 @@ const timeline: TTimeline = [
 	{
 		time: '2023 - 2024',
 		title: 'Freshmen BSIT',
-		text: 'In my first semester, I covered computing, programming, and networking basics. The following semester, I explored more in web development and continued with C++ and networking, finding it more manageable due to my previous experience.',
+		text: 'Nueva Ecija University of Science and Technology',
+		// text: 'In my first semester, I covered computing, programming, and networking basics. The following semester, I explored more in web development and continued with C++ and networking, finding it more manageable due to my previous experience.',
 	},
 	{
 		time: '2022 - 2023',
 		title: 'Grade 12 TVL-ICT',
-		text: 'Graduated with honors from Santa Rosa National High School. Focused on ICT, emphasizing web development and programming. Grateful to Mr. Rey Laura, my major subject teacher, for his guidance.',
+		text: 'Santa Rosa National High School',
+		// text: 'Graduated with honors from Santa Rosa National High School. Focused on ICT, emphasizing web development and programming. Grateful to Mr. Rey Laura, my major subject teacher, for his guidance.',
 	},
 	{
 		time: '2021 - 2022',
 		title: 'Grade 11 TVL-ICT',
-		text: 'Studied hardware basics online at Zamblaes National High School despite challenges of the online setup.',
+		text: 'Zamblaes National High School',
+		// text: 'Studied hardware basics online at Zamblaes National High School despite challenges of the online setup.',
 	},
 	{
 		time: '2019 - 2020',
 		title: 'Grade 10 ICT',
-		text: 'Discovered my passion for computers at Locloc National High School, sparking my interest in information technology.',
+		text: 'Locloc National High School',
+		// text: 'Discovered my passion for computers at Locloc National High School, sparking my interest in information technology.',
 	},
 	{
 		time: '2016 - 2019',
@@ -39,7 +43,7 @@ const timeline: TTimeline = [
 	{
 		time: '2016',
 		title: 'Grade 6 2nd Quarter',
-		text: 'Cabilaoan Elementary High School.',
+		text: 'Cabilaoan Elementary School.',
 	},
 	{
 		time: '2010 - 2016',

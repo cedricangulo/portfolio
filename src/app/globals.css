@@ -5,6 +5,10 @@
 @import url(../components/about/about.css);
 @import url(../components/works/works.css);
 
+/* * {
+	outline: lime dashed 1px;
+} */
+
 ::-webkit-scrollbar {
 	width: 8px;
 }
