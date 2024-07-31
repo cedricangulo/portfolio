@@ -26,6 +26,26 @@ const timeline: TTimeline = [
 		title: 'Grade 10 ICT',
 		text: 'Discovered my passion for computers at Locloc National High School, sparking my interest in information technology.',
 	},
+	{
+		time: '2016 - 2019',
+		title: 'Grade 7 - 9',
+		text: 'Cabilaoan Agro Industrial High School.',
+	},
+	{
+		time: '2016',
+		title: 'Grade 7 1st Quarter',
+		text: 'Locloc National High School.',
+	},
+	{
+		time: '2016',
+		title: 'Grade 6 2nd Quarter',
+		text: 'Cabilaoan Elementary High School.',
+	},
+	{
+		time: '2010 - 2016',
+		title: 'Grade 1 - 6',
+		text: 'Bato Elementary School.',
+	},
 ];
 
 const Skills: TSkills = [

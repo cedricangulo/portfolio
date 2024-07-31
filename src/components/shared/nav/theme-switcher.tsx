@@ -27,7 +27,10 @@ export function ThemeSwitch() {
 					<span className='sr-only'>Toggle theme</span>
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align='end' className='bg-neutral-50 dark:bg-black'>
+			<DropdownMenuContent
+				align='end'
+				className='bg-white dark:bg-neutral-950 shadow-black/10 shadow-md border-2 border-[#ebebeb] dark:border-[#333]'
+			>
 				<DropdownMenuItem onClick={() => setTheme('light')}>Light</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme('dark')}>Dark</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme('system')}>System</DropdownMenuItem>
