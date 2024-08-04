@@ -1,54 +1,45 @@
 import { TSkills, TTimeline } from './interface/about';
 
 const timeline: TTimeline = [
-	// {
-	// 	time: "2024 - Current",
-	// 	title: "Sophomore BSIT",
-	// 	text: "In my first year, I learned the basics of computing, programming, and networking.",
-	// },
 	{
 		time: '2023 - 2024',
 		title: 'Freshmen BSIT',
 		text: 'Nueva Ecija University of Science and Technology',
-		// text: 'In my first semester, I covered computing, programming, and networking basics. The following semester, I explored more in web development and continued with C++ and networking, finding it more manageable due to my previous experience.',
 	},
 	{
 		time: '2022 - 2023',
 		title: 'Grade 12 TVL-ICT',
 		text: 'Santa Rosa National High School',
-		// text: 'Graduated with honors from Santa Rosa National High School. Focused on ICT, emphasizing web development and programming. Grateful to Mr. Rey Laura, my major subject teacher, for his guidance.',
 	},
 	{
 		time: '2021 - 2022',
 		title: 'Grade 11 TVL-ICT',
 		text: 'Zamblaes National High School',
-		// text: 'Studied hardware basics online at Zamblaes National High School despite challenges of the online setup.',
 	},
 	{
 		time: '2019 - 2020',
 		title: 'Grade 10 ICT',
 		text: 'Locloc National High School',
-		// text: 'Discovered my passion for computers at Locloc National High School, sparking my interest in information technology.',
 	},
 	{
 		time: '2016 - 2019',
 		title: 'Grade 7 - 9',
-		text: 'Cabilaoan Agro Industrial High School.',
+		text: 'Cabilaoan Agro Industrial High School',
 	},
 	{
 		time: '2016',
 		title: 'Grade 7 1st Quarter',
-		text: 'Locloc National High School.',
+		text: 'Locloc National High School',
 	},
 	{
 		time: '2016',
 		title: 'Grade 6 2nd Quarter',
-		text: 'Cabilaoan Elementary School.',
+		text: 'Cabilaoan Elementary School',
 	},
 	{
 		time: '2010 - 2016',
 		title: 'Grade 1 - 6',
-		text: 'Bato Elementary School.',
+		text: 'Bato Elementary School',
 	},
 ];
 
