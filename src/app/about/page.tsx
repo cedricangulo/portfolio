@@ -12,17 +12,19 @@ export default function AboutPage() {
 			<div className='main-container'>
 				<div className='paragraph-wrapper'>
 					<p className='paragraph sec-text'>
-						I’m 19 years old and a second year <Highlight>BSIT student</Highlight>. Finding out that
+						I’m 20 years old and a second year <Highlight>BSIT student</Highlight>. Finding out that
 						websites are made with <Highlight>HTML</Highlight> and <Highlight>CSS</Highlight> got me
 						excited about web development. That made me really interested in computers and
 						programming.
 					</p>
 					<p className='paragraph sec-text'>
 						Right now, I’m learning <Highlight>ReactJS</Highlight> and getting better at front-end
-						skills with <Highlight>TailwindCSS</Highlight> and <Highlight>NextJS</Highlight>. Before
-						my second year starts, I want to get better at <Highlight>C++</Highlight> and learn more
-						about <Highlight>DSA</Highlight> and <Highlight>OOP</Highlight> subject. Even though I
-						mostly focus on front-end development, I also want to try back-end development someday.
+						skills with <Highlight>TailwindCSS</Highlight> and <Highlight>NextJS</Highlight>. As a
+						second-year student, I’m putting in more effort to learn about{' '}
+						<Highlight>DSA</Highlight> and <Highlight>OOP</Highlight> while applying my current web
+						development knowledge in my <Highlight>Web Systems Technology</Highlight> subject. Even
+						though I mostly focus on front-end development, I also want to try back-end development
+						someday.
 					</p>
 				</div>
 				<div className='lg:w-1/4 flex justify-center items-center xl:mb-0'>

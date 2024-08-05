@@ -5,7 +5,7 @@ import GitHubSolidIcon from '../icons/github-solid';
 
 export default function Footer() {
 	return (
-		<footer className='flex items-center justify-center gap-2 min-h-24 flex-col py-8 bg-transparent text-sm'>
+		<footer className='max-h-36 flex items-center justify-center gap-2 min-h-24 flex-col py-8 bg-transparent text-sm'>
 			<div className='inline-flex gap-4 sec-text'>
 				<Link
 					href='https://github.com/bryan308'

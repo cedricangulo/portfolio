@@ -14,7 +14,7 @@ const FeaturedSkills = () => (
 			return (
 				<div
 					key={index}
-					className='tag pri-text'
+					className='skills-badge pri-text'
 				>
 					<svg
 						style={{ fill: s.fill }}
@@ -23,7 +23,6 @@ const FeaturedSkills = () => (
 						viewBox='0 0 24 24'
 						xmlns='http://www.w3.org/2000/svg'
 					>
-						<span className='sr-only'>{s.text}</span>
 						<path d={`${s.icon}`} />
 					</svg>
 					{s.text}
