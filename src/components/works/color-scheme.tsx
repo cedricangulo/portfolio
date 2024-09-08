@@ -8,7 +8,7 @@ import {
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
-} from '@/components/shared/ui/tooltip';
+} from '@/components/ui/tooltip';
 
 const CopyIcon = ({ color }: { color: number }) => (
 	<svg

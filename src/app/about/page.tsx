@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { lexend } from '@/lib/fonts';
 import { FeaturedSkills, Highlight, Timeline } from '@/components/about/about';
-import AnnButton from '@/components/shared/ui/announcement-btn';
+import AnnButton from '@/components/ui/announcement-btn';
 import Carousell from '@/components/about/carousel-img';
 import Link from 'next/link';
 

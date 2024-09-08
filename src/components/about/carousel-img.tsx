@@ -4,7 +4,7 @@ import {
 	CarouselThumbsContainer,
 	SliderMainItem,
 	SliderThumbItem,
-} from '../shared/ui/carousel';
+} from '../ui/carousel';
 import ImageRender from '../shared/image-render';
 
 const Carousell = () => {

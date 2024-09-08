@@ -1,7 +1,7 @@
 'use client';
 
 import React, { forwardRef, useCallback, useContext, useEffect, useState } from 'react';
-import { Button } from '@/components/shared/ui/button';
+import { Button } from '@/components/ui/button';
 import { EmblaOptionsType } from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronRightIcon } from 'lucide-react';

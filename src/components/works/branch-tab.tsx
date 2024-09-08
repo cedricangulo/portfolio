@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import LangList from './lang-list';
-import AnnButton from '../shared/ui/announcement-btn';
+import AnnButton from '../ui/announcement-btn';
 import {
 	Select,
 	SelectContent,
@@ -11,7 +11,7 @@ import {
 	SelectLabel,
 	SelectTrigger,
 	SelectValue,
-} from '@/components/shared/ui/select';
+} from '@/components/ui/select';
 
 const main = [
 	{

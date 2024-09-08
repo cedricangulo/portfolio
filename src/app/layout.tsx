@@ -32,12 +32,7 @@ export default function RootLayout({ children }: Props) {
 			lang='en'
 			suppressHydrationWarning
 		>
-			<body
-				className={cn(
-					'text-gray-950 dark:text-gray-200 bg-neutral-50 dark:bg-black transition-all',
-					geistsans.className
-				)}
-			>
+			<body className={cn('text-gray-950 dark:text-gray-200 transition-all', geistsans.className)}>
 				<Providers>
 					<NavBar />
 					<main className='w-full px-8 justify-center flex flex-col items-center overflow-x'>
