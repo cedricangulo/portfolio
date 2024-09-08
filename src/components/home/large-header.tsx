@@ -6,7 +6,7 @@ function LargeHeader() {
 		<h1
 			className={cn(
 				'animate-slideIn [--slideIn-delay:500ms] opacity-0',
-				'pri-text font-extrabold tracking-tight leading-none',
+				'text-foreground font-extrabold tracking-tight leading-none',
 				'text-5xl sm:text-6xl md:text-8xl',
 				lexend.className
 			)}
