@@ -1,34 +1,34 @@
-'use client';
+"use client"
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { cn } from '@/lib/utils';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from "react"
+import Image from "next/image"
+import { cn } from "@/lib/utils"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Logo({ state, className }: { state: boolean; className: string | null }) {
-	const [delayedState, setDelayedState] = useState(state);
+	const [delayedState, setDelayedState] = useState(state)
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			setDelayedState(state);
-		}, 100);
+			setDelayedState(state)
+		}, 100)
 
-		return () => clearTimeout(timer);
-	}, [state]);
+		return () => clearTimeout(timer)
+	}, [state])
 
 	return (
-		<AnimatePresence mode='wait'>
+		<AnimatePresence mode="wait">
 			{delayedState ? (
 				<motion.div
-					key='logo-active'
+					key="logo-active"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.3 }}
 				>
 					<Image
-						src='/logo-active.png'
-						alt='logo'
+						src="/logo-active.png"
+						alt="logo"
 						width={40}
 						height={40}
 						className={cn(className)}
@@ -37,15 +37,15 @@ export default function Logo({ state, className }: { state: boolean; className: 
 				</motion.div>
 			) : (
 				<motion.div
-					key='logo'
+					key="logo"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.3 }}
 				>
 					<Image
-						src='/logo.png'
-						alt='logo'
+						src="/logo.png"
+						alt="logo"
 						width={40}
 						height={40}
 						className={cn(className)}
@@ -54,5 +54,5 @@ export default function Logo({ state, className }: { state: boolean; className: 
 				</motion.div>
 			)}
 		</AnimatePresence>
-	);
+	)
 }

@@ -1,5 +1,5 @@
 export interface IColorScheme {
-	content: string;
-	color: string;
-	textColor: number;
+	content: string
+	color: string
+	textColor: number
 }

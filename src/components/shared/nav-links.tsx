@@ -1,19 +1,19 @@
-import Link from 'next/link';
+import Link from "next/link"
 
-import { motion } from 'framer-motion';
-import { slide } from './anim';
-import styles from './styles/style.module.scss';
+import { motion } from "framer-motion"
+import { slide } from "./anim"
+import styles from "./styles/style.module.scss"
 
-import { INavLink } from './interface/nav';
+import { INavLink } from "./interface/nav"
 
 export default function NavLink({ i, href, className, setSidebarOpen, children }: INavLink) {
 	return (
 		<motion.div
-			exit='exit'
+			exit="exit"
 			custom={i}
-			animate='enter'
+			animate="enter"
 			variants={slide}
-			initial='initial'
+			initial="initial"
 			className={styles.link}
 			onClick={() => setSidebarOpen(false)}
 		>
@@ -24,5 +24,5 @@ export default function NavLink({ i, href, className, setSidebarOpen, children }
 				{children}
 			</Link>
 		</motion.div>
-	);
+	)
 }

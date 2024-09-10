@@ -17,7 +17,7 @@
 
 /* cards */
 .card {
-	@apply relative bg-card flex lg:flex-row flex-col items-start w-full min-h-[28.125rem] md:min-h-[0rem] mx-auto my-8 shadow-black/10 shadow-md rounded-lg border-2 border-border;
+	@apply overflow-x-hidden md:overflow-y-visible relative bg-card flex lg:flex-row flex-col items-start w-full min-h-[28.125rem] md:min-h-[0rem] mx-auto my-8 shadow-black/10 shadow-md rounded-lg border-2 border-border;
 }
 
 /* details */

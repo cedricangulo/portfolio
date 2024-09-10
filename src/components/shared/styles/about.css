@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* layout */
+.main-wrapper {
+	@apply min-h-dvh max-w-[62.5rem] mt-[4.5rem] md:mt-[5.5rem] mb-20 w-full;
+}
+
+.header-wrapper {
+	@apply lg:min-w-[62.5rem] w-full h-[7.5rem] pt-8 animate-fadeIn [--fadeIn-delay:300ms] opacity-0;
+}
+
+.header {
+	@apply m-auto uppercase text-center lg:text-left text-5xl font-extrabold tracking-tight leading-none;
+}
+
+.subheader {
+	@apply text-center lg:text-left text-xl font-normal;
+}
+
+.paragraph {
+	@apply text-muted-foreground text-base font-normal leading-relaxed;
+}
+
+/* main-content */
+.main-container {
+	@apply w-full mx-auto md:py-0 my-16 lg:my-4
+          animate-fadeIn [--fadeIn-delay:500ms] opacity-0
+          flex items-center justify-center gap-4 flex-col-reverse lg:flex-row;
+}
+
+.paragraph-wrapper {
+	@apply flex flex-col gap-4 w-full lg:w-3/4;
+}
+
+.featured-wrapper {
+	@apply flex flex-col items-center gap-4 max-w-6xl w-full mx-auto text-center my-16 animate-fadeIn [--fadeIn-delay:900ms] opacity-0;
+}
+
+.timeline-wrapper {
+	@apply flex flex-col gap-4 max-w-xl w-full mx-auto mt-16 animate-fadeIn [--fadeIn-delay:1200ms] opacity-0;
+}
+
+.featured-header,
+.photo-header {
+	@apply text-3xl font-medium;
+}
+
+.photo-header {
+	@apply text-center md:text-left;
+}
+
+.timeline-header,
+.oldport-header {
+	@apply text-center text-3xl font-medium;
+}
