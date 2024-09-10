@@ -1,36 +1,36 @@
-'use client';
-import { useScroll } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import Lenis from '@studio-freight/lenis';
-import { WorkList } from './data/workslist';
-import { TList } from '@/components/works/interface/card';
-import Card from '@/components/works/card';
+"use client"
+import { useScroll } from "framer-motion"
+import { useEffect, useRef } from "react"
+import Lenis from "@studio-freight/lenis"
+import { WorkList } from "./data/workslist"
+import { TList } from "@/components/shared/interface/card"
+import Card from "@/components/shared/card"
 
 export default function WorksPage() {
-	const container = useRef(null);
+	const container = useRef(null)
 	const { scrollYProgress } = useScroll({
 		target: container,
-		offset: ['start start', 'end end'],
-	});
+		offset: ["start start", "end end"],
+	})
 
 	useEffect(() => {
-		const lenis = new Lenis();
+		const lenis = new Lenis()
 
 		function raf(time: any) {
-			lenis.raf(time);
-			requestAnimationFrame(raf);
+			lenis.raf(time)
+			requestAnimationFrame(raf)
 		}
 
-		requestAnimationFrame(raf);
-	});
+		requestAnimationFrame(raf)
+	})
 
 	return (
 		<div
 			ref={container}
-			className='animate-fadeIn [--fadeIn-delay:700ms] opacity-0 min-h-screen w-full'
+			className="animate-fadeIn [--fadeIn-delay:700ms] opacity-0 min-h-screen w-full"
 		>
 			{WorkList.map((l: TList, index: number) => {
-				const targetScale = 1 - (WorkList.length - index) * 0.05;
+				const targetScale = 1 - (WorkList.length - index) * 0.05
 				return (
 					<Card
 						key={index}
@@ -40,8 +40,8 @@ export default function WorksPage() {
 						range={[index * 0.25, 1]}
 						targetScale={targetScale}
 					/>
-				);
+				)
 			})}
 		</div>
-	);
+	)
 }

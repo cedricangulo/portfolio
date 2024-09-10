@@ -1,51 +1,49 @@
-import './globals.css';
-import { cn } from '@/lib/utils';
-import type { Metadata } from 'next';
-import { geistsans } from '@/lib/fonts';
-import NavBar from '@/components/shared/nav/nav';
-import Footer from '@/components/shared/footer';
-import Providers from '@/components/shared/theme-provider';
+import "./globals.css"
+import type { Metadata } from "next"
+import { geistsans } from "@/lib/fonts"
+
+import Header from "@/components/shared/header"
+import Providers from "@/components/shared/theme-provider"
+import Footer from "@/components/shared/footer"
 
 export const metadata: Metadata = {
 	title: {
-		default: 'Cedric Angulo',
-		template: 'Cedric Angulo | %s',
+		default: "Cedric Angulo",
+		template: "Cedric Angulo | %s",
 	},
-	metadataBase: new URL('https://cdrcangulo.vercel.app'),
+	metadataBase: new URL("https://cdrcangulo.vercel.app"),
 	description:
-		'Aspiring web developer and a second year student at NEUST, based in Nueva Ecija, Philippines.',
+		"Aspiring web developer and a second year student at NEUST, based in Nueva Ecija, Philippines.",
 	openGraph: {
-		title: 'Cedric Angulo’s Portfolio',
+		title: "Cedric Angulo’s Portfolio",
 		description:
-			'Aspiring web developer and a second year student at NEUST, based in Nueva Ecija, Philippines.',
+			"Aspiring web developer and a second year student at NEUST, based in Nueva Ecija, Philippines.",
 		images: [`https://cdrcangulo.vercel.app/metaimg.jpg`],
 	},
-};
+}
 
 type Props = {
-	children: React.ReactNode;
-};
+	children: React.ReactNode
+}
 
 export default function RootLayout({ children }: Props) {
 	return (
 		<html
-			lang='en'
+			lang="en"
 			suppressHydrationWarning
 		>
-			<body
-				className={cn(
-					'text-gray-950 dark:text-gray-200 bg-neutral-50 dark:bg-black transition-all',
-					geistsans.className
-				)}
-			>
+			<body className={geistsans.className}>
 				<Providers>
-					<NavBar />
-					<main className='w-full px-8 justify-center flex flex-col items-center overflow-x'>
+					<Header />
+					<main
+						role="main"
+						className="w-full px-8 justify-center flex flex-col items-center overflow-x"
+					>
 						{children}
 					</main>
 					<Footer />
 				</Providers>
 			</body>
 		</html>
-	);
+	)
 }
