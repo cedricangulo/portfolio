@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { geistsans } from '@/lib/fonts';
+import Header from '@/components/shared/header';
+import Providers from '@/components/shared/theme-provider';
 
 export const metadata: Metadata = {
 	title: {
@@ -29,12 +31,15 @@ export default function RootLayout({ children }: Props) {
 			suppressHydrationWarning
 		>
 			<body className={geistsans.className}>
-				<main
-					role='main'
-					className='w-full px-8 justify-center flex flex-col items-center overflow-x'
-				>
-					{children}
-				</main>
+				<Providers>
+					<Header />
+					<main
+						role='main'
+						className='w-full px-8 justify-center flex flex-col items-center overflow-x'
+					>
+						{children}
+					</main>
+				</Providers>
 			</body>
 		</html>
 	);

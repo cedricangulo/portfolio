@@ -2,101 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(../components/about/about.css);
-@import url(../components/works/works.css);
-
-/* 
-color {
-	--background: hsl(0 0% 100%);
-	--foreground: hsl(0 0 40%);
-	--card: hsl(0 0% 100%);
-	--card-foreground: hsl(0 0% 3.9%);
-	--popover: hsl(0 0% 100%);
-	--popover-foreground: hsl(0 0% 3.9%);
-	--primary: hsl(0 0% 9.02%);
-	--primary-foreground: hsl(0 0% 98%);
-	--secondary: hsl(0 0% 90%);
-	--secondary-foreground: hsl(0 0% 30%);
-	--muted: hsl(0 0% 96.1%);
-	--muted-foreground: hsl(0 0% 45.1%);
-	--accent: hsl(270.74 91.01% 65.1%);
-	--accent-foreground: hsl(270 95.24% 75.29%);
-	--destructive: hsl(0 84.2% 60.2%);
-	--destructive-foreground: hsl(0 0% 98%);
-	--border: hsl(0 0% 92.94%);
-	--input: hsl(0 0% 89.8%);
-	--ring: hsl(0 0% 3.9%);
-	--------------------------------------------
-	--background: hsl(0 0% 0%);
-	--foreground: hsl(0 0% 98%);
-	--card: hsl(0 0% 3.92%);
-	--card-foreground: hsl(0 0% 98%);
-	--popover: hsl(0 0% 3.9%);
-	--popover-foreground: hsl(0 0% 98%);
-	--primary: hsl(0 0% 98%);
-	--primary-foreground: hsl(0 0% 9%);
-	--secondary: hsl(0 0% 14.9%);
-	--secondary-foreground: hsl(0 0% 98%);
-	--muted: hsl(0 0% 14.9%);
-	--muted-foreground: hsl(0 0% 63.9%);
-	--accent: hsl(270 95.24% 75.29%);
-	--accent-foreground: hsl(269.19 97.37% 85.1%);
-	--destructive: hsl(0 62.8% 30.6%);
-	--destructive-foreground: hsl(0 0% 98%);
-	--border: hsl(0 0% 14.9%);
-	--input: hsl(0 0% 14.9%);
-	--ring: hsl(0 0% 83.1%);
-}
-*/
+/* @import url(../components/about/about.css);
+@import url(../components/works/works.css); */
 
 @layer base {
 	:root {
-		--background: 0 0% 100%;
-		--foreground: 0 0 40%;
-		--card: 0 0% 100%;
-		--card-foreground: 0 0% 3.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 0 0% 3.9%;
-		--primary: 0 0% 9.02%;
-		--primary-foreground: 0 0% 98%;
-		--secondary: 0 0% 90%;
-		--secondary-foreground: 0 0% 30%;
-		--muted: 0 0% 96.1%;
-		--muted-foreground: 0 0% 45.1%;
-		--accent: 270.74 91.01% 65.1%;
-		--accent-foreground: 270 95.24% 75.29%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 92.94%;
-		--input: 0 0% 89.8%;
-		--ring: 0 0% 3.9%;
-		--chart-1: 12 76% 61%;
-		--chart-2: 173 58% 39%;
-		--chart-3: 197 37% 24%;
-		--chart-4: 43 74% 66%;
-		--chart-5: 27 87% 67%;
+		--background: 250 250 250;
+		--foreground: 23 23 23;
+		--card: 255 255 255;
+		--card-foreground: 23 23 23;
+		--popover: 255 255 255;
+		--popover-foreground: 15 23 42;
+		--primary: 146 27 224;
+		--primary-foreground: 23 23 23;
+		--secondary: 180 10 241;
+		--secondary-foreground: 77 77 77;
+		--muted: 245 245 245;
+		--muted-foreground: 115 115 115;
+		--accent: 241 245 249;
+		--accent-foreground: 15 23 42;
+		--destructive: 255 51 51;
+		--destructive-foreground: 250 250 250;
+		--border: 235 235 235;
+		--input: 235 235 235;
+		--ring: 245 125 255;
+		--chart-1: 233 103 62;
+		--chart-2: 66 162 158;
+		--chart-3: 61 92 123;
+		--chart-4: 247 207 67;
+		--chart-5: 245 188 48;
 		--radius: 0.5rem;
 	}
 	.dark {
-		--background: 0 0% 0%;
-		--foreground: 0 0% 63.14%;
-		--card: 0 0% 3.92%;
-		--card-foreground: 0 0% 98%;
-		--popover: 0 0% 3.9%;
-		--popover-foreground: 0 0% 98%;
-		--primary: 0 0% 98%;
-		--primary-foreground: 0 0% 9%;
-		--secondary: 0 0% 14.9%;
-		--secondary-foreground: 0 0% 98%;
-		--muted: 0 0% 14.9%;
+		--background: 9 11 10;
+		--foreground: 250 250 250;
+		--card: 10 10 10;
+		--card-foreground: 250 250 250;
+		--popover: 10 10 10;
+		--popover-foreground: 250 250 250;
+		--primary: 192 132 252;
+		--primary-foreground: 229 231 235;
+		--secondary: 216 180 254;
+		--secondary-foreground: 161 161 161;
+		--muted: 46 46 46;
 		--muted-foreground: 0 0% 63.9%;
-		--accent: 269.19 97.37% 85.1%;
-		--accent-foreground: 269.19 97.37% 85.1%;
+		--accent: 46 46 46;
+		--accent-foreground: 250 250 250;
 		--destructive: 0 62.8% 30.6%;
 		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 14.9%;
-		--input: 0 0% 14.9%;
-		--ring: 0 0% 83.1%;
+		--border: 46 46 46;
+		--input: 46 46 46;
+		--ring: 245 125 255;
 		--chart-1: 220 70% 50%;
 		--chart-2: 160 60% 45%;
 		--chart-3: 30 80% 55%;
@@ -111,7 +67,7 @@ color {
 	}
 
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-primary;
 	}
 
 	.accent100 {
