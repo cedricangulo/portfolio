@@ -16,7 +16,7 @@ function AnnButton({ className, href, icon, text, from, via, to }: AnnButtonProp
 		<Link
 			href={`${href}`}
 			target='_blank'
-			className={`${className} group relative flex max-w-fit flex-row items-center justify-center rounded-md bg-white/40 dark:bg-neutral-950 px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#9c40ff20] backdrop-blur-sm transition-shadow duration-500 ease-out [--bg-size:300%] hover:shadow-[inset_0_-5px_10px_#9c40ff55] dark:bg-black/40`}
+			className={`${className} group relative flex max-w-fit flex-row items-center justify-center rounded-md bg-primary/10 px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#9c40ff20] backdrop-blur-sm transition-shadow duration-500 ease-out [--bg-size:300%] hover:shadow-[inset_0_-5px_10px_#9c40ff55] dark:bg-black/40`}
 		>
 			<div
 				style={{
@@ -41,7 +41,7 @@ function AnnButton({ className, href, icon, text, from, via, to }: AnnButtonProp
 			>
 				{text}
 			</span>
-			<ChevronRight className='ml-1 size-4 sec-text' />
+			<ChevronRight className='ml-1 size-4 text-muted-foreground' />
 		</Link>
 	);
 }

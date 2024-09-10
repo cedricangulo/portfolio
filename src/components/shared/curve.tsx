@@ -25,7 +25,7 @@ export default function Curve() {
 	};
 
 	return (
-		<svg className={cn('fill-purple-500 transition-[fill]', styles.svgCurve)}>
+		<svg className={cn('fill-primary transition-[fill]', styles.svgCurve)}>
 			<motion.path
 				exit='exit'
 				animate='enter'

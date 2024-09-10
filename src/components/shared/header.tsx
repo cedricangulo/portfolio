@@ -31,7 +31,7 @@ export default function Header() {
 	return (
 		<header
 			role='header'
-			className='fixed top-0 py-0 w-full min-h-16 bg-none backdrop-blur-sm backdrop-saturate-200 bg-transparent flex flex-col justify-around items-center transition-all z-40'
+			className='fixed top-0 py-0 w-full min-h-16 backdrop-blur supports-[backdrop-filter]:bg-background/60 bg-transparent flex flex-col justify-around items-center z-40'
 		>
 			<nav
 				role='navigation'
@@ -79,9 +79,8 @@ export default function Header() {
 					{navLinks.map((data, index) => {
 						const isActive =
 							pathname === data.href || (data.href === '/works' && pathname.startsWith('/works'));
-						let style =
-							'text-secondary-foreground hover:text-purple-400 dark:hover:text-purple-300';
-						isActive && (style = 'text-secondary hover:text-secondary/80');
+						let style = 'text-foreground hover:text-primary/80';
+						isActive && (style = 'text-primary hover:text-primary/80');
 						return (
 							<li
 								key={index}

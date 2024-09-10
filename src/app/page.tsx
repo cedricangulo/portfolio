@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import GridBackground from '@/components/shared/grid-background';
 import { caveat, lexend } from '@/lib/fonts';
+import { Button } from '@/components/ui/button';
+import { EnvelopeOpenIcon } from '@radix-ui/react-icons';
 
 export default function HomePage() {
 	return (
@@ -11,25 +13,25 @@ export default function HomePage() {
 				<div className='w-full flex sm:items-center justify-center flex-col gap-2'>
 					<p
 						className={cn(
-							'text-xl sm:text-2xl md:text-3xl text-primary-foreground font-medium animate-slideIn [--slideIn-delay:300ms] opacity-0 transition-all',
+							'text-xl sm:text-2xl md:text-3xl text-foreground font-medium animate-slideIn [--slideIn-delay:300ms] opacity-0 transition-all',
 							lexend.className
 						)}
 					>
-						Hi, I’m <span className='text-secondary'>Cedric Angulo</span>
+						Hi, I’m <span className='text-primary'>Cedric Angulo</span>
 					</p>
 					<h1
 						className={cn(
-							'text-primary-foreground font-extrabold tracking-tight leading-none text-5xl sm:text-6xl md:text-8xl animate-slideIn [--slideIn-delay:500ms] opacity-0',
+							'text-foreground font-extrabold tracking-tight leading-none text-5xl sm:text-6xl md:text-8xl animate-slideIn [--slideIn-delay:500ms] opacity-0',
 							lexend.className
 						)}
 					>
-						<span className='text-secondary'>BSIT</span>{' '}
+						<span className='text-primary'>BSIT</span>{' '}
 						<span className='relative transition-all'>
 							Student
 							<span
 								className={cn(
 									'absolute -right-4 lg:-right-6 -rotate-12 -top-3',
-									'text-secondary font-normal tracking-wider',
+									'text-primary font-normal tracking-wider',
 									'text-2xl md:text-3xl',
 									caveat.className
 								)}
@@ -41,7 +43,7 @@ export default function HomePage() {
 					<p
 						className={cn(
 							'animate-slideIn [--slideIn-delay:700ms] opacity-0 transition-all',
-							'text-secondary-foreground text-sm sm:text-base max-w-sm sm:max-w-md',
+							'text-muted-foreground text-sm sm:text-base max-w-sm sm:max-w-md',
 							'sm:text-center leading-relaxed'
 						)}
 					>
@@ -49,12 +51,29 @@ export default function HomePage() {
 						<Link
 							href='https://neust.edu.ph'
 							target='_blank'
-							className='text-secondary hover:text-secondary/80 font-semibold focus:outline-ring'
+							className='text-primary hover:text-primary/80 hover:underline underline-offset-2 font-semibold focus:outline-ring'
 						>
 							NEUST
 						</Link>
 						, based in Nueva Ecija, Philippines
 					</p>
+					<div className='animate-slideIn [--slideIn-delay:900ms] opacity-0 inline-flex gap-3 mt-2'>
+						<Button variant='secondary'>
+							<EnvelopeOpenIcon className='mr-2 h-4 w-4' />
+							<Link
+								href='mailto:cdrcangulo@gmail.com'
+								target='_blank'
+							>
+								cdrcangulo@gmail.com
+							</Link>
+						</Button>
+						<Button
+							className='text-background'
+							asChild
+						>
+							<Link href='/works'>Works</Link>
+						</Button>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -1,8 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { geistsans } from '@/lib/fonts';
+
 import Header from '@/components/shared/header';
 import Providers from '@/components/shared/theme-provider';
+import Footer from '@/components/shared/footer';
 
 export const metadata: Metadata = {
 	title: {
@@ -39,6 +41,7 @@ export default function RootLayout({ children }: Props) {
 					>
 						{children}
 					</main>
+					<Footer />
 				</Providers>
 			</body>
 		</html>
