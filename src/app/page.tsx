@@ -1,23 +1,16 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import LargeHeader from '@/components/home/large-header';
-import SmallHeader from '@/components/home/small-header';
-import GridBackground from '@/components/home/grid-background';
-import HeroButtons from '@/components/home/hero-buttons';
 
 export default function HomePage() {
 	return (
 		<section className='relative h-dvh flex items-center justify-between max-w-[62.5rem] w-full'>
-			<GridBackground />
 			<div className='h-screen flex mx-0 sm:mx-auto'>
 				<div className='w-full flex sm:items-center justify-center flex-col gap-2'>
-					<SmallHeader />
-					<LargeHeader />
 					<p
 						className={cn(
 							'animate-slideIn [--slideIn-delay:700ms] opacity-0 transition-all',
-							'sec-text sm:text-center leading-relaxed',
-							'text-sm sm:text-base',
+							'sm:text-center leading-relaxed',
+							'text-foreground text-sm sm:text-base',
 							'max-w-sm sm:max-w-md'
 						)}
 					>
@@ -25,19 +18,12 @@ export default function HomePage() {
 						<Link
 							href='https://neust.edu.ph'
 							target='_blank'
+							className='text-accent hover:text-accent/80 font-semibold'
 						>
-							<span
-								className={cn(
-									'accent200 hover:text-purple-600 dark:hover:text-purple-400',
-									'underline underline-offset-2 decoration-1 transition-all'
-								)}
-							>
-								NEUST
-							</span>
+							NEUST
 						</Link>
 						, based in Nueva Ecija, Philippines
 					</p>
-					<HeroButtons />
 				</div>
 			</div>
 		</section>
