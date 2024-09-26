@@ -1,5 +1,20 @@
 export const WorkList = [
 	{
+		src: "/images/ca-resources/ca-resources.jpg",
+		title: "CA Resources",
+		text: "An open-source website aimed at boosting productivity, particularly in web development and education, offering valuable resources and guides.",
+		github: "https://github.com/bryan308/ca-resources",
+		href: "https://ca-resources.vercel.app",
+		tags: [
+			"resources",
+			"guides",
+			"nextjs",
+			"shadcn-ui",
+			"MDX",
+			"contentlayer",
+		],
+	},
+	{
 		src: "/images/webwise/webwise.jpeg",
 		title: "WebWise",
 		text: "An educational website to start learning web development.",

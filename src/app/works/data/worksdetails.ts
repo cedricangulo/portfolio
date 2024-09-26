@@ -1,3 +1,4 @@
+import { geistsans } from "@/lib/fonts";
 import {
 	anta,
 	electrolize,
@@ -8,10 +9,76 @@ import {
 	rubik_doodle_shadow,
 	tektur,
 } from "../_lib/font";
+import { GeistMono } from "geist/font/mono";
 
 export const worksMeta = [
 	{
 		id: 1,
+		title: "CA Resources",
+		paragraphs: [
+			"It is a website designed to improve productivity, especially for web development, among other fields in education. It provides the most valuable resources and guides.",
+			"The conceptualization of CA Resources is influenced by the Vercel Geist Design System.",
+		],
+		fontFamily: [
+			{ fonts: geistsans, text: "Geist Sans" },
+			{ fonts: GeistMono, text: "Gesit Mono" },
+		],
+		colorScheme: [
+			{ content: "#fafafa", color: "bg-[#fafafa]", textColor: 1 },
+			{ content: "#71717a", color: "bg-[#71717a]", textColor: 0 },
+			{ content: "#09090b", color: "bg-[#09090b]", textColor: 0 },
+		],
+		langs: [
+			{
+				langName: "MDX",
+				langColor: {
+					bg: "bg-[#fcb32c]",
+					fill: "fill-[#fcb32c]",
+				},
+				langWidth: 47.9,
+			},
+			{
+				langName: "TypeScript",
+				langColor: {
+					bg: "bg-[#3178c6]",
+					fill: "fill-[#3178c6]",
+				},
+				langWidth: 47.8,
+			},
+			{
+				langName: "CSS",
+				langColor: {
+					bg: "bg-[#1572b6]",
+					fill: "fill-[#1572b6]",
+				},
+				langWidth: 4.1,
+			},
+			{
+				langName: "JavaScript",
+				langColor: {
+					bg: "bg-[#f7df1e]",
+					fill: "fill-[#f7df1e]",
+				},
+				langWidth: 0.2,
+			},
+		],
+		images: [
+			{
+				src: "/images/ca-resources/ca-resources-1.jpg",
+				alt: "Resources Page",
+			},
+			{
+				src: "/images/ca-resources/ca-resources-2.jpg",
+				alt: "HTML Guides Page",
+			},
+			{
+				src: "/images/ca-resources/ca-resources-3.jpg",
+				alt: "JavaScript Guides Page",
+			},
+		],
+	},
+	{
+		id: 2,
 		title: "WebWise",
 		paragraphs: [
 			"WebWise is a comprehensive case study for our first-year, second-semester IT Web Systems Technology (ITWST) subject. Our goal was to create a free, user-friendly platform for learning web development.",
@@ -66,7 +133,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Techno Odyssey",
 		paragraphs: [
 			"This project was my submission for the Technoday 2024 event at our school. This project showcased the latest news and advancements in technology.",
@@ -141,7 +208,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Class Directory",
 		paragraphs: [
 			"It is designed to provide simple yet essential information about the class. The site includes of images of class officers, a class schedule presented using cards, and a list of announcements.",
@@ -202,7 +269,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Shoepee",
 		paragraphs: [
 			"Shoepee is an e-commerce website initially developed for my friend’s project. When he asked for my assistance, I saw it as a chance to learn more about PHP. We used PHP and a database managed through XAMPP. It was my first experience uploading and deleting images using PHP.",
@@ -264,7 +331,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Students’ Transcripts System",
 		paragraphs: [
 			"The STS is a web application for school registrars to manage Old Curriculum SF10 records. Developed within a month, it has some security limitations.",

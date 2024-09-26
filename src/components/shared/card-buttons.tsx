@@ -8,20 +8,22 @@ import { TButton } from "@/components/shared/interface/card"
 export default function Buttons({ i, l }: TButton) {
 	return (
 		<div className="flex items-center gap-3">
-			<Link
-				href={l.github}
-				target="_blank"
-				className="rounded-full"
-				aria-label="GitHub link"
-				rel="noopener noreferrer"
-			>
-				<span className="sr-only">GitHub link</span>
-				<GitHubIcon
-					strokeWidth={0}
-					className="size-[1.25rem] text-muted-foreground"
-				/>
-			</Link>
-			{l.href !== "" && (
+			{l.github && (
+				<Link
+					href={l.github}
+					target="_blank"
+					className="rounded-full"
+					aria-label="GitHub link"
+					rel="noopener noreferrer"
+				>
+					<span className="sr-only">GitHub link</span>
+					<GitHubIcon
+						strokeWidth={0}
+						className="size-[1.25rem] text-muted-foreground"
+					/>
+				</Link>
+			)}
+			{l.href && (
 				<Link
 					href={l.href}
 					target="_blank"
