@@ -2,7 +2,7 @@ export const WorkList = [
 	{
 		src: "/images/ca-resources/ca-resources.jpg",
 		title: "CA Resources",
-		text: "An open-source website aimed at boosting productivity, particularly in web development and education, offering valuable resources and guides.",
+		text: "An open-source website that boosts productivity in web development and education by offering valuable resources and guides.",
 		github: "https://github.com/bryan308/ca-resources",
 		href: "https://ca-resources.vercel.app",
 		tags: [
@@ -12,6 +12,7 @@ export const WorkList = [
 			"shadcn-ui",
 			"MDX",
 			"contentlayer",
+			"open-source",
 		],
 	},
 	{

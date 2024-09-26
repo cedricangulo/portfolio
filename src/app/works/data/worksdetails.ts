@@ -1,4 +1,4 @@
-import { geistsans } from "@/lib/fonts";
+import { geistsans } from "@/lib/fonts"
 import {
 	anta,
 	electrolize,
@@ -8,8 +8,8 @@ import {
 	poppins,
 	rubik_doodle_shadow,
 	tektur,
-} from "../_lib/font";
-import { GeistMono } from "geist/font/mono";
+} from "../_lib/font"
+import { GeistMono } from "geist/font/mono"
 
 export const worksMeta = [
 	{
@@ -401,4 +401,4 @@ export const worksMeta = [
 			},
 		],
 	},
-];
+]

@@ -9,7 +9,7 @@ import BranchTab from "@/components/shared/branch-tab"
 import { IDynamicParam } from "@/components/shared/interface/dynamic-param"
 
 export function generateStaticParams() {
-	return [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }, { id: "5" }, { id: "6" }]
+	return worksMeta.map((work) => ({ id: work.id.toString() }))
 }
 
 function worksDetails({ params }: IDynamicParam) {

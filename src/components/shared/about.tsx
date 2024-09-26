@@ -3,6 +3,7 @@ import { lexend } from "@/lib/fonts"
 import { GeistMono } from "geist/font/mono"
 import { Skills, timeline } from "./interface/about-meta"
 import { Badge } from "../ui/badge"
+import { cn } from "@/lib/utils"
 
 const Highlight = ({ children }: { children: React.ReactNode }) => (
 	<span className={`${GeistMono.className} px-1 rounded text-highlight-foreground bg-highlight`}>
@@ -21,9 +22,9 @@ const FeaturedSkills = () => (
 					className="flex gap-2 px-3 py-2 text-base font-normal border border-border"
 				>
 					<svg
-						style={{ fill: s.fill }}
+						className={cn("size-4", s.fill)}
+						// style={{ fill: s.fill }}
 						role="img"
-						className="size-4"
 						viewBox="0 0 24 24"
 						xmlns="http://www.w3.org/2000/svg"
 					>
