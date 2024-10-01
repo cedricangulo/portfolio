@@ -1,15 +1,22 @@
 import { Info } from "lucide-react"
-import { notFound } from "next/navigation"
 import { lexend, playfair } from "@/lib/fonts"
+import { notFound } from "next/navigation"
+
 import { worksMeta } from "../data/worksdetails"
+
 import LangList from "@/components/shared/lang-list"
 import ColorScheme from "@/components/shared/color-scheme"
 import ImageRender from "@/components/shared/image-render"
 import BranchTab from "@/components/shared/branch-tab"
-import { IDynamicParam } from "@/components/shared/interface/dynamic-param"
 
 export function generateStaticParams() {
 	return worksMeta.map((work) => ({ id: work.id.toString() }))
+}
+
+interface IDynamicParam {
+	params: {
+		id: string
+	}
 }
 
 function worksDetails({ params }: IDynamicParam) {
@@ -56,7 +63,7 @@ function worksDetails({ params }: IDynamicParam) {
 						</div>
 					</div>
 					<div className="lang-wrapper">
-						{work?.id === 2 ? <BranchTab /> : <LangList lang={work?.langs} />}
+						{work?.id === 3 ? <BranchTab /> : <LangList lang={work?.langs} />}
 					</div>
 				</div>
 			</div>
@@ -78,7 +85,7 @@ function worksDetails({ params }: IDynamicParam) {
 						</figcaption>
 					</figure>
 				))}
-				{work?.id === 5 && (
+				{work?.id === 6 && (
 					<span className="note">
 						<Info
 							strokeWidth={1.5}
