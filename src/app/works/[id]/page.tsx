@@ -3,7 +3,6 @@ import { lexend, playfair } from "@/lib/fonts"
 import { notFound } from "next/navigation"
 
 import { worksMeta } from "../data/worksdetails"
-import { IDynamicParam } from "@/components/shared/interface/dynamic-param"
 
 import LangList from "@/components/shared/lang-list"
 import ColorScheme from "@/components/shared/color-scheme"
@@ -12,6 +11,12 @@ import BranchTab from "@/components/shared/branch-tab"
 
 export function generateStaticParams() {
 	return worksMeta.map((work) => ({ id: work.id.toString() }))
+}
+
+interface IDynamicParam {
+	params: {
+		id: string
+	}
 }
 
 function worksDetails({ params }: IDynamicParam) {
