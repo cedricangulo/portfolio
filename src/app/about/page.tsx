@@ -16,7 +16,7 @@ const buttonData = [
 		to: "#af4edc",
 	},
 	{
-		href: "https://bryanangulo.vercel.app/",
+		href: "https://bryangulo.vercel.app/",
 		iconSrc: "/weblogo.png",
 		alt: "icon",
 		from: "#ff6224",
