@@ -54,7 +54,7 @@ const Timeline = () => (
 				<h3 className={`${lexend.className} text-lg font-semibold text-foreground`}>
 					{list.title}
 				</h3>
-				<p className="text-base font-normal text-muted-foreground">{list.text}</p>
+				<p className="text-base font-normal text-foreground">{list.text}</p>
 			</li>
 		))}
 	</ol>

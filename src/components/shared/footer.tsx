@@ -20,7 +20,7 @@ export default function Footer() {
 					/>
 				</Link>
 				<Link
-					href="https://www.facebook.com/bryan.19.hp"
+					href="https://www.facebook.com/bryan308.20"
 					target="_blank"
 					aria-label="Facebook icon"
 				>

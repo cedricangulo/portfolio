@@ -6,13 +6,14 @@ export const WorkList = [
 		github: "https://github.com/bryan308/ca-resources",
 		href: "https://ca-resources.vercel.app",
 		tags: [
-			"resources",
-			"guides",
+			"open-source",
 			"nextjs",
 			"shadcn-ui",
 			"MDX",
-			"contentlayer",
-			"open-source",
+			"fumadocs",
+			"content-collections",
+			"resources",
+			"guides",
 		],
 	},
 	{
