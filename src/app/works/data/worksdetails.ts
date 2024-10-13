@@ -17,7 +17,7 @@ export const worksMeta = [
 		title: "CA Resources",
 		paragraphs: [
 			"It is a website designed to improve productivity, especially for web development, among other fields in education. It provides the most valuable resources and guides.",
-			"The conceptualization of CA Resources is influenced by the Vercel Geist Design System.",
+			"It uses fumadocs as the content management system.",
 		],
 		fontFamily: [
 			{ fonts: geistsans, text: "Geist Sans" },
@@ -35,7 +35,7 @@ export const worksMeta = [
 					bg: "bg-[#fcb32c]",
 					fill: "fill-[#fcb32c]",
 				},
-				langWidth: 47.9,
+				langWidth: 50,
 			},
 			{
 				langName: "TypeScript",
@@ -43,7 +43,7 @@ export const worksMeta = [
 					bg: "bg-[#3178c6]",
 					fill: "fill-[#3178c6]",
 				},
-				langWidth: 47.8,
+				langWidth: 46.3,
 			},
 			{
 				langName: "CSS",
@@ -51,7 +51,7 @@ export const worksMeta = [
 					bg: "bg-[#1572b6]",
 					fill: "fill-[#1572b6]",
 				},
-				langWidth: 4.1,
+				langWidth: 2.4,
 			},
 			{
 				langName: "JavaScript",
@@ -59,7 +59,7 @@ export const worksMeta = [
 					bg: "bg-[#f7df1e]",
 					fill: "fill-[#f7df1e]",
 				},
-				langWidth: 0.2,
+				langWidth: 1.3,
 			},
 		],
 		images: [
@@ -69,11 +69,7 @@ export const worksMeta = [
 			},
 			{
 				src: "/images/ca-resources/ca-resources-2.jpg",
-				alt: "HTML Guides Page",
-			},
-			{
-				src: "/images/ca-resources/ca-resources-3.jpg",
-				alt: "JavaScript Guides Page",
+				alt: "Guides Page",
 			},
 		],
 	},

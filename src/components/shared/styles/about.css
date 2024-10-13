@@ -20,7 +20,7 @@
 }
 
 .paragraph {
-	@apply text-muted-foreground text-base font-normal leading-relaxed;
+	@apply text-foreground text-base font-normal leading-relaxed;
 }
 
 /* main-content */

@@ -6,6 +6,7 @@ import { worksMeta } from "../data/worksdetails"
 
 import LangList from "@/components/shared/lang-list"
 import ColorScheme from "@/components/shared/color-scheme"
+import { ImageZoom } from "fumadocs-ui/components/image-zoom"
 import ImageRender from "@/components/shared/image-render"
 import BranchTab from "@/components/shared/branch-tab"
 
@@ -34,7 +35,7 @@ function worksDetails({ params }: IDynamicParam) {
 				{work?.paragraphs.map((paragraph, index) => (
 					<p
 						key={index}
-						className="paragraph my-4 text-muted-foreground"
+						className="paragraph my-4 text-foreground"
 					>
 						{paragraph}
 					</p>
@@ -73,7 +74,7 @@ function worksDetails({ params }: IDynamicParam) {
 						key={index}
 						className="my-4 text-center"
 					>
-						<ImageRender
+						<ImageZoom
 							src={image.src}
 							alt={image.alt}
 							className="w-auto h-auto shadow-md"

@@ -6,17 +6,44 @@ import AnnButton from "@/components/shared/announcement-btn"
 import Carousell from "@/components/shared/carousel-img"
 import Link from "next/link"
 
+const buttonData = [
+	{
+		href: "https://cedangulo.vercel.app/",
+		iconSrc: "/weblogoD.png",
+		alt: "icon",
+		from: "#af4edc",
+		via: "#00bfff",
+		to: "#af4edc",
+	},
+	{
+		href: "https://bryangulo.vercel.app/",
+		iconSrc: "/weblogo.png",
+		alt: "icon",
+		from: "#ff6224",
+		via: "#f09819",
+		to: "#ff6224",
+	},
+	{
+		href: "https://cedbry.vercel.app/",
+		iconSrc: "/me-icon.png",
+		alt: "icon",
+		from: "#1a627e",
+		via: "#eff6e0",
+		to: "#1a627e",
+	},
+]
+
 export default function AboutPage() {
 	return (
 		<>
 			<div className="main-container">
 				<div className="paragraph-wrapper">
-					<p className="paragraph sec-text">
+					<p className="paragraph">
 						I’m 20 years old and a second year <Hl>BSIT student</Hl>. Finding out that websites are
 						made with <Hl>HTML</Hl> and <Hl>CSS</Hl> got me excited about web development. That made
 						me really interested in computers and programming.
 					</p>
-					<p className="paragraph sec-text">
+					<p className="paragraph">
 						Right now, I’m learning <Hl>ReactJS</Hl> and getting better at front-end skills with{" "}
 						<Hl>TailwindCSS</Hl> and <Hl>NextJS</Hl>. As a second-year student, I’m putting in more
 						effort to learn about <Hl>DSA</Hl> and <Hl>OOP</Hl> while applying my current web
@@ -71,56 +98,27 @@ export default function AboutPage() {
 				<Timeline />
 			</div>
 			<div className="max-w-xl w-full mx-auto mt-16">
-				<h2 className={`${lexend.className} oldport-header text-foreground`}>My old portfolios</h2>
+				<h2 className={`${lexend.className} oldport-header text-foreground`}>My Old Portfolios</h2>
 				<div className="flex items-center flex-col md:flex-row gap-0 md:gap-4 my-8">
-					<AnnButton
-						className="my-4 md:my-0"
-						href="https://cedangulo.vercel.app/"
-						icon={
-							<Image
-								src="/weblogoD.png"
-								alt="icon"
-								width={20}
-								height={20}
-							/>
-						}
-						text="@cdrcangulo"
-						from="#af4edc"
-						via="#00bfff"
-						to="#af4edc"
-					/>
-					<AnnButton
-						className="my-4 md:my-0"
-						href="https://bryanangulo.vercel.app/"
-						icon={
-							<Image
-								src="/weblogo.png"
-								alt="icon"
-								width={20}
-								height={20}
-							/>
-						}
-						text="@cdrcangulo"
-						from="#ff6224"
-						via="#f09819"
-						to="#ff6224"
-					/>
-					<AnnButton
-						className="my-4 md:my-0"
-						href="https://cedbry.vercel.app/"
-						icon={
-							<Image
-								src="/me-icon.png"
-								alt="icon"
-								width={20}
-								height={20}
-							/>
-						}
-						text="@cdrcangulo"
-						from="#1a627e"
-						via="#eff6e0"
-						to="#1a627e"
-					/>
+					{buttonData.map((b, index) => (
+						<AnnButton
+							key={index}
+							className="my-4 md:my-0"
+							href={b.href}
+							icon={
+								<Image
+									src={b.iconSrc}
+									alt={b.alt}
+									width={20}
+									height={20}
+								/>
+							}
+							text="@cdrcangulo"
+							from={b.from}
+							via={b.via}
+							to={b.to}
+						/>
+					))}
 				</div>
 			</div>
 		</>

@@ -34,7 +34,7 @@ function Card({ i, l, progress, range, targetScale }: TCard) {
 							>
 								{l?.title}
 							</h4>
-							<p className="text-muted-foreground text-base">{l.text}</p>
+							<p className="text-foreground text-base">{l.text}</p>
 						</div>
 						<Buttons
 							l={l}
