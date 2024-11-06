@@ -21,7 +21,7 @@ export const worksMeta = [
 		],
 		fontFamily: [
 			{ fonts: geistsans, text: "Geist Sans" },
-			{ fonts: GeistMono, text: "Gesit Mono" },
+			{ fonts: GeistMono, text: "Geist Mono" },
 		],
 		colorScheme: [
 			{ content: "#fafafa", color: "bg-[#fafafa]", textColor: 1 },
