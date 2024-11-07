@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(../components/shared/styles/about.css);
-@import url(../components/shared/styles/works.css);
-
 @layer base {
 	:root {
 		--background: 0 0% 98.04%;
