@@ -21,7 +21,7 @@ export const worksMeta = [
 		],
 		fontFamily: [
 			{ fonts: geistsans, text: "Geist Sans" },
-			{ fonts: GeistMono, text: "Gesit Mono" },
+			{ fonts: GeistMono, text: "Geist Mono" },
 		],
 		colorScheme: [
 			{ content: "#fafafa", color: "bg-[#fafafa]", textColor: 1 },
@@ -35,7 +35,7 @@ export const worksMeta = [
 					bg: "bg-[#fcb32c]",
 					fill: "fill-[#fcb32c]",
 				},
-				langWidth: 50,
+				langWidth: 58.3,
 			},
 			{
 				langName: "TypeScript",
@@ -43,7 +43,7 @@ export const worksMeta = [
 					bg: "bg-[#3178c6]",
 					fill: "fill-[#3178c6]",
 				},
-				langWidth: 46.3,
+				langWidth: 38.6,
 			},
 			{
 				langName: "CSS",
@@ -51,7 +51,7 @@ export const worksMeta = [
 					bg: "bg-[#1572b6]",
 					fill: "fill-[#1572b6]",
 				},
-				langWidth: 2.4,
+				langWidth: 2.0,
 			},
 			{
 				langName: "JavaScript",
@@ -59,7 +59,7 @@ export const worksMeta = [
 					bg: "bg-[#f7df1e]",
 					fill: "fill-[#f7df1e]",
 				},
-				langWidth: 1.3,
+				langWidth: 1.1,
 			},
 		],
 		images: [

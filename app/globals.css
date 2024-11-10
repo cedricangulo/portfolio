@@ -115,7 +115,7 @@
 
 /* details */
 .details-container {
-	@apply my-0 mx-auto min-h-screen w-full flex flex-col lg:flex-row gap-16 md:gap-12 justify-center animate-fadeIn [--fadeIn-delay:0ms] opacity-0;
+	@apply mb-0 mt-8 mx-auto min-h-screen w-full flex flex-col lg:flex-row gap-16 md:gap-12 justify-center animate-fadeIn [--fadeIn-delay:0ms] opacity-0;
 }
 
 .details-wrapper {

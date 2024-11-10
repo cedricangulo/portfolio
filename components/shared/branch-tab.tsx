@@ -55,7 +55,7 @@ const BranchTab = () => {
 		<Tabs defaultValue="main">
 			<TabsList>
 				<TabsTrigger value="main">main</TabsTrigger>
-				<TabsTrigger value="ts-version">ts-version</TabsTrigger>
+				<TabsTrigger value="ts-version">migrate-next-app</TabsTrigger>
 			</TabsList>
 			<TabsContent value="main">
 				<LangList lang={main} />
