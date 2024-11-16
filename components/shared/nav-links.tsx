@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { slide } from "./anim"
 import styles from "./styles/style.module.css"
 

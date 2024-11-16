@@ -1,5 +1,5 @@
 "use client"
-import { useScroll } from "framer-motion"
+import { useScroll } from "motion/react"
 import { useEffect, useRef } from "react"
 import Lenis from "lenis"
 import { WorkList } from "./data/workslist"

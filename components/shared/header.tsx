@@ -8,7 +8,7 @@ import { Button } from "../ui/button"
 import { cn } from "@/lib/utils"
 import { ModeToggle } from "./mode-toggle"
 import HeaderMenu, { navLinks } from "./header-menu"
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "motion/react"
 
 export default function Header() {
 	const pathname = usePathname()
