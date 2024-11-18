@@ -24,7 +24,7 @@ const timeline: TTimeline = [
 	{
 		time: "2021 - 2022",
 		title: "Grade 11 TVL-ICT",
-		text: "Studied hardware basics online at Zamblaes National High School despite challenges of the online setup.",
+		text: "Studied hardware basics online at Zambales National High School despite challenges of the online setup.",
 	},
 	{
 		time: "2019 - 2020",
