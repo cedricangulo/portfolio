@@ -14,14 +14,8 @@ export function generateStaticParams() {
 	return worksMeta.map((work) => ({ id: work.id.toString() }))
 }
 
-interface IDynamicParam {
-	params: {
-		id: string
-	}
-}
-
-function worksDetails({ params }: IDynamicParam) {
-	const { id } = params
+async function worksDetails({ params }: { params: any }) {
+	const { id } = await params
 	const work = worksMeta.find((work) => work.id.toString() === id)
 
 	!work && notFound()
