@@ -21,7 +21,7 @@ export const worksMeta = [
 		],
 		fontFamily: [
 			{ fonts: geistsans, text: "Geist Sans" },
-			{ fonts: GeistMono, text: "Gesit Mono" },
+			{ fonts: GeistMono, text: "Geist Mono" },
 		],
 		colorScheme: [
 			{ content: "#fafafa", color: "bg-[#fafafa]", textColor: 1 },
@@ -35,7 +35,7 @@ export const worksMeta = [
 					bg: "bg-[#fcb32c]",
 					fill: "fill-[#fcb32c]",
 				},
-				langWidth: 50,
+				langWidth: 61.3,
 			},
 			{
 				langName: "TypeScript",
@@ -43,26 +43,22 @@ export const worksMeta = [
 					bg: "bg-[#3178c6]",
 					fill: "fill-[#3178c6]",
 				},
-				langWidth: 46.3,
+				langWidth: 37,
 			},
 			{
-				langName: "CSS",
+				langName: "Other",
 				langColor: {
-					bg: "bg-[#1572b6]",
-					fill: "fill-[#1572b6]",
+					bg: "dark:bg-white bg-black",
+					fill: "dark:fill-white fill-black",
 				},
-				langWidth: 2.4,
-			},
-			{
-				langName: "JavaScript",
-				langColor: {
-					bg: "bg-[#f7df1e]",
-					fill: "fill-[#f7df1e]",
-				},
-				langWidth: 1.3,
+				langWidth: 1.7,
 			},
 		],
 		images: [
+			{
+				src: "/images/ca-resources/ca-resources.jpg",
+				alt: "Home Page",
+			},
 			{
 				src: "/images/ca-resources/ca-resources-1.jpg",
 				alt: "Resources Page",
@@ -251,15 +247,15 @@ export const worksMeta = [
 				alt: "Mobile view",
 			},
 			{
-				src: "/images/classdirectory/sumbsit1a1.webp",
+				src: "/images/classdirectory/sumbsit1a1.png",
 				alt: "Home page",
 			},
 			{
-				src: "/images/classdirectory/sumbsit1a2.webp",
+				src: "/images/classdirectory/sumbsit1a2.png",
 				alt: "Class Officers page",
 			},
 			{
-				src: "/images/classdirectory/sumbsit1a3.webp",
+				src: "/images/classdirectory/sumbsit1a3.png",
 				alt: "Schedules page",
 			},
 		],
