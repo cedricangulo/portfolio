@@ -1,9 +1,11 @@
 import { geistsans } from "@/lib/fonts"
 import {
 	anta,
+	bricolage_grotesque,
 	electrolize,
 	hind,
 	lexend,
+	montserrat,
 	orbitron,
 	poppins,
 	rubik_doodle_shadow,
@@ -14,6 +16,67 @@ import { GeistMono } from "geist/font/mono"
 export const worksMeta = [
 	{
 		id: 1,
+		title: "Personal Website",
+		paragraphs: [
+			"This website is designed to store and showcase the skills that he acquired throughout his life. It is not limited to school projects but also includes every skill that he learned, both inside and outside of school, such as gaming.",
+			"This is similar to a portfolio, organized into sections to showcase the diverse skills he has acquired and is continually developing.",
+		],
+		fontFamily: [
+			{ fonts: montserrat, text: "Montserrat" },
+			{ fonts: bricolage_grotesque, text: "Bricolage Grotesque" },
+		],
+		colorScheme: [
+			{ content: "#16B954", color: "bg-[#16B954]", textColor: 1 },
+			{ content: "#128ba3", color: "bg-[#128ba3]", textColor: 1 },
+			{ content: "#021d62", color: "bg-[#021d62]", textColor: 0 },
+		],
+		langs: [
+			{
+				langName: "JavaScript",
+				langColor: {
+					bg: "bg-[#f7df1e]",
+					fill: "fill-[#f7df1e]",
+				},
+				langWidth: 91.6,
+			},
+			{
+				langName: "CSS",
+				langColor: {
+					bg: "bg-[#1572b6]",
+					fill: "fill-[#1572b6]",
+				},
+				langWidth: 3.9,
+			},
+		],
+		images: [
+			{
+				src: "/images/personal-website/personal-website-1.png",
+				alt: "Home Page",
+			},
+			{
+				src: "/images/personal-website/personal-website-2.png",
+				alt: "Skills Page - Works",
+			},
+			{
+				src: "/images/personal-website/personal-website-3.png",
+				alt: "Skills Page - Games",
+			},
+			{
+				src: "/images/personal-website/personal-website-4.png",
+				alt: "About Page",
+			},
+			{
+				src: "/images/personal-website/personal-website-5.png",
+				alt: "About Page - Information",
+			},
+			{
+				src: "/images/personal-website/personal-website-6.png",
+				alt: "Contact Page",
+			},
+		],
+	},
+	{
+		id: 2,
 		title: "CA Resources",
 		paragraphs: [
 			"It is a website designed to improve productivity, especially for web development, among other fields in education. It provides the most valuable resources and guides.",
@@ -70,7 +133,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "WebWise",
 		paragraphs: [
 			"WebWise is a comprehensive case study for our first-year, second-semester IT Web Systems Technology (ITWST) subject. Our goal was to create a free, user-friendly platform for learning web development.",
@@ -125,7 +188,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Techno Odyssey",
 		paragraphs: [
 			"This project was my submission for the Technoday 2024 event at our school. This project showcased the latest news and advancements in technology.",
@@ -200,7 +263,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Class Directory",
 		paragraphs: [
 			"It is designed to provide simple yet essential information about the class. The site includes of images of class officers, a class schedule presented using cards, and a list of announcements.",
@@ -261,7 +324,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Shoepee",
 		paragraphs: [
 			"Shoepee is an e-commerce website initially developed for my friend’s project. When he asked for my assistance, I saw it as a chance to learn more about PHP. We used PHP and a database managed through XAMPP. It was my first experience uploading and deleting images using PHP.",
@@ -323,7 +386,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Students’ Transcripts System",
 		paragraphs: [
 			"The STS is a web application for school registrars to manage Old Curriculum SF10 records. Developed within a month, it has some security limitations.",

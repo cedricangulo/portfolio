@@ -1,8 +1,10 @@
 import {
 	Anta,
+	Bricolage_Grotesque,
 	Electrolize,
 	Hind,
 	Lexend,
+	Montserrat,
 	Orbitron,
 	Poppins,
 	Rubik_Doodle_Shadow,
@@ -46,6 +48,16 @@ export const hind = Hind({
 });
 
 export const rubik_doodle_shadow = Rubik_Doodle_Shadow({
+	subsets: ["latin"],
+	weight: ["400"],
+});
+
+export const montserrat = Montserrat({
+	subsets: ["latin"],
+	weight: ["400"],
+});
+
+export const bricolage_grotesque = Bricolage_Grotesque({
 	subsets: ["latin"],
 	weight: ["400"],
 });
