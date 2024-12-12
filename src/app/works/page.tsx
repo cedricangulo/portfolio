@@ -1,12 +1,12 @@
 "use client"
 
-import { useScroll } from "framer-motion"
+import { useScroll } from "motion/react"
 import { useEffect, useRef } from "react"
-import Lenis from "@studio-freight/lenis"
+import Lenis from "lenis"
 import { WorkList } from "./data/workslist"
 import { TList } from "@/components/shared/interface/card"
 import Card from "@/components/shared/card"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 export default function WorksPage() {
   const container = useRef(null)

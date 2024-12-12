@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import { lexend } from "@/lib/fonts"
 import Buttons from "./card-buttons"
-import { useTransform, motion } from "framer-motion"
+import { useTransform, motion } from "motion/react"
 import { TCard } from "@/components/shared/interface/card"
 import ImageRender from "./image-render"
 import { Badge } from "../ui/badge"

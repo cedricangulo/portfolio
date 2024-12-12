@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import BranchTab from "../branch-tab"
 import LangList from "../lang-list"
 import ColorScheme from "../color-scheme"

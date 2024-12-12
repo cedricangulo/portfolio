@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "motion/react"
 
 export default function Logo({ state, className }: { state: boolean; className: string | null }) {
 	const [delayedState, setDelayedState] = useState(state)
