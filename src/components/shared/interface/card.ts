@@ -1,4 +1,4 @@
-import { MotionValue } from "framer-motion"
+import { MotionValue } from "motion"
 
 export type TButton = {
 	i: number
