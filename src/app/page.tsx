@@ -30,7 +30,7 @@ export default function HomePage() {
 						<span className="text-primary">BSIT</span>{" "}
 						<span className="relative transition-all">
 							Student
-							{/* <span
+							<span
 								className={cn(
 									"absolute -right-4 lg:-right-6 -rotate-12 -top-3",
 									"text-primary font-normal tracking-wider",
@@ -38,8 +38,8 @@ export default function HomePage() {
 									caveat.className
 								)}
 							>
-								only
-							</span> */}
+								2nd year 🤙 
+							</span>
 						</span>
 					</h1>
 					<p

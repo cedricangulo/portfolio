@@ -13,7 +13,7 @@ const Title = ({ children, delay = 1, duration = 1 }: TitleProps) => {
   return (
     <motion.h2
       initial={{ opacity: 0, filter: "blur(4px)" }}
-      whileInView={{ opacity: 1, filter: "blur(0)" }}
+      animate={{ opacity: 1, filter: "blur(0)" }}
       viewport={{ amount: 0.5, once: false }}
       transition={{
         delay: delay,
