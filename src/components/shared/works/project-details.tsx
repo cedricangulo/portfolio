@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "motion/react"
-import BranchTab from "../branch-tab"
-import LangList from "../lang-list"
+import BranchTab from "./branch-tab"
+import LangList from "./lang-list"
 import ColorScheme from "../color-scheme"
 
 interface WorkDetails {

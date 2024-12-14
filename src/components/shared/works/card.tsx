@@ -3,8 +3,8 @@ import { lexend } from "@/lib/fonts"
 import Buttons from "./card-buttons"
 import { useTransform, motion } from "motion/react"
 import { TCard } from "@/components/shared/interface/card"
-import ImageRender from "./image-render"
-import { Badge } from "../ui/badge"
+import ImageRender from "../image-render"
+import { Badge } from "../../ui/badge"
 
 function Card({ i, l, progress, range, targetScale }: TCard) {
 	const container = useRef(null)

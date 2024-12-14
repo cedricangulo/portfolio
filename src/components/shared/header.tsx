@@ -77,7 +77,8 @@ export default function Header() {
 					{navLinks.map((data, index) => {
 						const isActive =
 							pathname === data.href || (data.href === "/works" && pathname.startsWith("/works"))
-						let style = "text-foreground hover:text-primary/80"
+						let style =
+							"text-zinc-500 dark:text-zinc-300 hover:text-primary/80 dark:hover:text-primary/90"
 						isActive && (style = "text-primary hover:text-primary/80")
 						return (
 							<li
@@ -87,7 +88,7 @@ export default function Header() {
 								<Link
 									href={data.href}
 									onClick={() => setSidebarOpen(false)}
-									className={`md:inline uppercase text-6xl md:text-sm font-medium rounded-lg md:rounded-none py-2 px-3 md:p-0
+									className={`md:inline uppercase text-6xl md:text-sm font-medium rounded-lg md:rounded-none py-2 px-3 md:p-0 transition-all
 										${style}
 									`}
 								>
