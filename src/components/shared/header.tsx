@@ -31,7 +31,12 @@ export default function Header() {
 	return (
 		<header
 			role="header"
-			className="fixed top-0 py-0 w-full min-h-16 backdrop-blur supports-[backdrop-filter]:bg-background/60 bg-transparent flex flex-col justify-around items-center z-40"
+			className={cn(
+				"fixed top-0 py-0 z-40",
+				"w-full min-h-16",
+				"flex flex-col justify-around items-center",
+				"backdrop-blur-lg supports-[backdrop-filter]:bg-background/50"
+			)}
 		>
 			<nav
 				role="navigation"
