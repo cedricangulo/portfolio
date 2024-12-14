@@ -1,4 +1,3 @@
-import { Info } from "lucide-react"
 import LinkIcon from "@/components/shared/icons/link-icon"
 import GitHubIcon from "@/components/shared/icons/github"
 
@@ -37,7 +36,7 @@ export default function Buttons({ i, l }: TButton) {
 					/>
 				</Link>
 			)}
-			<Link
+			{/* <Link
 				className="rounded-full"
 				href={`works/${i + 1}`}
 				aria-label="Learn more"
@@ -47,7 +46,7 @@ export default function Buttons({ i, l }: TButton) {
 					strokeWidth={1.5}
 					className="size-[1.25rem] text-muted-foreground"
 				/>
-			</Link>
+			</Link> */}
 		</div>
 	)
 }
