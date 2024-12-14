@@ -1,5 +1,22 @@
 export const WorkList = [
 	{
+		src: "/images/personal-website/personal-website-1.png",
+		title: "Personal Website",
+		text: "A personal website that showcases his projects and skills, built with nextjs and shadcn-ui.",
+		github: "https://github.com/bryan308/personal-website",
+		href: "https://rnlsevilla.vercel.app",
+		tags: [
+			"nextjs",
+			"shadcn-ui",
+			"personal-website",
+			"portfolio",
+			"dual-theme",
+			"mobile-responsive",
+			"web-development",
+			"games"
+		],
+	},
+	{
 		src: "/images/ca-resources/ca-resources.jpg",
 		title: "CA Resources",
 		text: "An open-source website that boosts productivity in web development and education by offering valuable resources and guides.",

@@ -55,12 +55,12 @@ const BranchTab = () => {
 		<Tabs defaultValue="main">
 			<TabsList>
 				<TabsTrigger value="main">main</TabsTrigger>
-				<TabsTrigger value="ts-version">ts-version</TabsTrigger>
+				<TabsTrigger value="migrate-next-app">migrate-next-app</TabsTrigger>
 			</TabsList>
 			<TabsContent value="main">
 				<LangList lang={main} />
 			</TabsContent>
-			<TabsContent value="ts-version">
+			<TabsContent value="migrate-next-app">
 				<AnnButton
 					className="my-4 block"
 					href="https://technodyssey.vercel.app/"

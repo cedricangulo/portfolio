@@ -3,7 +3,7 @@ interface langColor {
 	fill: string
 }
 
-interface langItem {
+export interface langItem {
 	langName: string
 	langColor: langColor
 	langWidth: number
