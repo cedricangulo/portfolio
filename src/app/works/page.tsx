@@ -1,12 +1,11 @@
 "use client"
 
-import { useScroll } from "motion/react"
+import { useScroll, motion, MotionValue } from "motion/react"
 import { useEffect, useRef } from "react"
 import Lenis from "lenis"
 import { WorkList } from "./data/workslist"
 import { TList } from "@/components/shared/interface/card"
 import Card from "@/components/shared/card"
-import { motion } from "motion/react"
 
 export default function WorksPage() {
   const container = useRef(null)
@@ -37,8 +36,7 @@ export default function WorksPage() {
         delay: 0.5,
         duration: 0.7,
         ease: "easeInOut",
-        repeat: 0,
-        repeatType: "loop",
+
       }}
     >
       {WorkList.map((l: TList, index: number) => {

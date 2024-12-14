@@ -37,8 +37,7 @@ const ProjectDetails = ({
         delay: delay,
         duration: duration,
         ease: "easeInOut",
-        repeat: 0,
-        repeatType: "loop",
+
       }}
       className="details-wrapper"
     >

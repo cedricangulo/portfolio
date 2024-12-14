@@ -19,8 +19,7 @@ const Paragraph = ({ children, delay = 1, duration = 1 }: ParagraphProps) => {
         delay: delay,
         duration: duration,
         ease: "easeInOut",
-        repeat: 0,
-        repeatType: "loop",
+
       }}
       className="paragraph my-4 text-foreground"
     >

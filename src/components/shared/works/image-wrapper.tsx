@@ -37,8 +37,7 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
         delay: 1.5,
         duration: 1,
         ease: "easeInOut",
-        repeat: 0,
-        repeatType: "loop",
+
       }}
       className="image-wrapper h-full"
     >

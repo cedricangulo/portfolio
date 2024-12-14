@@ -19,8 +19,6 @@ const Title = ({ children, delay = 1, duration = 1 }: TitleProps) => {
         delay: delay,
         duration: duration,
         ease: "easeInOut",
-        repeat: 0,
-        repeatType: "loop",
       }}
       className={`${lexend.className} text-left text-3xl mb-8 font-medium text-foreground`}
     >
