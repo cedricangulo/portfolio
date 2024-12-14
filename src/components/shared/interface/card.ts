@@ -1,4 +1,4 @@
-import { MotionValue } from "motion"
+import { MotionValue } from "motion/react"
 
 export type TButton = {
 	i: number
