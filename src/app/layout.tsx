@@ -5,6 +5,7 @@ import { geistsans } from "@/lib/fonts"
 import Header from "@/components/shared/header"
 import Providers from "@/components/shared/theme-provider"
 import Footer from "@/components/shared/footer"
+import LenisWrapper from "@/components/shared/lenis-wrapper"
 
 export const metadata: Metadata = {
 	title: {
@@ -35,12 +36,14 @@ export default function RootLayout({ children }: Props) {
 			<body className={geistsans.className}>
 				<Providers>
 					<Header />
-					<main
-						role="main"
-						className="w-full px-8 justify-center flex flex-col items-center overflow-x"
-					>
-						{children}
-					</main>
+					<LenisWrapper>
+						<main
+							role="main"
+							className="w-full px-8 justify-center flex flex-col items-center overflow-x"
+						>
+							{children}
+						</main>
+					</LenisWrapper>
 					<Footer />
 				</Providers>
 			</body>

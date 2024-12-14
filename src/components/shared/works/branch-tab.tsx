@@ -1,6 +1,6 @@
 "use client"
 
-import LangList from "../lang-list"
+import LangList from "./lang-list"
 import AnnButton from "../announcement-btn"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
