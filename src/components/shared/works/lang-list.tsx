@@ -1,4 +1,4 @@
-import { ILangListProps } from "./interface/lang"
+import { ILangListProps } from "../interface/lang"
 
 function LangList({ lang }: ILangListProps) {
 	return (

@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react"
 import Lenis from "lenis"
 import { WorkList } from "./data/workslist"
 import { TList } from "@/components/shared/interface/card"
-import Card from "@/components/shared/card"
+import Card from "@/components/shared/works/card"
 
 export default function WorksPage() {
   const container = useRef(null)
