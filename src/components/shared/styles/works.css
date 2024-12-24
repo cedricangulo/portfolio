@@ -26,7 +26,7 @@
 }
 
 .details-wrapper {
-	@apply rounded-lg mt-16 p-4 bg-card shadow-black/10 shadow-md border-2 border-border overflow-hidden transition-all;
+	@apply rounded-lg mt-16 p-4 bg-card shadow-black/10 shadow-md border-2 border-border transition-all;
 }
 
 .colorscheme-wrapper {

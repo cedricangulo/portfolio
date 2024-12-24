@@ -1,5 +1,13 @@
 export const WorkList = [
 	{
+		src: "/images/tcg-tool/tcg-tool1.png",
+		title: "Pokémon Grading Tool",
+		text: "A specialized tool for Pokemon card analysis with real-time market data integration and automated price comparison.",
+		github: "https://github.com/bryan308/pokemon",
+		href: "https://pokemon-proxx.vercel.app",
+		tags: ["react + vite", "shadcn-ui", "django", "eBay", "TCG market", "playwright"],
+	},
+	{
 		src: "/images/personal-website/personal-website-1.png",
 		title: "Personal Website",
 		text: "A personal website that showcases his projects and skills, built with nextjs and shadcn-ui.",
@@ -13,7 +21,7 @@ export const WorkList = [
 			"dual-theme",
 			"mobile-responsive",
 			"web-development",
-			"games"
+			"games",
 		],
 	},
 	{

@@ -16,6 +16,47 @@ import { GeistMono } from "geist/font/mono"
 export const worksMeta = [
 	{
 		id: 1,
+		title: "Pokémon Grading Tool",
+		paragraphs: [
+			"As a frontend developer, I had the opportunity to contribute to the development of the Pokémon Card Analysis Tool. This comprehensive tool is designed to provide users with the necessary information to make informed decisions regarding their card collection and trades.",
+			"Whether you are an experienced collector or just beginning to build your collection, this tool is intended to facilitate the navigation of the Pokémon trading card market and support informed decision-making.",
+		],
+		fontFamily: [{ fonts: geistsans, text: "Geist Sans" }],
+		colorScheme: [
+			{ content: "#d92d2d", color: "bg-[#d92d2d]", textColor: 0 },
+			{ content: "#ffffff", color: "bg-[#ffffff]", textColor: 1 },
+			{ content: "#0a0a0a", color: "bg-[#0a0a0a]", textColor: 0 },
+		],
+		contributors: [
+			{
+				avatar: "https://avatars.githubusercontent.com/u/142586349?v=4",
+				name: "Aldwin Sarte",
+				link: "https://github.com/AldJayR",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/141980423?v=4",
+				name: "Leon Laborina",
+				link: "https://github.com/leonlaborina15",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
+				name: "Cedric Angulo",
+				link: "https://github.com/bryan308",
+			},
+		],
+		images: [
+			{
+				src: "/images/tcg-tool/tcg-tool1.png",
+				alt: "Home Page",
+			},
+			{
+				src: "/images/tcg-tool/tcg-tool.png",
+				alt: "All Cards Page",
+			},
+		],
+	},
+	{
+		id: 2,
 		title: "Personal Website",
 		paragraphs: [
 			"This website is designed to store and showcase the skills that he acquired throughout his life. It is not limited to school projects but also includes every skill that he learned, both inside and outside of school, such as gaming.",
@@ -29,6 +70,18 @@ export const worksMeta = [
 			{ content: "#16B954", color: "bg-[#16B954]", textColor: 1 },
 			{ content: "#128ba3", color: "bg-[#128ba3]", textColor: 1 },
 			{ content: "#021d62", color: "bg-[#021d62]", textColor: 0 },
+		],
+		contributors: [
+			{
+				avatar: "https://avatars.githubusercontent.com/u/124354621?v=4",
+				name: "Rainiel Sevilla",
+				link: "https://github.com/CallMeSevilla",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
+				name: "Cedric Angulo",
+				link: "https://github.com/bryan308",
+			},
 		],
 		langs: [
 			{
@@ -76,7 +129,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "CA Resources",
 		paragraphs: [
 			"It is a website designed to improve productivity, especially for web development, among other fields in education. It provides the most valuable resources and guides.",
@@ -133,7 +186,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "WebWise",
 		paragraphs: [
 			"WebWise is a comprehensive case study for our first-year, second-semester IT Web Systems Technology (ITWST) subject. Our goal was to create a free, user-friendly platform for learning web development.",
@@ -188,7 +241,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Techno Odyssey",
 		paragraphs: [
 			"This project was my submission for the Technoday 2024 event at our school. This project showcased the latest news and advancements in technology.",
@@ -263,10 +316,10 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Class Directory",
 		paragraphs: [
-			"It is designed to provide simple yet essential information about the class. The site includes of images of class officers, a class schedule presented using cards, and a list of announcements.",
+			"It is designed to provide simple yet essential information about the class. The site includes images of class officers, a class schedule presented using cards, and a list of announcements.",
 			"Each announcements is marked with a colored dot to indicate its type or status.",
 		],
 		fontFamily: [
@@ -277,6 +330,18 @@ export const worksMeta = [
 			{ content: "#601008", color: "bg-[#601008]", textColor: 0 },
 			{ content: "#F88820", color: "bg-[#F88820]", textColor: 1 },
 			{ content: "#ffce0a", color: "bg-[#ffce0a]", textColor: 1 },
+		],
+		contributors: [
+			{
+				avatar: "https://avatars.githubusercontent.com/u/147966338?v=4",
+				name: "AJ Capule",
+				link: "https://github.com/Ryudd07",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
+				name: "Cedric Angulo",
+				link: "https://github.com/bryan308",
+			},
 		],
 		langs: [
 			{
@@ -324,7 +389,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Shoepee",
 		paragraphs: [
 			"Shoepee is an e-commerce website initially developed for my friend’s project. When he asked for my assistance, I saw it as a chance to learn more about PHP. We used PHP and a database managed through XAMPP. It was my first experience uploading and deleting images using PHP.",
@@ -339,6 +404,18 @@ export const worksMeta = [
 			{ content: "#2c3333", color: "bg-[#2c3333]", textColor: 0 },
 			{ content: "#a11b0f", color: "bg-[#a11b0f]", textColor: 0 },
 			{ content: "#dc000e", color: "bg-[#dc000e]", textColor: 0 },
+		],
+		contributors: [
+			{
+				avatar: "https://avatars.githubusercontent.com/u/131877672?v=4",
+				name: "Clent John Caseria",
+				link: "https://github.com/Clxntyyy",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
+				name: "Cedric Angulo",
+				link: "https://github.com/bryan308",
+			},
 		],
 		langs: [
 			{
@@ -386,7 +463,7 @@ export const worksMeta = [
 		],
 	},
 	{
-		id: 7,
+		id: 8,
 		title: "Students’ Transcripts System",
 		paragraphs: [
 			"The STS is a web application for school registrars to manage Old Curriculum SF10 records. Developed within a month, it has some security limitations.",
@@ -398,6 +475,33 @@ export const worksMeta = [
 			{ content: "#33691e", color: "bg-[#33691e]", textColor: 0 },
 			{ content: "#6a9221", color: "bg-[#6a9221]", textColor: 1 },
 			{ content: "#FFD046", color: "bg-[#FFD046]", textColor: 1 },
+		],
+		contributors: [
+			{
+				avatar: "https://avatars.githubusercontent.com/u/122410398?v=4",
+				name: "Winston Francisco",
+				link: "https://github.com/n0tsniW",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/121382059?v=4",
+				name: "Raphael Aguirre",
+				link: "https://github.com/annonycrom",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/124354621?v=4",
+				name: "Rainiel Sevilla",
+				link: "https://github.com/CallMeSevilla",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/134666037?v=4",
+				name: "Andrei Ferrer",
+				link: "https://github.com/AndreiFerrer",
+			},
+			{
+				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
+				name: "Cedric Angulo",
+				link: "https://github.com/bryan308",
+			},
 		],
 		langs: [
 			{
@@ -448,11 +552,11 @@ export const worksMeta = [
 			},
 			{
 				src: "/images/sts/sts4.webp",
-				alt: "Student’s Informations page",
+				alt: "Student’s Information page",
 			},
 			{
 				src: "/images/sts/sts5.webp",
-				alt: "Edit Informations page",
+				alt: "Edit Information page",
 			},
 		],
 	},
