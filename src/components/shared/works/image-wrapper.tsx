@@ -13,7 +13,7 @@ interface WorkDetails {
   paragraphs: string[]
   fontFamily: { fonts: { className: string }; text: string }[]
   colorScheme: { content: string; color: string; textColor: number }[]
-  langs: {
+  langs?: {
     langName: string
     langColor: { bg: string; fill: string }
     langWidth: number
