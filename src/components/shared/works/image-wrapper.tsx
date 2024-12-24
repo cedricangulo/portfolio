@@ -67,7 +67,7 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
           View More
         </Button>
       )}
-      {work.id === 7 && (
+      {work.id === 8 && (
         <span className="note">
           <Info
             strokeWidth={1.5}

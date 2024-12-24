@@ -6,6 +6,8 @@ import LangList from "./lang-list"
 import ColorScheme from "../color-scheme"
 import Image from "next/image"
 import Link from "next/link"
+import React from "react"
+import { Badge } from "@/components/ui/badge"
 
 interface WorkDetails {
 	id: number
@@ -68,28 +70,33 @@ const ProjectDetails = ({
 			{work?.contributors && (
 				<div className="mt-8">
 					<h4 className="scroll-m-20 text-xl mb-2 font-semibold tracking-tight">Contributors</h4>
-					<ul>
+					<div className="grid grid-cols-2 gap-2">
 						{work.contributors.map((contributor, index) => (
-							<li key={index}>
+							<React.Fragment key={index}>
 								<Link
 									href={contributor.link}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-foreground inline-flex gap-2"
+									className="w-full"
 								>
-									<Image
-										src={contributor.avatar}
-										alt={contributor.name}
-										width={20}
-										height={20}
-										quality={100}
-										className="rounded-full h-5 w-5"
-									/>
-									{contributor.name}
+									<Badge
+										variant="secondary"
+										className="p-2 rounded-2xl text-foreground inline-flex gap-2 w-full"
+									>
+										<Image
+											src={contributor.avatar}
+											alt={contributor.name}
+											width={20}
+											height={20}
+											quality={100}
+											className="rounded-full h-5 w-5"
+										/>
+										{contributor.name}
+									</Badge>
 								</Link>
-							</li>
+							</React.Fragment>
 						))}
-					</ul>
+					</div>
 				</div>
 			)}
 			<div className="lang-wrapper">

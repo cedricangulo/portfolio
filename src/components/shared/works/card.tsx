@@ -60,7 +60,7 @@ function Card({ i, l, progress, range, targetScale }: TCard) {
 						</div>
 						<p className="text-foreground text-base">{l.text}</p>
 					</div>
-					<Link
+					{/* <Link
 						className="flex items-center gap-2 w-fit text-muted-foreground"
 						href={`works/${i + 1}`}
 						aria-label="Learn more"
@@ -71,7 +71,7 @@ function Card({ i, l, progress, range, targetScale }: TCard) {
 							strokeWidth={1.5}
 							className="size-[1rem]"
 						/>
-					</Link>
+					</Link> */}
 					<div className="flex gap-2 flex-wrap">
 						{l.tags.map((tag: string, index: number) => {
 							return (
