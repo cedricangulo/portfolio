@@ -16,7 +16,7 @@ const AnimatefadeIn = (delay: number) => ({
 
 const TechStack: React.FC<{}> = () => {
 	return (
-		<div className="tech-wrapper">
+		<div className="tech-wrapper py-20 my-20">
 			<motion.h2
 				{...AnimatefadeIn(0)}
 				className={`${lexend.className} tech-header text-foreground`}

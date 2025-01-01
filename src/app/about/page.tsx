@@ -1,6 +1,5 @@
 import {
 	TechStack,
-	Highlight as Hl,
 	ParagraphWrapper,
 	PhotographySection,
 	Profile,
