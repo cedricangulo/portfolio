@@ -19,7 +19,7 @@ const Profile = () => {
 			className="lg:w-1/4 flex justify-center items-center xl:mb-0"
 		>
 			<Image
-				src="/about-img.png"
+				src="/me.png"
 				alt="me"
 				width={250}
 				height={250}
