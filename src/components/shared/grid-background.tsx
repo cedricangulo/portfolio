@@ -2,15 +2,39 @@ import { cn } from "@/lib/utils"
 
 function GridBackground() {
 	return (
-		<div
+		<svg
 			className={cn(
+				"h-full w-full",
 				"animate-fadeIn [--fadeIn-delay:1500ms] opacity-0",
-				"absolute top-0 left-0 h-full w-full",
-				"bg-[linear-gradient(to_right,#a855f770,transparent_1px),linear-gradient(to_bottom,#a855f770,transparent_1px)] bg-[size:3rem_3rem]",
-				"[mask-image:radial-gradient(ellipse_100%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
-				"sm:[mask-image:radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]"
+				"sm:[mask-image:radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
+				"[mask-image:radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
+				"pointer-events-none absolute inset-0 left-1/2 top-0 max-w-[800px] -translate-x-1/2 text-primary/50",
+				"[mask-image:linear-gradient(transparent,black_20%), linear-gradient(black_20%, transparent)]"
 			)}
-		></div>
+		>
+			<defs>
+				<pattern
+					id="grid-:r2:"
+					x="0"
+					y="-53.5"
+					width="40"
+					height="40"
+					patternUnits="userSpaceOnUse"
+				>
+					<path
+						d="M 80 0 L 0 0 0 80"
+						fill="transparent"
+						stroke="currentColor"
+						strokeWidth="1"
+					></path>
+				</pattern>
+			</defs>
+			<rect
+				fill="url(#grid-:r2:)"
+				width="100%"
+				height="100%"
+			></rect>
+		</svg>
 	)
 }
 
