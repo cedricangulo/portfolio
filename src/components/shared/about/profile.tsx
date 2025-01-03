@@ -24,10 +24,11 @@ const Profile = () => {
 				width={250}
 				height={250}
 				className={cn(
-					"rounded-full",
+					"rounded-lg",
 					// "brightness-125 grayscale",
 					"drop-shadow-[0_0_.75rem_#6b21a850] dark:drop-shadow-[0_0_1rem_#6b21a880]",
-					"hover:grayscale-0 hover:scale-105 transition-all duration-500"
+					"hover:scale-105 transition-transform duration-500",
+					"border-8 border-solid border-white/50 backdrop-blur-lg"
 				)}
 				priority={true}
 			/>

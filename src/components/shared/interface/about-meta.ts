@@ -12,8 +12,13 @@ type TSkills = {
 
 const timeline: TTimeline = [
 	{
+		time: "2024 - Present",
+		title: "Second Year BS Information Technology",
+		text: "Currently working with Java and C++, while deeply exploring web development as a frontend developer student.",
+	},
+	{
 		time: "2023 - 2024",
-		title: "Freshmen BSIT",
+		title: "First Year BS Information Technology",
 		text: "In my first semester, I covered computing, programming, and networking basics. The following semester, I explored more in web development and continued with C++ and networking, finding it more manageable due to my previous experience.",
 	},
 	{
