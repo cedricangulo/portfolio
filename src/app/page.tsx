@@ -1,11 +1,12 @@
 import { cn } from "@/lib/utils"
-import { caveat, lexend } from "@/lib/fonts"
+import { lexend } from "@/lib/fonts"
 
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons"
 
 import Link from "next/link"
 import GridBackground from "@/components/shared/grid-background"
 import { Button } from "@/components/ui/button"
+import YearBadge from "@/components/shared/year-badge"
 
 export default function HomePage() {
 	return (
@@ -29,17 +30,7 @@ export default function HomePage() {
 					>
 						<span className="text-primary">BSIT</span>{" "}
 						<span className="relative transition-all">
-							Student
-							<span
-								className={cn(
-									"absolute -right-20 -rotate-12 -top-5",
-									"text-primary font-normal tracking-wider",
-									"text-2xl md:text-3xl",
-									caveat.className
-								)}
-							>
-								2nd year 🤙
-							</span>
+							Student <YearBadge />
 						</span>
 					</h1>
 					<p
