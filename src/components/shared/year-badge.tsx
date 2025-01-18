@@ -9,7 +9,7 @@ const YearBadge: FC = () => {
 	return (
 		<span
 			className={cn(
-				"absolute -right-20 -rotate-12 -top-5 text-primary font-normal tracking-wider text-2xl md:text-3xl",
+				"absolute -right-12 sm:-right-20 -rotate-12 -top-5 text-primary font-normal tracking-wider text-2xl md:text-3xl",
 				caveat.className
 			)}
 		>
