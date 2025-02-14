@@ -1,94 +1,51 @@
-import { useEffect, useMemo, useRef } from "react"
-import { useTransform, motion } from "motion/react"
+"use client"
 
-import { TCard } from "@/components/shared/interface/card"
-import { lexend } from "@/lib/fonts"
-import { Info } from "lucide-react"
-
-import Buttons from "./card-buttons"
-import ImageRender from "../image-render"
-import { Badge } from "../../ui/badge"
+import { motion } from "motion/react"
+import React from "react"
+import ImageRender from "@/components/shared/image-render"
 import Link from "next/link"
 
-function Card({ i, l, progress, range, targetScale }: TCard) {
-	// Create a ref to the container element
-	const container = useRef(null)
+type CardProps = {
+	src: string
+	title: string
+	text: string
+	index: number
+}
 
-	// Adjust the range to avoid having the same start and end values
-	const adjustedRange = useMemo(() => {
-		return range[0] === range[1] ? [range[0] - 0.1, range[1] + 0] : range
-	}, [range])
-
-	// Create a scale transformation based on the progress and adjusted range
-	const scale = useTransform(progress, adjustedRange, [1, targetScale])
-
-	// Log the card index, scale, progress, and adjusted range whenever they change
-	// * DONE TESTING SO I'LL COMMENT THIS OUT 😀
-	// useEffect(() => {
-	// 	console.log(`Card index: ${i}, scale: ${scale.get()}`)
-	// 	console.log(`Progress: ${progress}, Range: ${adjustedRange}`)
-	// }, [scale, i, progress, adjustedRange])
-
+export const Card: React.FC<CardProps> = ({ src, title, text, index }) => {
 	return (
-		<div
-			ref={container}
-			className={`max-w-[34rem] lg:max-w-full mx-auto sticky top-[10%] flex items-enter justify-center`}
+		<motion.div
+			initial={{ opacity: 0, filter: "blur(8px)" }}
+			animate={{ opacity: 1, filter: "blur(0)" }}
+			viewport={{ amount: 0.5, once: false }}
+			transition={{
+				delay: 0.15 * index,
+				duration: 0.4,
+				ease: "easeInOut",
+			}}
 		>
-			<motion.div
-				style={{ scale, top: `calc(5vh + ${i * 1}rem)` }}
-				className="card"
-			>
-				<ImageRender
-					width={500}
-					height={280}
-					src={l.src}
-					alt={l?.title}
-					className="w-full lg:w-2/4"
-				/>
-				<div className="z-10 p-4 grid gap-4 w-full lg:w-2/4">
-					<div className="w-full gap-4 flex flex-col">
-						<div className="flex items-start justify-between">
-							<h4
-								className={`${lexend.className} text-foreground font-medium text-3xl mb-2 leading-7`}
-							>
-								{l?.title}
-							</h4>
-							<Buttons
-								l={l}
-								i={i}
-							/>
-						</div>
-						<p className="text-foreground text-base">{l.text}</p>
-					</div>
-					{/* <Link
-						className="flex items-center gap-2 w-fit text-muted-foreground"
-						href={`works/${i + 1}`}
-						aria-label="Learn more"
-					>
-						Learn More
-						<span className="sr-only">Learn more</span>
-						<Info
-							strokeWidth={1.5}
-							className="size-[1rem]"
+			<Link href={`/works/${index + 1}`}>
+				<article className="mt-8 border border-border hover:border-primary rounded-xl p-1 shadow-sm transition-colors duration-300">
+					<div className="relative rounded-lg overflow-hidden group">
+						<ImageRender
+							width={500}
+							height={280}
+							src={src}
+							alt={title}
+							className="w-full rounded-lg z-0"
 						/>
-					</Link> */}
-					<div className="flex gap-2 flex-wrap">
-						{l.tags.map((tag: string, index: number) => {
-							return (
-								<Badge
-									key={index}
-									variant="secondary"
-									className="text-muted-foreground border-border transition-none"
-								>
-									{tag}
-								</Badge>
-							)
-						})}
+						<div className="absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-black h-full w-full z-10 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-100" />
+						<div className="absolute bottom-0 left-0 p-4 z-20 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+							<h4 className="text-white text-xl font-medium mb-1.5 md:group-hover:delay-300">
+								{title}
+							</h4>
+							<p className="text-white text-sm md:group-hover:delay-1000">{text}</p>
+						</div>
 					</div>
-				</div>
-			</motion.div>
-		</div>
+				</article>
+			</Link>
+		</motion.div>
 	)
 }
 
-export default Card
+Card.displayName = "Card"

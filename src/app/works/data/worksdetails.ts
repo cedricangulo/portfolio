@@ -54,6 +54,8 @@ export const worksMeta = [
 				alt: "All Cards Page",
 			},
 		],
+		github: "https://github.com/bryan308/pokemon",
+		href: "https://pokemon-proxx.vercel.app",
 	},
 	{
 		id: 2,
@@ -127,6 +129,8 @@ export const worksMeta = [
 				alt: "Contact Page",
 			},
 		],
+		github: "https://github.com/bryan308/personal-website",
+		href: "https://rnlsevilla.vercel.app",
 	},
 	{
 		id: 3,
@@ -184,6 +188,8 @@ export const worksMeta = [
 				alt: "Guides Page",
 			},
 		],
+		github: "https://github.com/bryan308/ca-resources",
+		href: "https://ca-resources.vercel.app",
 	},
 	{
 		id: 4,
@@ -239,6 +245,8 @@ export const worksMeta = [
 				alt: "Compilation for Mobile View Pages",
 			},
 		],
+		github: "https://github.com/bryan308/WebWise",
+		href: "https://webwisee.vercel.app",
 	},
 	{
 		id: 5,
@@ -314,6 +322,8 @@ export const worksMeta = [
 				alt: "Reach us page",
 			},
 		],
+		github: "https://github.com/bryan308/technodyssey",
+		href: "",
 	},
 	{
 		id: 6,
@@ -387,6 +397,8 @@ export const worksMeta = [
 				alt: "Schedules page",
 			},
 		],
+		github: "https://github.com/bryan308/sumbsit1a",
+		href: "https://sumacabbsit1a.vercel.app",
 	},
 	{
 		id: 7,
@@ -461,6 +473,8 @@ export const worksMeta = [
 				alt: "Search resutls page",
 			},
 		],
+		github: "https://github.com/bryan308/shoepee",
+		href: "",
 	},
 	{
 		id: 8,
@@ -559,5 +573,7 @@ export const worksMeta = [
 				alt: "Edit Information page",
 			},
 		],
+		github: "https://github.com/bryan308/Students-Transcripts-System",
+		href: "",
 	},
 ]

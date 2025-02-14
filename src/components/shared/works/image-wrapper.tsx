@@ -34,10 +34,9 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
       animate={{ opacity: 1, filter: "blur(0)" }}
       viewport={{ amount: 0.5, once: false }}
       transition={{
-        delay: 1.5,
-        duration: 1,
+        delay: 1,
+        duration: 0.5,
         ease: "easeInOut",
-
       }}
       className="image-wrapper h-full"
     >

@@ -9,7 +9,7 @@ interface ParagraphProps {
   duration?: number
 }
 
-const Paragraph = ({ children, delay = 1, duration = 1 }: ParagraphProps) => {
+const Paragraph = ({ children, delay = 1, duration = 0.5 }: ParagraphProps) => {
   return (
     <motion.p
       initial={{ opacity: 0, filter: "blur(4px)" }}
@@ -19,7 +19,6 @@ const Paragraph = ({ children, delay = 1, duration = 1 }: ParagraphProps) => {
         delay: delay,
         duration: duration,
         ease: "easeInOut",
-
       }}
       className="paragraph my-4 text-foreground"
     >

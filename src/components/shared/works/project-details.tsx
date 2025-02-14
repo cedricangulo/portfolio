@@ -8,6 +8,9 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
+import { ArrowUpRight, Code, GitFork, Link2, Palette } from "lucide-react"
+import GitHubIcon from "../icons/github"
 
 interface WorkDetails {
 	id: number
@@ -22,12 +25,14 @@ interface WorkDetails {
 		langWidth: number
 	}[]
 	images: { src: string; alt: string }[]
+	github: string
+	href: string
 }
 
 const ProjectDetails = ({
 	work,
-	delay = 1,
-	duration = 1,
+	delay = 0.8,
+	duration = 0.3,
 }: {
 	work?: WorkDetails
 	delay?: number
@@ -45,6 +50,9 @@ const ProjectDetails = ({
 			}}
 			className="details-wrapper"
 		>
+			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
+				<Palette className="size-4 text-primary" /> Colors & Fonts
+			</h4>
 			<div className="flex flex-col sm:flex-row gap-8 sm:gap-4">
 				<div className="w-2/4">
 					{work?.fontFamily.map((f, index) => (
@@ -68,20 +76,23 @@ const ProjectDetails = ({
 				</div>
 			</div>
 			{work?.contributors && (
-				<div className="mt-8">
-					<h4 className="scroll-m-20 text-xl mb-2 font-semibold tracking-tight">Contributors</h4>
-					<div className="grid grid-cols-2 gap-2">
+				<>
+					<Separator className="bg-border my-8" />
+					<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
+						<GitFork className="size-4 text-primary" /> Contributors
+					</h4>
+					<div className="flex flex-wrap gap-2">
 						{work.contributors.map((contributor, index) => (
 							<React.Fragment key={index}>
 								<Link
 									href={contributor.link}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="w-full"
+									className="w-fit"
 								>
 									<Badge
 										variant="secondary"
-										className="p-2 rounded-2xl text-foreground inline-flex gap-2 w-full"
+										className="p-1 pr-2 rounded-2xl font-normal text-foreground inline-flex gap-2 w-full"
 									>
 										<Image
 											src={contributor.avatar}
@@ -97,14 +108,53 @@ const ProjectDetails = ({
 							</React.Fragment>
 						))}
 					</div>
-				</div>
+				</>
 			)}
+			<Separator className="bg-border my-8" />
+			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
+				<Code className="size-4 text-primary" /> Language Used
+			</h4>
 			<div className="lang-wrapper">
 				{work?.id === 1 || work?.id === 5 ? (
 					<BranchTab workId={work.id} />
 				) : (
 					<LangList lang={work?.langs} />
 				)}
+			</div>
+			<Separator className="bg-border my-8" />
+			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
+				<Link2 className="size-4 text-primary" />{" "}
+				{work?.href ? <span>Links</span> : <span>Link</span>}
+			</h4>
+			<div className="flex gap-2">
+				<Link
+					href={work?.github || ""}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Badge
+						variant="secondary"
+						className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
+					>
+						<GitHubIcon className="size-5" />
+						GitHub
+					</Badge>
+				</Link>
+				{work?.href ? (
+					<Link
+						href={work?.href || ""}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Badge
+							variant="secondary"
+							className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
+						>
+							<ArrowUpRight className="size-5" />
+							Visit Site
+						</Badge>
+					</Link>
+				) : null}
 			</div>
 		</motion.div>
 	)

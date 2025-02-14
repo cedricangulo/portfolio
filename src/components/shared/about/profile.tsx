@@ -12,8 +12,8 @@ const Profile = () => {
 			whileInView={{ opacity: 1, filter: "blur(0)" }}
 			viewport={{ amount: 0.5, once: false }}
 			transition={{
-				delay: 0.25,
-				duration: 1,
+				delay: 0.5,
+				duration: 0.3,
 				ease: "easeInOut",
 			}}
 			className="lg:w-1/4 flex justify-center items-center xl:mb-0"
@@ -26,9 +26,8 @@ const Profile = () => {
 				className={cn(
 					"rounded-lg",
 					// "brightness-125 grayscale",
-					"drop-shadow-[0_0_.75rem_#6b21a850] dark:drop-shadow-[0_0_1rem_#6b21a880]",
-					"hover:scale-105 transition-transform duration-500",
-					"border-8 border-solid border-white/50 backdrop-blur-lg"
+					"drop-shadow-[0_0_.75rem_#6b21a850] dark:drop-shadow-[0_0_0.5rem_#6b21a880]",
+					"hover:scale-105 transition-transform duration-500"
 				)}
 				priority={true}
 			/>

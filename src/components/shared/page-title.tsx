@@ -11,7 +11,7 @@ interface PageTitleProps {
 	duration?: number
 }
 
-const PageTitle = ({ title, subheader, delay = 0, duration = 0.5 }: PageTitleProps) => {
+const PageTitle = ({ title, subheader, delay = 0, duration = 0.3 }: PageTitleProps) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0, filter: "blur(8px)" }}
