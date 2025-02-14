@@ -37,7 +37,7 @@ const AnimatefadeIn = (delay: number = 0) => ({
 	initial: { opacity: 0, filter: "blur(4px)" },
 	whileInView: { opacity: 1, filter: "blur(0)" },
 	viewport: { amount: 0.5, once: false },
-	transition: { delay, duration: 1, ease: "easeInOut" },
+	transition: { delay, duration: 0.3, ease: "easeInOut" },
 })
 
 const OldPortfolioSection: React.FC<{}> = () => {

@@ -22,7 +22,7 @@ export default function WorksPage() {
 			viewport={{ amount: 0.5, once: false }}
 			transition={{
 				delay: 0.5,
-				duration: 0.7,
+				duration: 0.4,
 				ease: "easeInOut",
 			}}
 		>

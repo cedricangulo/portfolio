@@ -10,21 +10,21 @@ const AnimatefadeIn = (delay: number) => ({
 	initial: { opacity: 0, filter: "blur(4px)" },
 	whileInView: { opacity: 1, filter: "blur(0)" },
 	viewport: { amount: 0.5, once: false },
-	transition: { delay, duration: 1, ease: "easeInOut" },
+	transition: { delay, duration: 0.3, ease: "easeInOut" },
 })
 
 const PhotographySection: React.FC = () => {
 	return (
-		<div className="flex flex-col md:flex-row gap-4 w-full mx-auto py-20 my-36">
+		<div className="flex flex-col md:flex-row gap-16 w-full mx-auto py-20 my-36">
 			<div className="w-full md:w-1/2">
 				<motion.h2
-					{...AnimatefadeIn(0.75)}
+					{...AnimatefadeIn(0.5)}
 					className={`${lexend.className} photo-header text-foreground mb-4`}
 				>
 					My Photography Journey
 				</motion.h2>
 				<motion.p
-					{...AnimatefadeIn(1)}
+					{...AnimatefadeIn(0.75)}
 					className="paragraph"
 				>
 					I tried photography using just my phone in year 2022. At that time, I was living in
@@ -42,8 +42,8 @@ const PhotographySection: React.FC = () => {
 				</motion.p>
 			</div>
 			<motion.div
-				{...AnimatefadeIn(0.5)}
-				className="max-w-xl mx-auto mt-8 w-full md:w-1/2"
+				{...AnimatefadeIn(1)}
+				className="max-w-xl mx-auto mt-16 w-full md:w-1/2"
 			>
 				<Carousell />
 			</motion.div>

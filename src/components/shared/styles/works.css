@@ -34,7 +34,7 @@
 }
 
 .lang-wrapper {
-	@apply mt-8 flex gap-2 flex-wrap w-full sm:w-3/4;
+	@apply flex gap-2 flex-wrap w-full sm:w-3/4;
 }
 
 .image-wrapper {

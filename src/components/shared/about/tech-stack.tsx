@@ -11,7 +11,7 @@ const AnimatefadeIn = (delay: number) => ({
 	initial: { opacity: 0, filter: "blur(4px)" },
 	whileInView: { opacity: 1, filter: "blur(0)" },
 	viewport: { amount: 0.5, once: false },
-	transition: { delay, duration: 1, ease: "easeInOut" },
+	transition: { delay, duration: 0.3, ease: "easeInOut" },
 })
 
 const TechStack: React.FC<{}> = () => {
@@ -29,7 +29,7 @@ const TechStack: React.FC<{}> = () => {
 						<motion.div
 							key={index}
 							// animate the badge with a delay of 0.15s per index
-							{...AnimatefadeIn(0.15 * index)}
+							{...AnimatefadeIn(0.1 * index)}
 						>
 							<Badge
 								variant="secondary"
