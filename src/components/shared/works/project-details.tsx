@@ -9,7 +9,8 @@ import Link from "next/link"
 import React from "react"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Code, GitFork, Palette } from "lucide-react"
+import { ArrowUpRight, Code, GitFork, Link2, Palette } from "lucide-react"
+import GitHubIcon from "../icons/github"
 
 interface WorkDetails {
 	id: number
@@ -24,6 +25,8 @@ interface WorkDetails {
 		langWidth: number
 	}[]
 	images: { src: string; alt: string }[]
+	github: string
+	href: string
 }
 
 const ProjectDetails = ({
@@ -117,6 +120,41 @@ const ProjectDetails = ({
 				) : (
 					<LangList lang={work?.langs} />
 				)}
+			</div>
+			<Separator className="bg-border my-8" />
+			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
+				<Link2 className="size-4 text-primary" />{" "}
+				{work?.href ? <span>Links</span> : <span>Link</span>}
+			</h4>
+			<div className="flex gap-2">
+				<Link
+					href={work?.github || ""}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Badge
+						variant="secondary"
+						className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
+					>
+						<GitHubIcon className="size-5" />
+						GitHub
+					</Badge>
+				</Link>
+				{work?.href ? (
+					<Link
+						href={work?.href || ""}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Badge
+							variant="secondary"
+							className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
+						>
+							<ArrowUpRight className="size-5" />
+							Visit Site
+						</Badge>
+					</Link>
+				) : null}
 			</div>
 		</motion.div>
 	)

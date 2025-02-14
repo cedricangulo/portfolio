@@ -9,8 +9,6 @@ export type TList = {
 	src: string
 	title: string
 	text: string
-	github: string
-	href: string
 	tags: string[]
 }
 

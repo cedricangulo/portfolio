@@ -3,16 +3,12 @@ export const WorkList = [
 		src: "/images/tcg-tool/tcg-tool1.png",
 		title: "Pokémon Grading Tool",
 		text: "A specialized tool for Pokemon card analysis with real-time market data integration and automated price comparison.",
-		github: "https://github.com/bryan308/pokemon",
-		href: "https://pokemon-proxx.vercel.app",
 		tags: ["react + vite", "shadcn-ui", "django", "eBay", "TCG market", "playwright"],
 	},
 	{
 		src: "/images/personal-website/personal-website-1.png",
 		title: "Personal Website",
 		text: "A personal website that showcases his projects and skills, built with nextjs and shadcn-ui.",
-		github: "https://github.com/bryan308/personal-website",
-		href: "https://rnlsevilla.vercel.app",
 		tags: [
 			"nextjs",
 			"shadcn-ui",
@@ -28,8 +24,6 @@ export const WorkList = [
 		src: "/images/ca-resources/ca-resources.jpg",
 		title: "CA Resources",
 		text: "An open-source website that boosts productivity in web development and education by offering valuable resources and guides.",
-		github: "https://github.com/bryan308/ca-resources",
-		href: "https://ca-resources.vercel.app",
 		tags: [
 			"open-source",
 			"nextjs",
@@ -45,8 +39,6 @@ export const WorkList = [
 		src: "/images/webwise/webwise.jpeg",
 		title: "WebWise",
 		text: "An educational website to start learning web development.",
-		github: "https://github.com/bryan308/WebWise",
-		href: "https://webwisee.vercel.app",
 		tags: [
 			"case-study",
 			"educational-website",
@@ -61,16 +53,12 @@ export const WorkList = [
 		src: "/images/techodyssey/techno.jpg",
 		title: "Techno Odyssey",
 		text: "My entry in CICT Technoday 2024.",
-		github: "https://github.com/bryan308/technodyssey",
-		href: "",
 		tags: ["competition-entry", "innovations", "latest-tech", "static"],
 	},
 	{
 		src: "/images/classdirectory/sumbsit1a.jpg",
 		title: "Class Directory",
 		text: "A static website for class information.",
-		github: "https://github.com/bryan308/sumbsit1a",
-		href: "https://sumacabbsit1a.vercel.app",
 		tags: [
 			"realtime-updates",
 			"interactive-cards",
@@ -84,8 +72,6 @@ export const WorkList = [
 		src: "/images/shoepee/shoepee.webp",
 		title: "Shoepee",
 		text: "An e-commerce website for shoes.",
-		github: "https://github.com/bryan308/shoepee",
-		href: "",
 		tags: [
 			"upload-image",
 			"search",
@@ -103,8 +89,6 @@ export const WorkList = [
 		src: "/images/sts/sts.webp",
 		title: `Students’ Transcripts System`,
 		text: "A web-based application for managing and creating Old Curriculum SH10 records.",
-		github: "https://github.com/bryan308/Students-Transcripts-System",
-		href: "",
 		tags: [
 			"admin-account",
 			"sign-in",

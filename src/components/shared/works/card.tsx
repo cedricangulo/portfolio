@@ -9,8 +9,6 @@ type CardProps = {
 	src: string
 	title: string
 	text: string
-	github: string
-	href: string
 	index: number
 }
 

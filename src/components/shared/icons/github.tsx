@@ -1,4 +1,4 @@
-function GitHubIcon({ strokeWidth, className }: { strokeWidth: number; className: string }) {
+function GitHubIcon({ strokeWidth, className }: { strokeWidth?: number; className?: string }) {
 	return (
 		<svg
 			height="16"

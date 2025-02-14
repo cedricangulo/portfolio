@@ -8,9 +8,7 @@ import { Card } from "@/components/shared/works/card"
 
 export default function WorksPage() {
 	return (
-		<motion.div
-			className="min-h-screen w-full grid grid-cols-1 md:grid-cols-2 gap-8"
-		>
+		<motion.div className="min-h-screen w-full grid grid-cols-1 md:grid-cols-2 gap-8">
 			{WorkList.map((l: TList, index: number) => {
 				return (
 					<Card
@@ -19,8 +17,6 @@ export default function WorksPage() {
 						src={l.src}
 						title={l.title}
 						text={l.text}
-						github={l.github}
-						href={l.href}
 					/>
 				)
 			})}
