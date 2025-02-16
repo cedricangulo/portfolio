@@ -9,10 +9,11 @@ type Prop = {
 export default function RootLayout({ children }: Prop) {
 	return (
 		<>
-			<div className="max-w-3xl pb-8 animate-fadeIn [--fadeIn-delay:2000ms] opacity-0">
+			<nav className="max-w-3xl grid place-items-center md:block my-8 animate-fadeIn [--fadeIn-delay:0ms] opacity-0">
 				<Link
 					href="/works"
 					className="text-secondary-foreground back"
+					aria-label="Back to works"
 				>
 					<MoveLeft
 						strokeWidth={1.5}
@@ -20,7 +21,7 @@ export default function RootLayout({ children }: Prop) {
 					/>
 					Back
 				</Link>
-			</div>
+			</nav>
 			{children}
 		</>
 	)
