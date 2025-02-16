@@ -12,7 +12,7 @@
 }
 
 .back {
-	@apply inline-flex gap-1 hover:text-purple-500 hover:gap-0 mt-2 text-lg items-center italic transition-all;
+	@apply inline-flex gap-1 hover:text-purple-500 hover:gap-0 text-lg items-center italic transition-all;
 }
 
 /* cards */
