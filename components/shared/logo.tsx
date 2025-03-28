@@ -27,7 +27,7 @@ export default function Logo({ state, className }: { state: boolean; className: 
 					transition={{ duration: 0.3 }}
 				>
 					<Image
-						src="/logo-active.png"
+						src="/logo-active.svg"
 						alt="logo"
 						width={40}
 						height={40}
@@ -44,7 +44,7 @@ export default function Logo({ state, className }: { state: boolean; className: 
 					transition={{ duration: 0.3 }}
 				>
 					<Image
-						src="/logo.png"
+						src="/logo.svg"
 						alt="logo"
 						width={40}
 						height={40}

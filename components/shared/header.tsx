@@ -21,7 +21,7 @@ export default function Header() {
 	useEffect(() => {
 		const d = document
 
-		sidebarOpen ? (d.body.style.overflow = "hidden") : (d.body.style.overflow = "")
+		d.body.style.overflow = sidebarOpen ? "hidden" : ""
 
 		return () => {
 			d.body.style.overflow = ""
@@ -61,7 +61,9 @@ export default function Header() {
 				>
 					<div
 						className={cn(
-							"menu_toggle after:bg-foreground before:bg-foreground",
+							"flex gap-3 flex-col justify-center items-center w-full h-full pointer-events-none after:bg-foreground before:bg-foreground",
+							"before:content-[''] before:block before:h-[1.5px] before:w-[24px] before:rotate-0 before:transition-all before:duration-[600ms] before:ease-[cubic-bezier(0.76,0,0.24,1)]",
+							"after:content-[''] after:block after:h-[1.5px] after:w-[24px] after:rotate-0 after:transition-all after:duration-[600ms] after:ease-[cubic-bezier(0.76,0,0.24,1)]",
 							sidebarOpen
 								? "before:rotate-45 before:translate-y-[0.438rem] after:-rotate-45 after:translate-y-[-0.375rem]"
 								: "before:rotate-0 after:rotate-0"
@@ -84,7 +86,9 @@ export default function Header() {
 							pathname === data.href || (data.href === "/works" && pathname.startsWith("/works"))
 						let style =
 							"text-zinc-500 dark:text-zinc-300 hover:text-primary/80 dark:hover:text-primary/90"
-						isActive && (style = "text-primary hover:text-primary/80")
+						if (isActive) {
+							style = "text-primary hover:text-primary/80"
+						}
 						return (
 							<li
 								key={index}

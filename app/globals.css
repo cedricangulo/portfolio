@@ -3,30 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-.menu_toggle {
-	@apply flex gap-3 flex-col justify-center items-center w-full h-full pointer-events-none
-					before:content-[''] before:block before:h-[1.5px] before:w-[24px] before:-translate-y-[4px] before:rotate-0 before:transition-all before:duration-[600ms] before:ease-[cubic-bezier(0.76,0,0.24,1)]
-					after:content-[''] after:block after:h-[1.5px] after:w-[24px] after:translate-y-[4px] after:rotate-0 after:transition-all after:duration-[600ms] after:ease-[cubic-bezier(0.76,0,0.24,1)];
-}
-
-/* .menu_toggle::before {
-	content: "";
-	display: block;
-	height: 1.5px;
-	width: 24px;
-	transform: translateY(-4px) rotate(0deg);
-	transition: all 600ms cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-.menu_toggle::after {
-	content: "";
-	display: block;
-	height: 1.5px;
-	width: 24px;
-	transform: translateY(4px) rotate(0deg);
-	transition: all 600ms cubic-bezier(0.76, 0, 0.24, 1);
-} */
-
 @theme {
 	--animate-skeleton: skeleton 2s cubic-bezier(0.4, 0, 0.6, 1) var(--pulse-delay, 0) infinite;
 	--animate-fadeIn: fadeIn 1s ease var(--fadeIn-delay, 0) forwards;

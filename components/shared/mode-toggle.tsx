@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { LoaderIcon, MoonIcon, SunIcon } from "lucide-react"
 import { useTheme } from "next-themes"
+import { LoadingIcon, MoonIcon, SunIcon } from "@/public/icons"
 
 export function ModeToggle() {
 	const { setTheme, theme } = useTheme()
@@ -13,7 +13,7 @@ export function ModeToggle() {
 	}, [])
 
 	if (!mounted) {
-		return <LoaderIcon className="text-muted-foreground w-12 h-12 md:w-5 md:h-5 animate-spin" />
+		return <LoadingIcon className="text-muted-foreground w-12 h-12 md:w-5 md:h-5 animate-spin" />
 	}
 
 	const isLight = theme === "light"
