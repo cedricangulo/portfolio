@@ -1,6 +1,5 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { geistsans } from "@/lib/fonts"
 
 import Header from "@/components/shared/header"
 import Providers from "@/components/shared/theme-provider"
@@ -33,7 +32,7 @@ export default function RootLayout({ children }: Props) {
 			lang="en"
 			suppressHydrationWarning
 		>
-			<body className={geistsans.className}>
+			<body className="font-geist">
 				<Providers>
 					<Header />
 					<LenisWrapper>

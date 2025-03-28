@@ -1,6 +1,4 @@
-import { cn } from "@/lib/utils"
 import { motion } from "motion/react"
-import styles from "./styles/style.module.scss"
 
 export default function Curve() {
 	const initialPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${window.innerHeight} Q-100 ${
@@ -25,7 +23,7 @@ export default function Curve() {
 	}
 
 	return (
-		<svg className={cn("fill-purple-500 transition-[fill]", styles.svgCurve)}>
+		<svg className="fill-purple-500 transition-[fill] absolute top-0 left-[-99px] w-[100px] h-full stroke-none">
 			<motion.path
 				exit="exit"
 				animate="enter"

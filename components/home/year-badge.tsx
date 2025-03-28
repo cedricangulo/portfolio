@@ -1,11 +1,10 @@
 "use client"
 
 import { motion } from "motion/react"
-import React, { FC } from "react"
 import { cn } from "@/lib/utils"
 import { caveat } from "@/lib/fonts"
 
-const YearBadge: FC = () => {
+export const YearBadge = () => {
 	return (
 		<span
 			className={cn(
@@ -28,5 +27,3 @@ const YearBadge: FC = () => {
 		</span>
 	)
 }
-
-export default YearBadge

@@ -1,11 +1,16 @@
+"use client"
+
+import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
 
-function GridBackground() {
+export const GridBackground = () => {
 	return (
-		<svg
+		<motion.svg
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 1, delay: 1 }}
 			className={cn(
 				"h-full w-full",
-				"animate-fadeIn [--fadeIn-delay:1500ms] opacity-0",
 				"sm:[mask-image:radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
 				"[mask-image:radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
 				"pointer-events-none absolute inset-0 left-1/2 top-0 max-w-[800px] -translate-x-1/2 text-primary/50",
@@ -34,8 +39,6 @@ function GridBackground() {
 				width="100%"
 				height="100%"
 			></rect>
-		</svg>
+		</motion.svg>
 	)
 }
-
-export default GridBackground
