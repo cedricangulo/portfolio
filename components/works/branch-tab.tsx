@@ -1,7 +1,7 @@
 "use client"
 
+import AnnButton from "../shared/announcement-btn"
 import LangList from "./lang-list"
-import AnnButton from "../announcement-btn"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const tabsData = [

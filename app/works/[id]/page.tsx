@@ -1,27 +1,22 @@
 import { notFound } from "next/navigation"
 
 import { worksMeta } from "../data/worksdetails"
-import {
-	ImageWrapper,
-	Paragraph,
-	ProjectDetails,
-	Title,
-} from "@/components/shared/works/works-bundle"
+import { ImageWrapper, Paragraph, ProjectDetails, ProjectTitle } from "@/components/works"
 
 export function generateStaticParams() {
 	return worksMeta.map((work) => ({ id: work.id.toString() }))
 }
 
-async function worksDetails({ params }: { params: any }) {
-	const { id } = await params
+async function worksDetails({ params }: { params: { id: string } }) {
+	const { id } = params
 	const work = worksMeta.find((work) => work.id.toString() === id)
 
-	!work && notFound()
+	if (!work) notFound()
 
 	return (
 		<div className="details-container">
 			<div className="mx-auto w-full xl:w-2/4">
-				<Title delay={0}>{work?.title}</Title>
+				<ProjectTitle>{work?.title}</ProjectTitle>
 				{work?.paragraphs.map((paragraph, index) => (
 					<Paragraph
 						key={index}

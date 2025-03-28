@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils"
 import { useState } from "react"
-import { IColorScheme } from "./interface/color-scheme"
+import { IColorScheme } from "../shared/interface/color-scheme"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 const CopyIcon = ({ color }: { color: number }) => (

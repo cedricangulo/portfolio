@@ -3,14 +3,22 @@
 import { motion } from "motion/react"
 import BranchTab from "./branch-tab"
 import LangList from "./lang-list"
-import ColorScheme from "../color-scheme"
+
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { ArrowUpRight, Code, GitFork, Link2, Palette } from "lucide-react"
-import GitHubIcon from "../icons/github"
+import ColorScheme from "./color-scheme"
+import {
+	ArrowUpRightIcon,
+	GithubIcon,
+	GitMergeIcon,
+	LinkIcon,
+	PaintBoardIcon,
+	SourceCodeIcon,
+} from "@/public/icons"
+import { getMotionProps } from "."
 
 interface WorkDetails {
 	id: number
@@ -29,29 +37,14 @@ interface WorkDetails {
 	href: string
 }
 
-const ProjectDetails = ({
-	work,
-	delay = 0.8,
-	duration = 0.3,
-}: {
-	work?: WorkDetails
-	delay?: number
-	duration?: number
-}) => {
+const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 	return (
 		<motion.div
-			initial={{ opacity: 0, filter: "blur(4px)" }}
-			animate={{ opacity: 1, filter: "blur(0)" }}
-			viewport={{ amount: 0.5, once: false }}
-			transition={{
-				delay: delay,
-				duration: duration,
-				ease: "easeInOut",
-			}}
-			className="details-wrapper"
+			{...getMotionProps(0.3, 0.8)}
+			className="rounded-lg mt-16 p-4 bg-card shadow-black/10 shadow-md border-2 border-border transition-all"
 		>
 			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-				<Palette className="size-4 text-primary" /> Colors & Fonts
+				<PaintBoardIcon className="size-4 text-primary" /> Colors & Fonts
 			</h4>
 			<div className="flex flex-col sm:flex-row gap-8 sm:gap-4">
 				<div className="w-2/4">
@@ -79,7 +72,7 @@ const ProjectDetails = ({
 				<>
 					<Separator className="bg-border my-8" />
 					<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-						<GitFork className="size-4 text-primary" /> Contributors
+						<GitMergeIcon className="size-5 text-primary" /> Contributors
 					</h4>
 					<div className="flex flex-wrap gap-2">
 						{work.contributors.map((contributor, index) => (
@@ -112,7 +105,7 @@ const ProjectDetails = ({
 			)}
 			<Separator className="bg-border my-8" />
 			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-				<Code className="size-4 text-primary" /> Language Used
+				<SourceCodeIcon className="size-5 text-primary" /> Language Used
 			</h4>
 			<div className="lang-wrapper">
 				{work?.id === 1 || work?.id === 5 ? (
@@ -123,7 +116,7 @@ const ProjectDetails = ({
 			</div>
 			<Separator className="bg-border my-8" />
 			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-				<Link2 className="size-4 text-primary" />{" "}
+				<LinkIcon className="size-4 text-primary" />{" "}
 				{work?.href ? <span>Links</span> : <span>Link</span>}
 			</h4>
 			<div className="flex gap-2">
@@ -136,7 +129,7 @@ const ProjectDetails = ({
 						variant="secondary"
 						className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
 					>
-						<GitHubIcon className="size-5" />
+						<GithubIcon className="text-foreground" />
 						GitHub
 					</Badge>
 				</Link>
@@ -150,7 +143,7 @@ const ProjectDetails = ({
 							variant="secondary"
 							className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
 						>
-							<ArrowUpRight className="size-5" />
+							<ArrowUpRightIcon className="text-foreground" />
 							Visit Site
 						</Badge>
 					</Link>

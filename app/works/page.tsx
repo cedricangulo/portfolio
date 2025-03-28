@@ -4,7 +4,7 @@ import React from "react"
 import { motion } from "motion/react"
 import { WorkList } from "./data/workslist"
 import { TList } from "@/components/shared/interface/card"
-import { Card } from "@/components/shared/works/card"
+import { Card } from "@/components/works/card"
 
 export default function WorksPage() {
 	return (

@@ -25,8 +25,14 @@ const PageTitle = ({ title, subheader, delay = 0, duration = 0.3 }: PageTitlePro
 			}}
 			className="lg:min-w-[62.5rem] w-full h-[7.5rem] pt-8"
 		>
-			<h1 className={`${lexend.className} header`}>{title}</h1>
-			<p className="subheader text-foreground">{subheader}</p>
+			<h1
+				className={`${lexend.className} text-foreground text-center lg:text-left m-auto text-5xl font-extrabold tracking-tight leading-none uppercase`}
+			>
+				{title}
+			</h1>
+			<p className="text-foreground text-center lg:text-left text-xl font-normal">
+				{subheader}
+			</p>
 		</motion.div>
 	)
 }
