@@ -14,8 +14,8 @@ async function worksDetails({ params }: { params: { id: string } }) {
 	if (!work) notFound()
 
 	return (
-		<div className="details-container">
-			<div className="mx-auto w-full xl:w-2/4">
+		<div className="my-0 mx-auto min-h-screen w-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 justify-center">
+			<div className="mx-auto">
 				<ProjectTitle>{work?.title}</ProjectTitle>
 				{work?.paragraphs.map((paragraph, index) => (
 					<Paragraph

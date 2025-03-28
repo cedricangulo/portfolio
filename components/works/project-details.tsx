@@ -1,15 +1,12 @@
 "use client"
 
 import { motion } from "motion/react"
-import BranchTab from "./branch-tab"
-import LangList from "./lang-list"
-
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
+
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
-import ColorScheme from "./color-scheme"
+import { Button } from "../ui/button"
 import {
 	ArrowUpRightIcon,
 	GithubIcon,
@@ -18,8 +15,11 @@ import {
 	PaintBoardIcon,
 	SourceCodeIcon,
 } from "@/public/icons"
+
 import { getMotionProps } from "."
-import { Button } from "../ui/button"
+import BranchTab from "./branch-tab"
+import ColorScheme from "./color-scheme"
+import LangList from "./lang-list"
 
 interface WorkDetails {
 	id: number
@@ -62,7 +62,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				<span>Colors & Fonts</span>
 			</h4>
 			<div
-				className="flex flex-col gap-8 sm:gap-4"
+				className="flex flex-col gap-4"
 				aria-labelledby="colors-fonts-heading"
 			>
 				<div className="flex flex-nowrap w-full">
@@ -88,10 +88,9 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 			</div>
 			{work?.contributors && (
 				<>
-					<Separator className="bg-border my-8" />
 					<h4
 						id="contributors-heading"
-						className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+						className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight mt-8"
 					>
 						<GitMergeIcon
 							className="size-5 text-primary"
@@ -133,10 +132,9 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 					</div>
 				</>
 			)}
-			<Separator className="bg-border my-8" />
 			<h4
 				id="languages-heading"
-				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mt-8 tracking-tight"
 			>
 				<SourceCodeIcon
 					className="size-5 text-primary"
@@ -144,20 +142,16 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				/>
 				<span>Language Used</span>
 			</h4>
-			<div
-				className="lang-wrapper"
-				aria-labelledby="languages-heading"
-			>
+			<div className="w-full sm:w-3/4" aria-labelledby="languages-heading">
 				{work?.id === 1 || work?.id === 5 ? (
 					<BranchTab workId={work.id} />
 				) : (
 					<LangList lang={work?.langs} />
 				)}
 			</div>
-			<Separator className="bg-border my-8" />
 			<h4
 				id="links-heading"
-				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 mt-8 tracking-tight"
 			>
 				<LinkIcon
 					className="size-4 text-primary"
@@ -169,7 +163,10 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				className="flex gap-2"
 				aria-labelledby="links-heading"
 			>
-				<Button variant="secondary" asChild>
+				<Button
+					variant="secondary"
+					asChild
+				>
 					<Link
 						href={work?.github || ""}
 						target="_blank"

@@ -1,8 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-
-import GitHubSolidIcon from "./icons/github-solid"
-import FacebookIcon from "./icons/fb"
+import { FacebookFilledIcon, GithubFilledIcon } from "@/public/icons"
 
 export default function Footer() {
 	return (
@@ -14,7 +12,7 @@ export default function Footer() {
 					aria-label="GitHub icon"
 				>
 					<span className="sr-only">GitHub icon</span>
-					<GitHubSolidIcon
+					<GithubFilledIcon
 						className="stroke-current fill-current w-6 h-6"
 						strokeWidth={1}
 					/>
@@ -25,7 +23,7 @@ export default function Footer() {
 					aria-label="Facebook icon"
 				>
 					<span className="Facebook icon"></span>
-					<FacebookIcon className="fill-current h-6 1-6" />
+					<FacebookFilledIcon className="fill-current h-6 1-6" />
 				</Link>
 			</div>
 			<div className="flex flex-col items-center gap-1">

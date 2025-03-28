@@ -31,12 +31,12 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
 	return (
 		<motion.div
 			{...getMotionProps(0.3, 1)}
-			className="flex gap-2 flex-wrap w-full h-full"
+			className="w-full"
 		>
 			{(showAllImages ? work.images : work.images.slice(0, 2)).map((image, index) => (
 				<figure
 					key={index}
-					className="my-4 text-center"
+					className="mb-8 text-center"
 				>
 					<ImageZoom
 						src={image.src}
@@ -48,15 +48,16 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
 					<figcaption className="mt-4 text-sm italic text-muted-foreground">{image.alt}</figcaption>
 				</figure>
 			))}
-			{work.images.length > 2 && (
-				<Button
-					variant="ghost"
-					onClick={() => setShowAllImages(!showAllImages)}
-					className="mx-auto mt-4"
-				>
-					{showAllImages ? "View Less" : "View More"}
-				</Button>
-			)}
+			<div className="grid place-items-center mt-4">
+				{work.images.length > 2 && (
+					<Button
+						variant="ghost"
+						onClick={() => setShowAllImages(!showAllImages)}
+					>
+						{showAllImages ? "View Less" : "View More"}
+					</Button>
+				)}
+			</div>
 			{work.id === 8 && (
 				<span className="mt-12 inline-flex items-center gap-4 text-xs p-4 rounded-lg text-yellow-800 dark:text-yellow-50 border border-yellow-500 dark:border-yellow-600 bg-yellow-200/50 dark:bg-yellow-950">
 					<InformationCircleIcon className="size-6 text-yellow-600 dark:text-yellow-200" />
