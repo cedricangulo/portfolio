@@ -19,6 +19,7 @@ import {
 	SourceCodeIcon,
 } from "@/public/icons"
 import { getMotionProps } from "."
+import { Button } from "../ui/button"
 
 interface WorkDetails {
 	id: number
@@ -39,25 +40,32 @@ interface WorkDetails {
 
 const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 	return (
-		<motion.div
+		<motion.section
 			{...getMotionProps(0.3, 0.8)}
 			className="rounded-lg mt-16 p-4 bg-card shadow-black/10 shadow-md border-2 border-border transition-all"
+			aria-labelledby="project-details-title"
 		>
-			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-				<PaintBoardIcon className="size-4 text-primary" /> Colors & Fonts
+			<h3
+				id="project-details-title"
+				className="sr-only"
+			>
+				Project Details for {work?.title}
+			</h3>
+			<h4
+				id="colors-fonts-heading"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+			>
+				<PaintBoardIcon
+					className="size-4 text-primary"
+					aria-hidden="true"
+				/>
+				<span>Colors & Fonts</span>
 			</h4>
-			<div className="flex flex-col sm:flex-row gap-8 sm:gap-4">
-				<div className="w-2/4">
-					{work?.fontFamily.map((f, index) => (
-						<p
-							key={index}
-							className={`${f.fonts.className} text-2xl text-foreground`}
-						>
-							{f.text}
-						</p>
-					))}
-				</div>
-				<div className="colorscheme-wrapper">
+			<div
+				className="flex flex-col gap-8 sm:gap-4"
+				aria-labelledby="colors-fonts-heading"
+			>
+				<div className="flex flex-nowrap w-full">
 					{work?.colorScheme.map((color, index) => (
 						<ColorScheme
 							key={index}
@@ -67,21 +75,42 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 						/>
 					))}
 				</div>
+				<div>
+					{work?.fontFamily.map((f, index) => (
+						<p
+							key={index}
+							className={`${f.fonts.className} text-2xl text-foreground`}
+						>
+							{f.text}
+						</p>
+					))}
+				</div>
 			</div>
 			{work?.contributors && (
 				<>
 					<Separator className="bg-border my-8" />
-					<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-						<GitMergeIcon className="size-5 text-primary" /> Contributors
+					<h4
+						id="contributors-heading"
+						className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+					>
+						<GitMergeIcon
+							className="size-5 text-primary"
+							aria-hidden="true"
+						/>
+						<span>Contributors</span>
 					</h4>
-					<div className="flex flex-wrap gap-2">
+					<div
+						className="flex flex-wrap gap-2"
+						aria-labelledby="contributors-heading"
+					>
 						{work.contributors.map((contributor, index) => (
 							<React.Fragment key={index}>
 								<Link
 									href={contributor.link}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="w-fit"
+									className="w-fit focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+									aria-label={`${contributor.name}'s profile`}
 								>
 									<Badge
 										variant="secondary"
@@ -89,11 +118,12 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 									>
 										<Image
 											src={contributor.avatar}
-											alt={contributor.name}
+											alt=""
 											width={20}
 											height={20}
 											quality={100}
 											className="rounded-full h-5 w-5"
+											aria-hidden="true"
 										/>
 										{contributor.name}
 									</Badge>
@@ -104,10 +134,20 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				</>
 			)}
 			<Separator className="bg-border my-8" />
-			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-				<SourceCodeIcon className="size-5 text-primary" /> Language Used
+			<h4
+				id="languages-heading"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+			>
+				<SourceCodeIcon
+					className="size-5 text-primary"
+					aria-hidden="true"
+				/>
+				<span>Language Used</span>
 			</h4>
-			<div className="lang-wrapper">
+			<div
+				className="lang-wrapper"
+				aria-labelledby="languages-heading"
+			>
 				{work?.id === 1 || work?.id === 5 ? (
 					<BranchTab workId={work.id} />
 				) : (
@@ -115,41 +155,51 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				)}
 			</div>
 			<Separator className="bg-border my-8" />
-			<h4 className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight">
-				<LinkIcon className="size-4 text-primary" />{" "}
+			<h4
+				id="links-heading"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+			>
+				<LinkIcon
+					className="size-4 text-primary"
+					aria-hidden="true"
+				/>{" "}
 				{work?.href ? <span>Links</span> : <span>Link</span>}
 			</h4>
-			<div className="flex gap-2">
-				<Link
-					href={work?.github || ""}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Badge
-						variant="secondary"
-						className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
-					>
-						<GithubIcon className="text-foreground" />
-						GitHub
-					</Badge>
-				</Link>
-				{work?.href ? (
+			<div
+				className="flex gap-2"
+				aria-labelledby="links-heading"
+			>
+				<Button variant="secondary" asChild>
 					<Link
-						href={work?.href || ""}
+						href={work?.github || ""}
 						target="_blank"
 						rel="noopener noreferrer"
+						className="focus:outline-none"
+						aria-label={`View ${work?.title} source code on GitHub`}
 					>
-						<Badge
-							variant="secondary"
-							className="p-1 pr-2 rounded-2xl font-normal inline-flex gap-1 text-foreground"
-						>
-							<ArrowUpRightIcon className="text-foreground" />
-							Visit Site
-						</Badge>
+						<GithubIcon aria-hidden="true" />
+						GitHub
 					</Link>
+				</Button>
+				{work?.href ? (
+					<Button
+						variant="secondary"
+						asChild
+					>
+						<Link
+							href={work?.href || ""}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="focus:outline-none"
+							aria-label={`Visit ${work?.title} website`}
+						>
+							<ArrowUpRightIcon aria-hidden="true" />
+							Visit Site
+						</Link>
+					</Button>
 				) : null}
 			</div>
-		</motion.div>
+		</motion.section>
 	)
 }
 
