@@ -2,7 +2,7 @@
 
 import { lexend } from "@/lib/fonts"
 import React from "react"
-import AnnButton from "../announcement-btn"
+import AnnButton from "../shared/announcement-btn"
 import Image from "next/image"
 import { motion } from "motion/react"
 
@@ -40,7 +40,7 @@ const AnimatefadeIn = (delay: number = 0) => ({
 	transition: { delay, duration: 0.3, ease: "easeInOut" },
 })
 
-const OldPortfolioSection: React.FC<{}> = () => {
+const OldPortfolioSection: React.FC = () => {
 	return (
 		<div className="max-w-xl w-full mx-auto mt-16">
 			<motion.h2

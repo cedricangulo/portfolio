@@ -1,7 +1,8 @@
 type TTimeline = {
-	time: string
+	id: number
+	date: string
 	title: string
-	text?: string
+	description?: string
 }[]
 
 type TSkills = {
@@ -12,29 +13,34 @@ type TSkills = {
 
 const timeline: TTimeline = [
 	{
-		time: "2024 - Present",
+		id: 1,
+		date: "2024 - Present",
 		title: "Second Year BS Information Technology",
-		text: "Currently working with Java and C++, while deeply exploring web development as a frontend developer student.",
+		description: "Currently working with Java and C++, while deeply exploring web development as a frontend developer student.",
 	},
 	{
-		time: "2023 - 2024",
+		id: 2,
+		date: "2023 - 2024",
 		title: "First Year BS Information Technology",
-		text: "In my first semester, I covered computing, programming, and networking basics. The following semester, I explored more in web development and continued with C++ and networking, finding it more manageable due to my previous experience.",
+		description: "In my first semester, I covered computing, programming, and networking basics. The following semester, I explored more in web development and continued with C++ and networking, finding it more manageable due to my previous experience.",
 	},
 	{
-		time: "2022 - 2023",
+		id: 3,
+		date: "2022 - 2023",
 		title: "Grade 12 TVL-ICT",
-		text: "Graduated with honors from Santa Rosa National High School. Focused on ICT, emphasizing web development and programming. Grateful to Mr. Rey Laura, my major subject teacher, for his guidance.",
+		description: "Graduated with honors from Santa Rosa National High School. Focused on ICT, emphasizing web development and programming. Grateful to Mr. Rey Laura, my major subject teacher, for his guidance.",
 	},
 	{
-		time: "2021 - 2022",
+		id: 4,
+		date: "2021 - 2022",
 		title: "Grade 11 TVL-ICT",
-		text: "Studied hardware basics online at Zambales National High School despite challenges of the online setup.",
+		description: "Studied hardware basics online at Zambales National High School despite challenges of the online setup.",
 	},
 	{
-		time: "2019 - 2020",
+		id: 5,
+		date: "2019 - 2020",
 		title: "Grade 10 ICT",
-		text: "Discovered my passion for computers at Locloc National High School, sparking my interest in information technology.",
+		description: "Discovered my passion for computers at Locloc National High School, sparking my interest in information technology.",
 	},
 	// {
 	// 	time: '2022 - 2023',

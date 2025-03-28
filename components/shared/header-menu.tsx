@@ -19,7 +19,9 @@ export default function HeaderMenu({ sidebarOpen, setSidebarOpen }: INavMenu) {
 	function currentPath(isActive: boolean): string {
 		let style = "text-purple-900 hover:text-purple-800"
 
-		isActive && (style = "text-cyan-100 hover:text-purple-50")
+		if (isActive) {
+			style = "text-cyan-100 hover:text-purple-50"
+		}
 
 		return style
 	}

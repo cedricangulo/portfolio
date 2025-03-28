@@ -7,8 +7,8 @@ export function generateStaticParams() {
 	return worksMeta.map((work) => ({ id: work.id.toString() }))
 }
 
-async function worksDetails({ params }: { params: { id: string } }) {
-	const { id } = params
+async function worksDetails({ params }: { params: Promise<{ id: string }> }) {
+	const { id } = await params
 	const work = worksMeta.find((work) => work.id.toString() === id)
 
 	if (!work) notFound()

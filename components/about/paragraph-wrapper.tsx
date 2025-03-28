@@ -6,7 +6,7 @@ import { default as Hl } from "./highlight"
 
 const ParagraphWrapper: React.FC = () => {
 	return (
-		<div className="paragraph-wrapper">
+		<div className="flex flex-col gap-4 w-full lg:w-3/4">
 			<Paragraph delay={0}>
 				Finding out that websites are made with <Hl>HTML</Hl> and <Hl>CSS</Hl> got me excited about{" "}
 				web development. That made me really interested in computers and programming. Now here I am,{" "}
@@ -42,7 +42,7 @@ const Paragraph: React.FC<{ children: React.ReactNode; delay: number }> = ({ chi
 				duration: 0.3,
 				ease: "easeInOut",
 			}}
-			className="paragraph"
+			className="text-foreground text-base font-normal leading-relaxed"
 		>
 			{children}
 		</motion.p>

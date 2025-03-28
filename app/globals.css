@@ -86,6 +86,8 @@
 	--border: oklch(92.78% 0.0058 264.53);
 	--input: oklch(92.78% 0.0058 264.53);
 	--ring: oklch(66.78% 0.1801 298.39);
+	--highlight: oklch(90.23% 0.0604 306.7);
+	--highlight-foreground: oklch(43.83% 0.1983 303.73);
 }
 
 .dark {
@@ -107,6 +109,8 @@
 	--border: oklch(27.84% 0.0296 256.85);
 	--input: oklch(27.84% 0.0296 256.85);
 	--ring: oklch(67.91% 0.1555 300.31);
+	--highlight: oklch(18.22% 0.0952 303.83);
+	--highlight-foreground: oklch(76.76% 0.1497 305.4);
 }
 
 @theme inline {
@@ -132,6 +136,8 @@
 	--color-border: var(--border);
 	--color-input: var(--input);
 	--color-ring: var(--ring);
+	--color-highlight: var(--highlight);
+	--color-highlight-foreground: var(--highlight-foreground);
 }
 
 @layer base {

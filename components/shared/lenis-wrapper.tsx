@@ -7,7 +7,7 @@ const LenisWrapper: React.FC<{ children: ReactNode }> = ({ children }) => {
 	useEffect(() => {
 		const lenis = new Lenis()
 
-		function raf(time: any) {
+		function raf(time: number) {
 			lenis.raf(time)
 			requestAnimationFrame(raf)
 		}

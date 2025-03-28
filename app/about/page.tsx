@@ -3,21 +3,21 @@ import {
 	ParagraphWrapper,
 	PhotographySection,
 	Profile,
-	Timeline,
-	OldPortfolioSection,
-} from "@/components/shared/about/about-bunddle"
+	TimelineContainer,
+	// OldPortfolioSection,
+} from "@/components/about"
 
 export default function AboutPage() {
 	return (
 		<>
-			<div className="main-container">
+			<div className="w-full mx-auto md:py-0 my-16 lg:my-4 flex items-center justify-center gap-16 flex-col-reverse lg:flex-row">
 				<ParagraphWrapper />
 				<Profile />
 			</div>
 			<PhotographySection />
 			<TechStack />
-			<Timeline />
-			<OldPortfolioSection />
+			<TimelineContainer />
+			{/* <OldPortfolioSection /> */}
 		</>
 	)
 }

@@ -1,6 +1,6 @@
 import Highlight from "./highlight"
 import TechStack from "./tech-stack"
-import Timeline from "./timeline"
+import TimelineContainer from "./timeline"
 import ParagraphWrapper from "./paragraph-wrapper"
 import Profile from "./profile"
 import PhotographySection from "./photography-section"
@@ -12,6 +12,6 @@ export {
 	PhotographySection,
 	Highlight,
 	TechStack,
-	Timeline,
+	TimelineContainer,
 	OldPortfolioSection,
 }
