@@ -1,13 +1,13 @@
 "use client"
 
 import Link from "next/link"
-
 import { motion } from "motion/react"
-
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { YearBadge } from "@/components/home"
 import { Mail } from "lucide-react"
+import { lexend } from "@/lib/fonts"
+import { MailIcon } from "@/public/icons"
 
 const getMotionProps = (delay: number = 0) => ({
 	initial: { opacity: 0, y: -20, filter: "blur(2px)" },
@@ -18,18 +18,25 @@ const getMotionProps = (delay: number = 0) => ({
 
 export const Contents = () => {
 	return (
-		<div className="h-screen flex mx-0 sm:mx-auto">
+		<section
+			className="h-screen flex mx-0 sm:mx-auto"
+			aria-label="Home"
+		>
 			<div className="w-full flex sm:items-center justify-center flex-col gap-2">
 				<motion.p
 					{...getMotionProps(0)}
-					className={cn("font-lexend text-xl sm:text-2xl md:text-3xl text-foreground font-medium")}
+					className={cn(
+						"font-lexend text-xl sm:text-2xl md:text-3xl text-foreground font-medium",
+						lexend.className
+					)}
 				>
-					Hi, I’m <span className="text-primary">Cedric Angulo</span>
+					Hi, I&apos;m <span className="text-primary">Cedric Angulo</span>
 				</motion.p>
 				<motion.h1
 					{...getMotionProps(0.15)}
 					className={cn(
-						"font-lexend text-foreground font-extrabold tracking-tight leading-none text-5xl sm:text-6xl md:text-8xl"
+						"text-foreground font-extrabold tracking-tight leading-none text-5xl sm:text-6xl md:text-8xl",
+						lexend.className
 					)}
 				>
 					<span className="text-primary">BSIT</span>{" "}
@@ -49,6 +56,8 @@ export const Contents = () => {
 						href="https://neust.edu.ph"
 						target="_blank"
 						className="text-primary hover:text-primary/80 hover:underline underline-offset-2 font-semibold focus:outline-ring"
+						aria-label="NEUST - Nueva Ecija University of Science and Technology"
+						rel="noopener noreferrer"
 					>
 						NEUST
 					</Link>
@@ -56,7 +65,45 @@ export const Contents = () => {
 				</motion.p>
 				<motion.div
 					{...getMotionProps(0.45)}
-					className="inline-flex gap-3 mt-2"
+					className="hidden md:inline-flex gap-3 mt-2"
+					role="navigation"
+					aria-label="Main actions"
+				>
+					<Button
+						variant="secondary"
+						size={"lg"}
+						asChild
+					>
+						<Link
+							href="mailto:cdrcangulo@gmail.com"
+							target="_blank"
+							aria-label="Email me at cdrcangulo@gmail.com"
+							rel="noopener noreferrer"
+						>
+							<Mail
+								className="size-5"
+								aria-hidden="true"
+							/>
+							<span>cdrcangulo@gmail.com</span>
+						</Link>
+					</Button>
+					<Button
+						size={"lg"}
+						asChild
+					>
+						<Link
+							href="/works"
+							aria-label="View my works"
+						>
+							Works
+						</Link>
+					</Button>
+				</motion.div>
+				<motion.div
+					{...getMotionProps(0.45)}
+					className="md:hidden inline-flex gap-3 mt-2"
+					role="navigation"
+					aria-label="Main actions"
 				>
 					<Button
 						variant="secondary"
@@ -65,19 +112,23 @@ export const Contents = () => {
 						<Link
 							href="mailto:cdrcangulo@gmail.com"
 							target="_blank"
+							aria-label="Email me at cdrcangulo@gmail.com"
+							rel="noopener noreferrer"
 						>
-							<Mail className="size-5" />
+							<MailIcon className="text-foreground size-5" />
 							<span>cdrcangulo@gmail.com</span>
 						</Link>
 					</Button>
-					<Button
-						// className="text-white"
-						asChild
-					>
-						<Link href="/works">Works</Link>
+					<Button asChild>
+						<Link
+							href="/works"
+							aria-label="View my works"
+						>
+							Works
+						</Link>
 					</Button>
 				</motion.div>
 			</div>
-		</div>
+		</section>
 	)
 }

@@ -27,35 +27,7 @@
 	transition: all 600ms cubic-bezier(0.76, 0, 0.24, 1);
 } */
 
-@font-face {
-	font-family: "Lexend", sans-serif;
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/public/fonts/Lexend.ttf") format("ttf");
-}
-
-@font-face {
-	font-family: "Geist", sans-serif;
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/public/fonts/Geist.ttf") format("ttf");
-}
-
-@font-face {
-	font-family: "Geist Mono", sans-serif;
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/public/fonts/GeistMono.ttf") format("ttf");
-}
-
 @theme {
-	--font-geist: "Geist", sans-serif;
-	--font-geist-mono: "Geist Mono", monospace;
-	--font-lexend: "Lexend", sans-serif;
-
 	--animate-skeleton: skeleton 2s cubic-bezier(0.4, 0, 0.6, 1) var(--pulse-delay, 0) infinite;
 	--animate-fadeIn: fadeIn 1s ease var(--fadeIn-delay, 0) forwards;
 	--animate-slideIn: slideIn 1s ease var(--slideIn-delay, 0) forwards;
