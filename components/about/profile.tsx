@@ -18,8 +18,8 @@ const Profile = () => {
 				containerWidth="300px"
 				imageHeight="300px"
 				imageWidth="300px"
-				rotateAmplitude={12}
-				scaleOnHover={1.2}
+				rotateAmplitude={20}
+				scaleOnHover={1.1}
 				showMobileWarning={false}
 				showTooltip={false}
 				displayOverlayContent={true}
