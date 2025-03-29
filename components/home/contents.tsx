@@ -50,7 +50,7 @@ export const Contents = () => {
 						"sm:text-center leading-relaxed"
 					)}
 				>
-					Aspiring web developer and a second year student at{" "}
+					Aspiring Frontend Developer and a student at{" "}
 					<Link
 						href="https://neust.edu.ph"
 						target="_blank"
