@@ -2,9 +2,9 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import Logo from "./logo"
-import { Button } from "../ui/button"
+import { Button } from "../../ui/button"
 import { cn } from "@/lib/utils"
 import { ModeToggle } from "./mode-toggle"
 import HeaderMenu, { navLinks } from "./header-menu"
@@ -13,6 +13,7 @@ import { AnimatePresence } from "motion/react"
 export default function Header() {
 	const pathname = usePathname()
 	const [sidebarOpen, setSidebarOpen] = useState(false)
+	const menuButtonRef = useRef<HTMLButtonElement>(null)
 
 	const toggleSidebar = () => {
 		setSidebarOpen(!sidebarOpen)
@@ -23,14 +24,24 @@ export default function Header() {
 
 		d.body.style.overflow = sidebarOpen ? "hidden" : ""
 
+		// Handle ESC key to close the sidebar
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === "Escape" && sidebarOpen) {
+				setSidebarOpen(false)
+				menuButtonRef.current?.focus()
+			}
+		}
+
+		window.addEventListener("keydown", handleKeyDown)
+
 		return () => {
 			d.body.style.overflow = ""
+			window.removeEventListener("keydown", handleKeyDown)
 		}
 	}, [sidebarOpen])
 
 	return (
 		<header
-			role="header"
 			className={cn(
 				"fixed top-0 py-0 z-40",
 				"w-full min-h-16",
@@ -39,13 +50,14 @@ export default function Header() {
 			)}
 		>
 			<nav
-				role="navigation"
+				aria-label="Main navigation"
 				className="relative flex flex-wrap items-center justify-between max-w-[62.5rem] w-full px-4 py-4 lg:px-0 md:py-6"
 			>
 				<Link
 					href="/"
 					className="flex items-center space-x-3 rtl:space-x-reverse hover:scale-[1.05] active:scale-[.95] transition-all z-50"
 					onClick={() => setSidebarOpen(false)}
+					aria-label="Home page"
 				>
 					<Logo
 						state={sidebarOpen}
@@ -53,10 +65,12 @@ export default function Header() {
 					/>
 				</Link>
 				<Button
+					ref={menuButtonRef}
 					variant="link"
 					onClick={toggleSidebar}
-					aria-label="open menu"
-					aria-expanded={sidebarOpen ? "true" : "false"}
+					aria-label={sidebarOpen ? "Close menu" : "Open menu"}
+					aria-expanded={sidebarOpen}
+					aria-controls="mobile-menu"
 					className="md:hidden flex items-center justify-center m-0 p-0 border-none h-9 w-9 rounded-md cursor-pointer bg-transparent z-10"
 				>
 					<div
@@ -80,29 +94,32 @@ export default function Header() {
 					)}
 				</AnimatePresence>
 
-				<ul className="hidden md:flex items-center justify-around md:space-x-8 md:border-0 md:bg-transparent">
+				<ul
+					className="hidden md:flex items-center justify-around md:space-x-4 md:border-0 md:bg-transparent"
+					aria-label="Desktop navigation"
+				>
 					{navLinks.map((data, index) => {
 						const isActive =
 							pathname === data.href || (data.href === "/works" && pathname.startsWith("/works"))
-						let style =
-							"text-zinc-500 dark:text-zinc-300 hover:text-primary/80 dark:hover:text-primary/90"
-						if (isActive) {
-							style = "text-primary hover:text-primary/80"
-						}
+						const activeClass = isActive ? "text-highlight-foreground bg-highlight" : ""
 						return (
 							<li
 								key={index}
 								className="w-full md:w-auto"
 							>
-								<Link
-									href={data.href}
-									onClick={() => setSidebarOpen(false)}
-									className={`md:inline uppercase text-6xl md:text-sm font-medium rounded-lg md:rounded-none py-2 px-3 md:p-0 transition-all
-										${style}
-									`}
+								<Button
+									variant="ghost"
+									asChild
 								>
-									{data.title}
-								</Link>
+									<Link
+										href={data.href}
+										onClick={() => setSidebarOpen(false)}
+										className={`md:inline uppercase text-6xl md:text-sm font-medium rounded-lg ${activeClass}`}
+										aria-current={isActive ? "page" : undefined}
+									>
+										{data.title}
+									</Link>
+								</Button>
 							</li>
 						)
 					})}

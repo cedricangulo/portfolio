@@ -15,7 +15,7 @@ type CardProps = {
 export const Card: React.FC<CardProps> = ({ src, title, text, index }) => {
 	return (
 		<motion.div
-			initial={{ opacity: 0, filter: "blur(8px)" }}
+			initial={{ opacity: 0, filter: "blur(4px)" }}
 			animate={{ opacity: 1, filter: "blur(0)" }}
 			viewport={{ amount: 0.5, once: false }}
 			transition={{

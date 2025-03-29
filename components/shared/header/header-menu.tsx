@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { ModeToggle } from "./mode-toggle"
 import Curve from "./curve"
 import NavLink from "./nav-links"
-import { INavMenu } from "./interface/nav"
+import { INavMenu } from "../interface/nav"
 import { menuSlide } from "./anim"
 
 export const navLinks = [

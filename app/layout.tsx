@@ -1,7 +1,7 @@
 import "./globals.css"
 import type { Metadata } from "next"
 
-import Header from "@/components/shared/header"
+import Header from "@/components/shared/header/header"
 import Providers from "@/components/shared/theme-provider"
 import Footer from "@/components/shared/footer"
 import LenisWrapper from "@/components/shared/lenis-wrapper"
