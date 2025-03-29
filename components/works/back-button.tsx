@@ -8,7 +8,7 @@ import { getMotionProps } from "."
 const BackButton = () => {
 	return (
 		<motion.nav
-			{...getMotionProps(0.3, 0)}
+			{...getMotionProps(0)}
 			className="group my-8 w-fit mx-auto md:mx-0"
 		>
 			<Link
@@ -16,10 +16,7 @@ const BackButton = () => {
 				className="text-foreground inline-flex gap-1 group-hover:text-primary hover:gap-0 text-lg items-center italic transition-all"
 				aria-label="Back to works"
 			>
-				<ArrowLeftIcon
-					strokeWidth={1.5}
-					className="text-foreground size-6 align-middle group-hover:text-primary"
-				/>
+				<ArrowLeftIcon className="text-foreground size-6 align-middle group-hover:text-primary" />
 				Back
 			</Link>
 		</motion.nav>

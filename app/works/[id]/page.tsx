@@ -14,13 +14,13 @@ async function worksDetails({ params }: { params: Promise<{ id: string }> }) {
 	if (!work) notFound()
 
 	return (
-		<div className="my-0 mx-auto min-h-screen w-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 justify-center">
+		<div className="my-0 mx-auto min-h-screen w-full grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-12 justify-center">
 			<div className="mx-auto">
 				<ProjectTitle>{work?.title}</ProjectTitle>
 				{work?.paragraphs.map((paragraph, index) => (
 					<Paragraph
 						key={index}
-						delay={(index + 1) * 0.15}
+						delay={(index + 2) * 0.15}
 					>
 						{paragraph}
 					</Paragraph>

@@ -7,7 +7,7 @@ import { getMotionProps } from "."
 const ProjectTitle = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<motion.h2
-			{...getMotionProps()}
+			{...getMotionProps(0.15)}
 			className={`${lexend.className} text-left text-3xl mb-8 font-medium text-foreground`}
 		>
 			{children}

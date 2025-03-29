@@ -41,8 +41,8 @@ interface WorkDetails {
 const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 	return (
 		<motion.section
-			{...getMotionProps(0.3, 0.8)}
-			className="rounded-lg mt-16 p-4 bg-card shadow-black/10 shadow-md border-2 border-border transition-all"
+			{...getMotionProps(0.6)}
+			className="mt-24 transition-all"
 			aria-labelledby="project-details-title"
 		>
 			<h3
@@ -53,7 +53,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 			</h3>
 			<h4
 				id="colors-fonts-heading"
-				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mb-2 tracking-tight"
 			>
 				<PaintBoardIcon
 					className="size-4 text-primary"
@@ -61,11 +61,8 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				/>
 				<span>Colors & Fonts</span>
 			</h4>
-			<div
-				className="flex flex-col gap-4"
-				aria-labelledby="colors-fonts-heading"
-			>
-				<div className="flex flex-nowrap w-full">
+			<div aria-labelledby="colors-fonts-heading">
+				<div className="flex flex-nowrap w-full mb-4">
 					{work?.colorScheme.map((color, index) => (
 						<ColorScheme
 							key={index}
@@ -90,7 +87,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				<>
 					<h4
 						id="contributors-heading"
-						className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 tracking-tight mt-8"
+						className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mb-2 tracking-tight mt-16"
 					>
 						<GitMergeIcon
 							className="size-5 text-primary"
@@ -134,7 +131,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 			)}
 			<h4
 				id="languages-heading"
-				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mt-8 tracking-tight"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mt-16 tracking-tight"
 			>
 				<SourceCodeIcon
 					className="size-5 text-primary"
@@ -142,7 +139,10 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				/>
 				<span>Language Used</span>
 			</h4>
-			<div className="w-full sm:w-3/4" aria-labelledby="languages-heading">
+			<div
+				className="w-full sm:w-3/4"
+				aria-labelledby="languages-heading"
+			>
 				{work?.id === 1 || work?.id === 5 ? (
 					<BranchTab workId={work.id} />
 				) : (
@@ -151,7 +151,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 			</div>
 			<h4
 				id="links-heading"
-				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-muted-foreground mb-2 mt-8 tracking-tight"
+				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mb-2 mt-16 tracking-tight"
 			>
 				<LinkIcon
 					className="size-4 text-primary"
