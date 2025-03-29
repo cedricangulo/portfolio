@@ -2,18 +2,12 @@
 
 import { motion } from "motion/react"
 import TiltedCard from "./tilted-card"
+import { AnimateFadeIn } from "."
 
 const Profile = () => {
 	return (
 		<motion.div
-			initial={{ opacity: 0, filter: "blur(4px)" }}
-			whileInView={{ opacity: 1, filter: "blur(0)" }}
-			viewport={{ amount: 0.5, once: false }}
-			transition={{
-				delay: 0.5,
-				duration: 0.3,
-				ease: "easeIn",
-			}}
+			{...AnimateFadeIn(0.45)}
 			className="lg:w-1/4 flex justify-center items-center xl:mb-0"
 		>
 			<TiltedCard

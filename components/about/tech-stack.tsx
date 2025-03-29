@@ -6,13 +6,7 @@ import { cn } from "@/lib/utils"
 
 import { motion } from "motion/react"
 import { lexend } from "@/lib/fonts"
-
-const AnimatefadeIn = (delay: number) => ({
-	initial: { opacity: 0, filter: "blur(4px)" },
-	whileInView: { opacity: 1, filter: "blur(0)" },
-	viewport: { amount: 0.5, once: false },
-	transition: { delay, duration: 0.3, ease: "easeInOut" },
-})
+import { AnimateFadeIn } from "."
 
 const TechStack: React.FC = () => {
 	return (
@@ -22,7 +16,7 @@ const TechStack: React.FC = () => {
 		>
 			<motion.h2
 				id="tech-stack-heading"
-				{...AnimatefadeIn(0)}
+				{...AnimateFadeIn()}
 				className={`${lexend.className} text-3xl font-medium text-foreground`}
 			>
 				Tech Stack
@@ -32,7 +26,7 @@ const TechStack: React.FC = () => {
 					return (
 						<motion.li
 							key={index}
-							{...AnimatefadeIn(0.1 * index)}
+							{...AnimateFadeIn(0.05 * index)}
 						>
 							<Badge
 								variant="secondary"

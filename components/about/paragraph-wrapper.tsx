@@ -3,6 +3,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { default as Hl } from "./highlight"
+import { AnimateFadeIn } from "."
 
 const ParagraphWrapper: React.FC = () => {
 	return (
@@ -12,7 +13,7 @@ const ParagraphWrapper: React.FC = () => {
 				web development. That made me really interested in computers and programming. Now here I am,{" "}
 				<Hl>20</Hl> years old and pursuing my dreams as a second year BSIT student.
 			</Paragraph>
-			<Paragraph delay={0.2}>
+			<Paragraph delay={0.15}>
 				Currently at <Hl>NEUST</Hl>, I’m diving deep into web development, Java, and UI/UX Design. I
 				see myself mainly as a <Hl>frontend developer</Hl>, but I want to be versatile and work well
 				in a team. Soon, I plan to learn Laravel to build <Hl>full-stack applications</Hl> on my
@@ -34,14 +35,7 @@ export default ParagraphWrapper
 const Paragraph: React.FC<{ children: React.ReactNode; delay: number }> = ({ children, delay }) => {
 	return (
 		<motion.p
-			initial={{ opacity: 0, filter: "blur(4px)" }}
-			whileInView={{ opacity: 1, filter: "blur(0)" }}
-			viewport={{ amount: 0.5, once: false }}
-			transition={{
-				delay: delay,
-				duration: 0.3,
-				ease: "easeInOut",
-			}}
+			{...AnimateFadeIn(delay)}
 			className="text-foreground text-base font-normal leading-relaxed"
 		>
 			{children}

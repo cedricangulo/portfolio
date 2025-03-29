@@ -14,24 +14,18 @@ import {
 	TimelineSeparator,
 	TimelineTitle,
 } from "@/components/ui/timeline"
-
-const AnimatefadeIn = (delay: number = 0) => ({
-	initial: { opacity: 0, filter: "blur(4px)" },
-	whileInView: { opacity: 1, filter: "blur(0)" },
-	viewport: { amount: 0.5, once: false },
-	transition: { delay, duration: 0.3, ease: "easeInOut" },
-})
+import { AnimateFadeIn } from "."
 
 const TimelineContainer: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-4 max-w-xl w-full mx-auto mt-16">
 			<motion.h2
-				{...AnimatefadeIn()}
+				{...AnimateFadeIn()}
 				className={`${lexend.className} text-center text-3xl font-medium text-foreground`}
 			>
 				Education
 			</motion.h2>
-			<motion.div {...AnimatefadeIn(0.25)}>
+			<motion.div {...AnimateFadeIn(0.15)}>
 				<Timeline defaultValue={5}>
 					{timeline.map((item) => (
 						<TimelineItem

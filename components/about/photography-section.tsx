@@ -4,18 +4,10 @@ import { lexend } from "@/lib/fonts"
 import Link from "next/link"
 import React from "react"
 import Carousell from "./carousel-img"
-import { motion, useReducedMotion } from "motion/react"
-
-const AnimateFadeIn = (delay: number, prefersReducedMotion: boolean | null) => ({
-	initial: prefersReducedMotion ? { opacity: 1 } : { opacity: 0, filter: "blur(4px)" },
-	whileInView: { opacity: 1, filter: "blur(0)" },
-	viewport: { amount: 0.5, once: true },
-	transition: prefersReducedMotion ? { duration: 0 } : { delay, duration: 0.3, ease: "easeIn" },
-})
+import { motion } from "motion/react"
+import { AnimateFadeIn } from "."
 
 const PhotographySection: React.FC = () => {
-	const prefersReducedMotion = useReducedMotion()
-
 	return (
 		<section
 			className="flex flex-col md:flex-row gap-16 w-full mx-auto py-20 my-36"
@@ -24,13 +16,13 @@ const PhotographySection: React.FC = () => {
 			<div className="w-full md:w-1/2">
 				<motion.h2
 					id="photography-heading"
-					{...AnimateFadeIn(0.5, prefersReducedMotion)}
+					{...AnimateFadeIn(0.15)}
 					className={`${lexend.className} text-3xl font-medium text-center md:text-left text-foreground mb-4`}
 				>
 					My Photography Journey
 				</motion.h2>
 				<motion.p
-					{...AnimateFadeIn(0.75, prefersReducedMotion)}
+					{...AnimateFadeIn(0.3)}
 					className="text-foreground text-base font-normal leading-relaxed"
 				>
 					I tried photography using just my phone in year 2022. At that time, I was living in
@@ -50,7 +42,7 @@ const PhotographySection: React.FC = () => {
 				</motion.p>
 			</div>
 			<motion.div
-				{...AnimateFadeIn(1, prefersReducedMotion)}
+				{...AnimateFadeIn(0.45)}
 				className="max-w-xl mx-auto mt-16 w-full md:w-1/2"
 				aria-label="Photography portfolio carousel"
 			>
