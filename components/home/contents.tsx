@@ -5,7 +5,6 @@ import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { YearBadge } from "@/components/home"
-import { Mail } from "lucide-react"
 import { lexend } from "@/lib/fonts"
 import { MailIcon } from "@/public/icons"
 
@@ -13,7 +12,7 @@ const getMotionProps = (delay: number = 0) => ({
 	initial: { opacity: 0, y: -20, filter: "blur(2px)" },
 	animate: { opacity: 1, y: 0, filter: "0" },
 	viewport: { once: true, amount: 0.5 },
-	transition: { type: "spring", damping: 15, stiffness: 100, duration: 1, delay },
+	transition: { type: "spring", damping: 15, stiffness: 100, duration: 0.3, delay },
 })
 
 export const Contents = () => {
@@ -65,7 +64,7 @@ export const Contents = () => {
 				</motion.p>
 				<motion.div
 					{...getMotionProps(0.45)}
-					className="hidden md:inline-flex gap-3 mt-2"
+					className="inline-flex gap-3 mt-2"
 					role="navigation"
 					aria-label="Main actions"
 				>
@@ -80,7 +79,7 @@ export const Contents = () => {
 							aria-label="Email me at cdrcangulo@gmail.com"
 							rel="noopener noreferrer"
 						>
-							<Mail
+							<MailIcon
 								className="size-5"
 								aria-hidden="true"
 							/>
@@ -91,35 +90,6 @@ export const Contents = () => {
 						size={"lg"}
 						asChild
 					>
-						<Link
-							href="/works"
-							aria-label="View my works"
-						>
-							Works
-						</Link>
-					</Button>
-				</motion.div>
-				<motion.div
-					{...getMotionProps(0.45)}
-					className="md:hidden inline-flex gap-3 mt-2"
-					role="navigation"
-					aria-label="Main actions"
-				>
-					<Button
-						variant="secondary"
-						asChild
-					>
-						<Link
-							href="mailto:cdrcangulo@gmail.com"
-							target="_blank"
-							aria-label="Email me at cdrcangulo@gmail.com"
-							rel="noopener noreferrer"
-						>
-							<MailIcon className="text-foreground size-5" />
-							<span>cdrcangulo@gmail.com</span>
-						</Link>
-					</Button>
-					<Button asChild>
 						<Link
 							href="/works"
 							aria-label="View my works"

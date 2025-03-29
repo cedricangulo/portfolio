@@ -41,7 +41,7 @@ interface WorkDetails {
 const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 	return (
 		<motion.section
-			{...getMotionProps(0.3, 0.8)}
+			{...getMotionProps(0.6)}
 			className="rounded-lg mt-16 p-4 bg-card shadow-black/10 shadow-md border-2 border-border transition-all"
 			aria-labelledby="project-details-title"
 		>

@@ -30,7 +30,7 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
 
 	return (
 		<motion.div
-			{...getMotionProps(0.3, 1)}
+			{...getMotionProps(0.6)}
 			className="w-full"
 		>
 			{(showAllImages ? work.images : work.images.slice(0, 2)).map((image, index) => (

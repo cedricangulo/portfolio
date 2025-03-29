@@ -20,7 +20,7 @@ async function worksDetails({ params }: { params: Promise<{ id: string }> }) {
 				{work?.paragraphs.map((paragraph, index) => (
 					<Paragraph
 						key={index}
-						delay={(index + 1) * 0.15}
+						delay={(index + 2) * 0.15}
 					>
 						{paragraph}
 					</Paragraph>
