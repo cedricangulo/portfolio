@@ -33,7 +33,7 @@ export default function TiltedCard({
 	imageHeight = "300px",
 	imageWidth = "300px",
 	scaleOnHover = 1.1,
-	rotateAmplitude = 14,
+	rotateAmplitude = 30,
 	showMobileWarning = true,
 	showTooltip = true,
 	overlayContent = null,
@@ -119,7 +119,7 @@ export default function TiltedCard({
 				<motion.img
 					src={imageSrc}
 					alt={altText}
-					className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
+					className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)] border border-border hover:border-primary rounded-xl p-1 shadow-sm transition-colors duration-300"
 					style={{
 						width: imageWidth,
 						height: imageHeight,
