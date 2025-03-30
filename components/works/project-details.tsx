@@ -59,7 +59,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 					className="size-4 text-primary"
 					aria-hidden="true"
 				/>
-				<span>Colors & Fonts</span>
+				<span>Colors & Typefaces</span>
 			</h4>
 			<div aria-labelledby="colors-fonts-heading">
 				<div className="flex flex-nowrap w-full mb-4">
