@@ -1,12 +1,10 @@
 "use client"
 
-import { motion } from "motion/react"
-import Image from "next/image"
-import Link from "next/link"
 import React from "react"
+import Link from "next/link"
+import { motion } from "motion/react"
 
-import { Badge } from "@/components/ui/badge"
-import { Button } from "../ui/button"
+import { getMotionProps } from "."
 import {
 	ArrowUpRightIcon,
 	GithubIcon,
@@ -16,7 +14,9 @@ import {
 	SourceCodeIcon,
 } from "@/public/icons"
 
-import { getMotionProps } from "."
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
+import { Button } from "../ui/button"
+import { AvatarGroup, AvatarGroupTooltip } from "../animate-ui/avatar-group"
 import BranchTab from "./branch-tab"
 import ColorScheme from "./color-scheme"
 import LangList from "./lang-list"
@@ -24,7 +24,7 @@ import LangList from "./lang-list"
 interface WorkDetails {
 	id: number
 	title: string
-	contributors?: { name: string; link: string; avatar: string }[]
+	contributors?: { name: string; link: string; avatar: string; fallback: string }[]
 	paragraphs: string[]
 	fontFamily: { fonts: { className: string }; text: string }[]
 	colorScheme: { content: string; color: string; textColor: number }[]
@@ -95,7 +95,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 						/>
 						<span>Contributors</span>
 					</h4>
-					<div
+					<AvatarGroup
 						className="flex flex-wrap gap-2"
 						aria-labelledby="contributors-heading"
 					>
@@ -108,25 +108,20 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 									className="w-fit focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
 									aria-label={`${contributor.name}'s profile`}
 								>
-									<Badge
-										variant="secondary"
-										className="p-1 pr-2 rounded-2xl font-normal text-foreground inline-flex gap-2 w-full"
+									<Avatar
+										key={index}
+										className="size-12 border-3 border-background cursor-pointer"
 									>
-										<Image
-											src={contributor.avatar}
-											alt=""
-											width={20}
-											height={20}
-											quality={100}
-											className="rounded-full h-5 w-5"
-											aria-hidden="true"
-										/>
-										{contributor.name}
-									</Badge>
+										<AvatarImage src={contributor.avatar} />
+										<AvatarFallback>{contributor.name}</AvatarFallback>
+										<AvatarGroupTooltip>
+											<p>{contributor.name}</p>
+										</AvatarGroupTooltip>
+									</Avatar>
 								</Link>
 							</React.Fragment>
 						))}
-					</div>
+					</AvatarGroup>
 				</>
 			)}
 			<h4

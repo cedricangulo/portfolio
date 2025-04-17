@@ -2,7 +2,13 @@
 
 import AnnButton from "../shared/announcement-btn"
 import LangList from "./lang-list"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+	Tabs,
+	TabsContent,
+	TabsContents,
+	TabsList,
+	TabsTrigger,
+} from "@/components/animate-ui/tabs"
 
 const tabsData = [
 	{
@@ -75,7 +81,7 @@ const tabsData = [
 					bg: "bg-[#3178c6]",
 					fill: "fill-[#3178c6]",
 				},
-				langWidth: 93.9,
+				langWidth: 95.0,
 			},
 			{
 				langName: "JavaScript",
@@ -83,7 +89,7 @@ const tabsData = [
 					bg: "bg-[#f7df1e]",
 					fill: "fill-[#f7df1e]",
 				},
-				langWidth: 3.1,
+				langWidth: 2.4,
 			},
 			{
 				langName: "CSS",
@@ -91,7 +97,7 @@ const tabsData = [
 					bg: "bg-[#1572b6]",
 					fill: "fill-[#1572b6]",
 				},
-				langWidth: 2.6,
+				langWidth: 2.3,
 			},
 			{
 				langName: "HTML",
@@ -99,7 +105,7 @@ const tabsData = [
 					bg: "bg-[#e34f26]",
 					fill: "fill-[#e34f26]",
 				},
-				langWidth: 0.4,
+				langWidth: 0.3,
 			},
 		],
 	},
@@ -113,7 +119,7 @@ const tabsData = [
 					bg: "bg-[#3776AB]",
 					fill: "fill-[#3776AB]",
 				},
-				langWidth: 97.8,
+				langWidth: 99.0,
 			},
 			{
 				langName: "Dockerfile",
@@ -121,7 +127,7 @@ const tabsData = [
 					bg: "bg-[#2496ED]",
 					fill: "fill-[#2496ED]",
 				},
-				langWidth: 2.2,
+				langWidth: 1.0,
 			},
 		],
 	},
@@ -145,25 +151,27 @@ const BranchTab = ({ workId }: { workId: number }) => {
 					</TabsTrigger>
 				))}
 			</TabsList>
-			{filteredTabsData.map((tab) => (
-				<TabsContent
-					key={tab.value}
-					value={tab.value}
-				>
-					{tab.announcement && (
-						<AnnButton
-							className="my-4 block"
-							href={tab.announcement.href}
-							icon={tab.announcement.icon}
-							text={tab.announcement.text}
-							from={tab.announcement.from}
-							via={tab.announcement.via}
-							to={tab.announcement.to}
-						/>
-					)}
-					<LangList lang={tab.lang} />
-				</TabsContent>
-			))}
+			<TabsContents className="mx-1 mb-1 -mt-2 rounded-sm h-full bg-background">
+				{filteredTabsData.map((tab) => (
+					<TabsContent
+						key={tab.value}
+						value={tab.value}
+					>
+						{tab.announcement && (
+							<AnnButton
+								className="my-4 block"
+								href={tab.announcement.href}
+								icon={tab.announcement.icon}
+								text={tab.announcement.text}
+								from={tab.announcement.from}
+								via={tab.announcement.via}
+								to={tab.announcement.to}
+							/>
+						)}
+						<LangList lang={tab.lang} />
+					</TabsContent>
+				))}
+			</TabsContents>
 		</Tabs>
 	)
 }

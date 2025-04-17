@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { IColorScheme } from "../shared/interface/color-scheme"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/animate-ui/tooltip"
 import { CheckIcon, CopyIcon } from "@/public/icons"
 
 export default function ColorScheme({ content, color, textColor }: IColorScheme) {
@@ -46,7 +46,7 @@ export default function ColorScheme({ content, color, textColor }: IColorScheme)
 	return (
 		<TooltipProvider>
 			<Tooltip>
-				<TooltipTrigger asChild>
+				<TooltipTrigger>
 					<div
 						onClick={handleCopy}
 						className={`${color} flex items-center justify-center relative h-8 w-full cursor-pointer group`}
@@ -54,7 +54,7 @@ export default function ColorScheme({ content, color, textColor }: IColorScheme)
 						{copied ? <CheckIcon colorScheme={textColor} /> : <CopyIcon colorScheme={textColor} />}
 					</div>
 				</TooltipTrigger>
-				<TooltipContent className="uppercase rounded-md px-2">{content}</TooltipContent>
+				<TooltipContent>{content}</TooltipContent>
 			</Tooltip>
 		</TooltipProvider>
 	)
