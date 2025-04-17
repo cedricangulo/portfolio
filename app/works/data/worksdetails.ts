@@ -32,16 +32,19 @@ export const worksMeta = [
 				avatar: "https://avatars.githubusercontent.com/u/142586349?v=4",
 				name: "Aldwin Sarte",
 				link: "https://github.com/AldJayR",
+				fallback: "AS"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/141980423?v=4",
 				name: "Leon Laborina",
 				link: "https://github.com/leonlaborina15",
+				fallback: "LL"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
 				link: "https://github.com/bryan308",
+				fallback: "CA"
 			},
 		],
 		images: [
@@ -78,11 +81,13 @@ export const worksMeta = [
 				avatar: "https://avatars.githubusercontent.com/u/124354621?v=4",
 				name: "Rainiel Sevilla",
 				link: "https://github.com/CallMeSevilla",
+				fallback: "RS"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
 				link: "https://github.com/bryan308",
+				fallback: "CA"
 			},
 		],
 		langs: [
@@ -92,7 +97,7 @@ export const worksMeta = [
 					bg: "bg-[#f7df1e]",
 					fill: "fill-[#f7df1e]",
 				},
-				langWidth: 91.6,
+				langWidth: 96.5,
 			},
 			{
 				langName: "CSS",
@@ -100,7 +105,7 @@ export const worksMeta = [
 					bg: "bg-[#1572b6]",
 					fill: "fill-[#1572b6]",
 				},
-				langWidth: 3.9,
+				langWidth: 3.5,
 			},
 		],
 		images: [
@@ -155,7 +160,7 @@ export const worksMeta = [
 					bg: "bg-[#fcb32c]",
 					fill: "fill-[#fcb32c]",
 				},
-				langWidth: 61.3,
+				langWidth: 66.1,
 			},
 			{
 				langName: "TypeScript",
@@ -163,15 +168,23 @@ export const worksMeta = [
 					bg: "bg-[#3178c6]",
 					fill: "fill-[#3178c6]",
 				},
-				langWidth: 37,
+				langWidth: 30.3,
 			},
 			{
-				langName: "Other",
+				langName: "CSS",
 				langColor: {
-					bg: "dark:bg-white bg-black",
-					fill: "dark:fill-white fill-black",
+					bg: "bg-[#1572b6]",
+					fill: "fill-[#1572b6]",
 				},
-				langWidth: 1.7,
+				langWidth: 3.5,
+			},
+			{
+				langName: "JavaScript",
+				langColor: {
+					bg: "bg-[#f7df1e]",
+					fill: "fill-[#f7df1e]",
+				},
+				langWidth: 0.1,
 			},
 		],
 		images: [
@@ -346,11 +359,13 @@ export const worksMeta = [
 				avatar: "https://avatars.githubusercontent.com/u/147966338?v=4",
 				name: "AJ Capule",
 				link: "https://github.com/Ryudd07",
+				fallback: "AC"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
 				link: "https://github.com/bryan308",
+				fallback: "CA"
 			},
 		],
 		langs: [
@@ -422,11 +437,13 @@ export const worksMeta = [
 				avatar: "https://avatars.githubusercontent.com/u/131877672?v=4",
 				name: "Clent John Caseria",
 				link: "https://github.com/Clxntyyy",
+				fallback: "CC"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
 				link: "https://github.com/bryan308",
+				fallback: "CA"
 			},
 		],
 		langs: [
@@ -495,26 +512,31 @@ export const worksMeta = [
 				avatar: "https://avatars.githubusercontent.com/u/122410398?v=4",
 				name: "Winston Francisco",
 				link: "https://github.com/n0tsniW",
+				fallback: "WF"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/121382059?v=4",
 				name: "Raphael Aguirre",
 				link: "https://github.com/annonycrom",
+				fallback: "RA"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/124354621?v=4",
 				name: "Rainiel Sevilla",
 				link: "https://github.com/CallMeSevilla",
+				fallback: "RS"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/134666037?v=4",
 				name: "Andrei Ferrer",
 				link: "https://github.com/AndreiFerrer",
+				fallback: "AF"
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
 				link: "https://github.com/bryan308",
+				fallback: "CA"
 			},
 		],
 		langs: [
