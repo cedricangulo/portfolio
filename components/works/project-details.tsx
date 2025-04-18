@@ -106,14 +106,14 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 									target="_blank"
 									rel="noopener noreferrer"
 									className="w-fit focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-									aria-label={`${contributor.name}'s profile`}
+									aria-label={`${contributor.name}'s avatar`}
 								>
 									<Avatar
 										key={index}
 										className="size-12 border-3 border-background cursor-pointer"
 									>
 										<AvatarImage src={contributor.avatar} />
-										<AvatarFallback>{contributor.name}</AvatarFallback>
+										<AvatarFallback>{contributor.fallback}</AvatarFallback>
 										<AvatarGroupTooltip>
 											<p>{contributor.name}</p>
 										</AvatarGroupTooltip>
