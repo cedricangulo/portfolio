@@ -1,5 +1,5 @@
 type TTimeline = {
-	id: number
+	id?: number
 	date: string
 	title: string
 	description?: string
@@ -13,31 +13,31 @@ type TSkills = {
 
 const timeline: TTimeline = [
 	{
-		id: 1,
-		date: "2024 - Present",
-		title: "Second Year BS Information Technology",
-		description: "Currently working with Java and Figma, while self-studying and deeply exploring web development.",
+		date: "2025 - Present",
+		title: "Third Year BSIT",
+		description: "Preparing for advanced courses and projects in my third year of BSIT.",
 	},
 	{
-		id: 2,
+		date: "2024 - 2025",
+		title: "Second Year BSIT",
+		description: "Worked with Java and Figma, while self-studying and deeply exploring web development.",
+	},
+	{
 		date: "2023 - 2024",
-		title: "First Year BS Information Technology",
+		title: "First Year BS Information Technology (BSIT)",
 		description: "In my first semester, I learned the basics of computing, programming, and networking. In the second semester, I focused on web development, C++, and networking, which felt easier due to prior experience.",
 	},
 	{
-		id: 3,
 		date: "2022 - 2023",
 		title: "Grade 12 TVL-ICT",
 		description: "Graduated with honors from Santa Rosa National High School, focusing on ICT, web development, and programming. Grateful to Mr. Rey Laura for his guidance.",
 	},
 	{
-		id: 4,
 		date: "2021 - 2022",
 		title: "Grade 11 TVL-ICT",
 		description: "Studied hardware basics online at Zambales National High School despite challenges of the online setup.",
 	},
 	{
-		id: 5,
 		date: "2019 - 2020",
 		title: "Grade 10 ICT",
 		description: "Discovered my passion for computers at Locloc National High School, sparking my interest in information technology.",

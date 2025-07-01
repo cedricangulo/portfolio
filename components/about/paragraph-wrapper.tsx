@@ -7,24 +7,14 @@ import { AnimateFadeIn } from "."
 
 const ParagraphWrapper: React.FC = () => {
 	return (
-		<div className="flex flex-col gap-4 w-full lg:w-3/4">
+		<div className="flex flex-col items-start gap-4 w-full lg:w-3/4">
 			<Paragraph delay={0}>
-				Finding out that websites are made with <Hl>HTML</Hl> and <Hl>CSS</Hl> got me excited about{" "}
-				web development. That made me really interested in computers and programming. Now here I am,{" "}
-				<Hl>20</Hl> years old and pursuing my dreams as a second year BSIT student.
+				Finding out that websites use <Hl>HTML</Hl> and <Hl>CSS</Hl> sparked my interest in web development and programming.
+				Now, at <Hl>20</Hl>, I’m chasing my dreams.
 			</Paragraph>
 			<Paragraph delay={0.15}>
-				Currently at <Hl>NEUST</Hl>, I’m diving deep into web development, Java, and UI/UX Design. I
-				see myself mainly as a <Hl>frontend developer</Hl>, but I want to be versatile and work well
-				in a team. Soon, I plan to learn Laravel to build <Hl>full-stack applications</Hl> on my
-				own. The thought of all the new knowledge I will gain in the future excites me greatly.
-			</Paragraph>
-			<Paragraph delay={0.3}>
-				When working on my personal projects, I love using <Hl>Next.js</Hl> and{" "}
-				<Hl>Tailwind CSS</Hl> with <Hl>shadcn/ui</Hl>. These tools make me super productive! Though
-				I’m comfortable with this stack, many developers suggest learning to love <Hl>PHP</Hl> and I
-				should not stay at my comfort zone. That’s exactly why I’m planning to explore its most
-				popular framework, Laravel.
+				I see myself as a <Hl>frontend developer</Hl> but want to be flexible and work well with others.
+				I’m planning to learn <Hl>Laravel</Hl> soon so I can build <Hl>full-stack apps</Hl>.
 			</Paragraph>
 		</div>
 	)

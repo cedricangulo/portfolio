@@ -25,13 +25,13 @@ export const Card: React.FC<{
 				<article className="mt-8 border border-border hover:border-primary rounded-xl p-1 shadow-sm transition-colors duration-300">
 					<div className="relative rounded-lg overflow-hidden group">
 						<ImageRender
-							width={500}
-							height={280}
+							width={475}
+							height={355}
 							src={src}
 							alt={title}
 							className="w-full rounded-lg z-0"
 						/>
-						<div className="absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-black h-full w-full z-10 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-100" />
+						<div className="absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-black h-1/2 w-full z-10 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-100" />
 						<div className="absolute bottom-0 left-0 p-4 z-20 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
 							<h4 className="text-white text-xl font-medium mb-1.5 md:group-hover:delay-300">
 								{title}

@@ -1,12 +1,12 @@
 export const WorkList = [
 	{
-		src: "/images/tcg-tool/tcg-tool1.png",
+		src: "/images/tcg-tool/pokemon.jpg",
 		title: "Pokémon Grading Tool",
 		text: "A specialized tool for Pokemon card analysis with real-time market data integration and automated price comparison.",
 		tags: ["react + vite", "shadcn-ui", "django", "eBay", "TCG market", "playwright"],
 	},
 	{
-		src: "/images/ca-resources/ca-resources.jpg",
+		src: "/images/ca-resources/CA Resources.jpg",
 		title: "CA Resources",
 		text: "An open-source website that boosts productivity in web development and education by offering valuable resources and guides.",
 		tags: [
@@ -21,7 +21,7 @@ export const WorkList = [
 		],
 	},
 	{
-		src: "/images/webwise/webwise.jpeg",
+		src: "/images/webwise/webwise.jpg",
 		title: "WebWise",
 		text: "An educational website to start learning web development.",
 		tags: [
@@ -41,7 +41,7 @@ export const WorkList = [
 		tags: ["competition-entry", "innovations", "latest-tech", "static"],
 	},
 	{
-		src: "/images/classdirectory/sumbsit1a.jpg",
+		src: "/images/classdirectory/classdirectory.jpg",
 		title: "Class Directory",
 		text: "A static website for class information.",
 		tags: [

@@ -26,11 +26,11 @@ const TimelineContainer: React.FC = () => {
 				Education
 			</motion.h2>
 			<motion.div {...AnimateFadeIn(0.15)}>
-				<Timeline defaultValue={5}>
-					{timeline.map((item) => (
+				<Timeline defaultValue={6}>
+					{timeline.map((item, idx) => (
 						<TimelineItem
-							key={item.id}
-							step={item.id}
+							key={idx}
+							step={idx + 1}
 						>
 							<TimelineHeader>
 								<TimelineSeparator />
