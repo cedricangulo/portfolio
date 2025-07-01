@@ -1,14 +1,10 @@
 import { geistsans } from "@/lib/fonts"
 import {
 	anta,
-	bricolage_grotesque,
 	electrolize,
-	hind,
 	lexend,
-	montserrat,
 	orbitron,
 	poppins,
-	rubik_doodle_shadow,
 	tektur,
 } from "../_lib/font"
 import { GeistMono } from "geist/font/mono"
@@ -62,83 +58,6 @@ export const worksMeta = [
 	},
 	{
 		id: 2,
-		title: "Personal Website",
-		paragraphs: [
-			"This website is designed to store and showcase the skills that he acquired throughout his life. It is not limited to school projects but also includes every skill that he learned, both inside and outside of school, such as gaming.",
-			"This is similar to a portfolio, organized into sections to showcase the diverse skills he has acquired and is continually developing.",
-		],
-		fontFamily: [
-			{ fonts: montserrat, text: "Montserrat" },
-			{ fonts: bricolage_grotesque, text: "Bricolage Grotesque" },
-		],
-		colorScheme: [
-			{ content: "#16B954", color: "bg-[#16B954]", textColor: 1 },
-			{ content: "#128ba3", color: "bg-[#128ba3]", textColor: 1 },
-			{ content: "#021d62", color: "bg-[#021d62]", textColor: 0 },
-		],
-		contributors: [
-			{
-				avatar: "https://avatars.githubusercontent.com/u/124354621?v=4",
-				name: "Rainiel Sevilla",
-				link: "https://github.com/CallMeSevilla",
-				fallback: "RS"
-			},
-			{
-				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
-				name: "Cedric Angulo",
-				link: "https://github.com/bryan308",
-				fallback: "CA"
-			},
-		],
-		langs: [
-			{
-				langName: "JavaScript",
-				langColor: {
-					bg: "bg-[#f7df1e]",
-					fill: "fill-[#f7df1e]",
-				},
-				langWidth: 96.5,
-			},
-			{
-				langName: "CSS",
-				langColor: {
-					bg: "bg-[#1572b6]",
-					fill: "fill-[#1572b6]",
-				},
-				langWidth: 3.5,
-			},
-		],
-		images: [
-			{
-				src: "/images/personal-website/personal-website-1.png",
-				alt: "Home Page",
-			},
-			{
-				src: "/images/personal-website/personal-website-2.png",
-				alt: "Skills Page - Works",
-			},
-			{
-				src: "/images/personal-website/personal-website-3.png",
-				alt: "Skills Page - Games",
-			},
-			{
-				src: "/images/personal-website/personal-website-4.png",
-				alt: "About Page",
-			},
-			{
-				src: "/images/personal-website/personal-website-5.png",
-				alt: "About Page - Information",
-			},
-			{
-				src: "/images/personal-website/personal-website-6.png",
-				alt: "Contact Page",
-			},
-		],
-		github: "https://github.com/bryan308/personal-website",
-		href: "https://rnlsevilla.vercel.app",
-	},
-	{
-		id: 3,
 		title: "CA Resources",
 		paragraphs: [
 			"It is a website designed to improve productivity, especially for web development, among other fields in education. It provides the most valuable resources and guides.",
@@ -205,7 +124,7 @@ export const worksMeta = [
 		href: "https://ca-resources.vercel.app",
 	},
 	{
-		id: 4,
+		id: 3,
 		title: "WebWise",
 		paragraphs: [
 			"WebWise is a comprehensive case study for our first-year, second-semester IT Web Systems Technology (ITWST) subject. Our goal was to create a free, user-friendly platform for learning web development.",
@@ -262,7 +181,7 @@ export const worksMeta = [
 		href: "https://webwisee.vercel.app",
 	},
 	{
-		id: 5,
+		id: 4,
 		title: "Techno Odyssey",
 		paragraphs: [
 			"This project was my submission for the Technoday 2024 event at our school. This project showcased the latest news and advancements in technology.",
@@ -339,7 +258,7 @@ export const worksMeta = [
 		href: "",
 	},
 	{
-		id: 6,
+		id: 5,
 		title: "Class Directory",
 		paragraphs: [
 			"It is designed to provide simple yet essential information about the class. The site includes images of class officers, a class schedule presented using cards, and a list of announcements.",
@@ -414,188 +333,5 @@ export const worksMeta = [
 		],
 		github: "https://github.com/bryan308/sumbsit1a",
 		href: "https://sumacabbsit1a.vercel.app",
-	},
-	{
-		id: 7,
-		title: "Shoepee",
-		paragraphs: [
-			"Shoepee is an e-commerce website initially developed for my friend’s project. When he asked for my assistance, I saw it as a chance to learn more about PHP. We used PHP and a database managed through XAMPP. It was my first experience uploading and deleting images using PHP.",
-			"We started development on December 5, 2023, and he submitted the project on December 22, 2023. Although the initial project was submitted, I have continued to work on it, and it remains an ongoing development project.",
-		],
-		fontFamily: [
-			{ fonts: poppins, text: "Poppins" },
-			{ fonts: hind, text: "Hind" },
-			{ fonts: rubik_doodle_shadow, text: "Rubik Doodle Shadow" },
-		],
-		colorScheme: [
-			{ content: "#2c3333", color: "bg-[#2c3333]", textColor: 0 },
-			{ content: "#a11b0f", color: "bg-[#a11b0f]", textColor: 0 },
-			{ content: "#dc000e", color: "bg-[#dc000e]", textColor: 0 },
-		],
-		contributors: [
-			{
-				avatar: "https://avatars.githubusercontent.com/u/131877672?v=4",
-				name: "Clent John Caseria",
-				link: "https://github.com/Clxntyyy",
-				fallback: "CC"
-			},
-			{
-				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
-				name: "Cedric Angulo",
-				link: "https://github.com/bryan308",
-				fallback: "CA"
-			},
-		],
-		langs: [
-			{
-				langName: "PHP",
-				langColor: {
-					bg: "bg-[#777bb4]",
-					fill: "fill-[#777bb4]",
-				},
-				langWidth: 79.6,
-			},
-			{
-				langName: "CSS",
-				langColor: {
-					bg: "bg-[#1572b6]",
-					fill: "fill-[#1572b6]",
-				},
-				langWidth: 15.8,
-			},
-			{
-				langName: "JavaScript",
-				langColor: {
-					bg: "bg-[#f7df1e]",
-					fill: "fill-[#f7df1e]",
-				},
-				langWidth: 4.6,
-			},
-		],
-		images: [
-			{
-				src: "/images/shoepee/shoepee.webp",
-				alt: "Landing page",
-			},
-			{
-				src: "/images/shoepee/shoepee1.webp",
-				alt: "Product info page",
-			},
-			{
-				src: "/images/shoepee/shoepee2.webp",
-				alt: "Bag list page",
-			},
-			{
-				src: "/images/shoepee/shoepee3.webp",
-				alt: "Search resutls page",
-			},
-		],
-		github: "https://github.com/bryan308/shoepee",
-		href: "",
-	},
-	{
-		id: 8,
-		title: "Students’ Transcripts System",
-		paragraphs: [
-			"The STS is a web application for school registrars to manage Old Curriculum SF10 records. Developed within a month, it has some security limitations.",
-			"The primary goal is to generate internal-use Excel files (.xlsx), not for public access.",
-			"This was my first project using PHP, undertaken as self-study since our teacher hadn’t covered PHP. Our knowledge was limited to HTML, CSS, and JavaScript fundamentals. In this group project, I served as the full stack developer, with my teammates managing other tasks.",
-		],
-		fontFamily: [{ fonts: poppins, text: "Poppins" }],
-		colorScheme: [
-			{ content: "#33691e", color: "bg-[#33691e]", textColor: 0 },
-			{ content: "#6a9221", color: "bg-[#6a9221]", textColor: 1 },
-			{ content: "#FFD046", color: "bg-[#FFD046]", textColor: 1 },
-		],
-		contributors: [
-			{
-				avatar: "https://avatars.githubusercontent.com/u/122410398?v=4",
-				name: "Winston Francisco",
-				link: "https://github.com/n0tsniW",
-				fallback: "WF"
-			},
-			{
-				avatar: "https://avatars.githubusercontent.com/u/121382059?v=4",
-				name: "Raphael Aguirre",
-				link: "https://github.com/annonycrom",
-				fallback: "RA"
-			},
-			{
-				avatar: "https://avatars.githubusercontent.com/u/124354621?v=4",
-				name: "Rainiel Sevilla",
-				link: "https://github.com/CallMeSevilla",
-				fallback: "RS"
-			},
-			{
-				avatar: "https://avatars.githubusercontent.com/u/134666037?v=4",
-				name: "Andrei Ferrer",
-				link: "https://github.com/AndreiFerrer",
-				fallback: "AF"
-			},
-			{
-				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
-				name: "Cedric Angulo",
-				link: "https://github.com/bryan308",
-				fallback: "CA"
-			},
-		],
-		langs: [
-			{
-				langName: "PHP",
-				langColor: {
-					bg: "bg-[#777bb4]",
-					fill: "fill-[#777bb4]",
-				},
-				langWidth: 88.6,
-			},
-			{
-				langName: "CSS",
-				langColor: {
-					bg: "bg-[#1572b6]",
-					fill: "fill-[#1572b6]",
-				},
-				langWidth: 8.7,
-			},
-			{
-				langName: "HTML",
-				langColor: {
-					bg: "bg-[#e34f26]",
-					fill: "fill-[#e34f26]",
-				},
-				langWidth: 2.1,
-			},
-			{
-				langName: "JavaScript",
-				langColor: {
-					bg: "bg-[#f7df1e]",
-					fill: "fill-[#f7df1e]",
-				},
-				langWidth: 0.6,
-			},
-		],
-		images: [
-			{
-				src: "/images/sts/sts.webp",
-				alt: "Landing page",
-			},
-			{
-				src: "/images/sts/sts2.webp",
-				alt: "Students list",
-			},
-			{
-				src: "/images/sts/sts3.webp",
-				alt: "Add student page",
-			},
-			{
-				src: "/images/sts/sts4.webp",
-				alt: "Student’s Information page",
-			},
-			{
-				src: "/images/sts/sts5.webp",
-				alt: "Edit Information page",
-			},
-		],
-		github: "https://github.com/bryan308/Students-Transcripts-System",
-		href: "",
-	},
+	}
 ]

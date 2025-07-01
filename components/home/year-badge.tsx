@@ -12,7 +12,7 @@ export const YearBadge = () => {
 				caveat.className
 			)}
 		>
-			2nd year{" "}
+			3rd year{" "}
 			<motion.span
 				animate={{ rotate: [0, -10, 10, 0, -10, 10, 0], transformOrigin: "left center" }}
 				transition={{
