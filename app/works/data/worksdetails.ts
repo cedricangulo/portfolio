@@ -45,11 +45,11 @@ export const worksMeta = [
 		],
 		images: [
 			{
-				src: "/images/tcg-tool/tcg-tool1.png",
+				src: "XLJnqTgGVh2yMHI2jKY1FnJXUsEZgBrp8NT5qM4mkuwC9ORi",
 				alt: "Home Page",
 			},
 			{
-				src: "/images/tcg-tool/tcg-tool.png",
+				src: "XLJnqTgGVh2yhqcXUL8VPwXjt6UCkn9zaKJdyx7e2Q1NHcWI",
 				alt: "All Cards Page",
 			},
 		],
@@ -108,15 +108,15 @@ export const worksMeta = [
 		],
 		images: [
 			{
-				src: "/images/ca-resources/ca-resources.jpg",
+				src: "XLJnqTgGVh2yIG3yG7NogqDwuQNEpVJTsR9WnlXj0YHZ5Lz1",
 				alt: "Home Page",
 			},
 			{
-				src: "/images/ca-resources/ca-resources-1.jpg",
+				src: "XLJnqTgGVh2y3DRJWHP5p1EXywrTAMbuKslkcH86SVeU7Roz",
 				alt: "Resources Page",
 			},
 			{
-				src: "/images/ca-resources/ca-resources-2.jpg",
+				src: "XLJnqTgGVh2yOSrQHU9kZVhkTKUwtzfEOCLFl1xqnuXr70Nj",
 				alt: "Guides Page",
 			},
 		],
@@ -169,11 +169,11 @@ export const worksMeta = [
 		],
 		images: [
 			{
-				src: "/images/webwise/webwisee-mobile.jpg",
+				src: "XLJnqTgGVh2yxCSjXCCb6ZuGqAYgJcld1BMXNWR5LK9o8exj",
 				alt: "WebWise in Mobile",
 			},
 			{
-				src: "/images/webwise/webwise2.webp",
+				src: "XLJnqTgGVh2yTrEZlo3djaF5VK7iGR0ZQqIx4Ynk2rvCLESX",
 				alt: "Compilation for Mobile View Pages",
 			},
 		],
@@ -218,39 +218,27 @@ export const worksMeta = [
 		],
 		images: [
 			{
-				src: "/images/techodyssey/technodyssey-mobile.jpg",
+				src: "XLJnqTgGVh2yUeaWIDVykJKLRtwfPhDTQaGnuIdBzNYms2q3",
 				alt: "Mobile view",
 			},
 			{
-				src: "/images/techodyssey/techno1.jpg",
+				src: "XLJnqTgGVh2yS08t3tdkZ5UY7wNv401CqDaOyxGREVrfImtl",
 				alt: "Home page",
 			},
 			{
-				src: "/images/techodyssey/techno2.jpg",
+				src: "XLJnqTgGVh2y6jaur3CqJMYprfCyscKo1mt5FhSGRL9aHnUw",
 				alt: "Articles page",
 			},
-			// {
-			// 	src: "/images/techodyssey/techno3.jpg",
-			// 	alt: "Techno Odyssey",
-			// },
 			{
-				src: "/images/techodyssey/techno4.jpg",
+				src: "XLJnqTgGVh2yUY7gyFVykJKLRtwfPhDTQaGnuIdBzNYms2q3",
 				alt: "Innovations page",
 			},
-			// {
-			// 	src: "/images/techodyssey/techno5.jpg",
-			// 	alt: "Techno Odyssey",
-			// },
 			{
-				src: "/images/techodyssey/techno6.jpg",
+				src: "XLJnqTgGVh2yd5NacNEKg4cMa3RysqvVZNfz7AFDkKEIrj2o",
 				alt: "About page",
 			},
-			// {
-			// 	src: "/images/techodyssey/techno7.jpg",
-			// 	alt: "Techno Odyssey",
-			// },
 			{
-				src: "/images/techodyssey/techno8.jpg",
+				src: "XLJnqTgGVh2yKpDf31rquhokAsR2IXiT0b4Cc7Zmp6nwBzLF",
 				alt: "Reach us page",
 			},
 		],
@@ -315,19 +303,19 @@ export const worksMeta = [
 		],
 		images: [
 			{
-				src: "/images/classdirectory/sumbsit-mobile.jpg",
+				src: "XLJnqTgGVh2y8xOJnz2HPbiBv6EgI17KOo5AxDFleTXQ9wRz",
 				alt: "Mobile view",
 			},
 			{
-				src: "/images/classdirectory/sumbsit1a1.png",
+				src: "XLJnqTgGVh2yQj6zvFtq982FJZLc513oMElSdaWGzVOuDmXe",
 				alt: "Home page",
 			},
 			{
-				src: "/images/classdirectory/sumbsit1a2.png",
+				src: "XLJnqTgGVh2yNHVEW8ejYPiBbefI3WXTF0u4Swh5xO2mM1Hk",
 				alt: "Class Officers page",
 			},
 			{
-				src: "/images/classdirectory/sumbsit1a3.png",
+				src: "XLJnqTgGVh2yS7JuYVdkZ5UY7wNv401CqDaOyxGREVrfImtl",
 				alt: "Schedules page",
 			},
 		],

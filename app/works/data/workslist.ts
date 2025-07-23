@@ -1,12 +1,12 @@
 export const WorkList = [
 	{
-		src: "/images/tcg-tool/pokemon.jpg",
+		src: "XLJnqTgGVh2ymzi8F39c4WEG6bBVzAyapM3RhxKINnfdZv5i",
 		title: "Pokémon Grading Tool",
 		text: "A specialized tool for Pokemon card analysis with real-time market data integration and automated price comparison.",
 		tags: ["react + vite", "shadcn-ui", "django", "eBay", "TCG market", "playwright"],
 	},
 	{
-		src: "/images/ca-resources/CA Resources.jpg",
+		src: "XLJnqTgGVh2y2GRQAxBD4fHUOVLECrxZshYRme6oPWFbAySu",
 		title: "CA Resources",
 		text: "An open-source website that boosts productivity in web development and education by offering valuable resources and guides.",
 		tags: [
@@ -21,7 +21,7 @@ export const WorkList = [
 		],
 	},
 	{
-		src: "/images/webwise/webwise.jpg",
+		src: "XLJnqTgGVh2yv3rCKzbGjG7wMieJuCyp9LlNcSIUxKrZRbY5",
 		title: "WebWise",
 		text: "An educational website to start learning web development.",
 		tags: [
@@ -35,13 +35,13 @@ export const WorkList = [
 		],
 	},
 	{
-		src: "/images/techodyssey/techno.jpg",
+		src: "XLJnqTgGVh2yTrzzRL3djaF5VK7iGR0ZQqIx4Ynk2rvCLESX",
 		title: "Techno Odyssey",
 		text: "My entry in CICT Technoday 2024.",
 		tags: ["competition-entry", "innovations", "latest-tech", "static"],
 	},
 	{
-		src: "/images/classdirectory/classdirectory.jpg",
+		src: "XLJnqTgGVh2yUPJyuaVykJKLRtwfPhDTQaGnuIdBzNYms2q3",
 		title: "Class Directory",
 		text: "A static website for class information.",
 		tags: [

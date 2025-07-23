@@ -26,6 +26,7 @@ export default function ImageRender({ src, alt, width, height, className }: TIma
 			height={height}
 			placeholder="blur"
 			className={className}
+			loading={isLoading ? "lazy" : "eager"}
 			onLoad={handleLoading}
 			aria-label={isLoading ? "Loading..." : ""}
 			blurDataURL="data:text/html;base64,PGRpdiBjbGFzc05hbWU9Im1pbi1oLVszMjVweF0gdy1kdncgYmctZ3JheS0zMDAvNjAgZGFyazpiZy1ncmF5LTUwMC8xMCBhbmltYXRlLXB1bHNlIj48L2Rpdj4="

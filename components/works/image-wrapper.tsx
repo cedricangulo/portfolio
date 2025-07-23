@@ -39,7 +39,7 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
 					className="mb-8 text-center"
 				>
 					<ImageZoom
-						src={image.src}
+						src={`https://sow4xmup6y.ufs.sh/f/${image.src}`}
 						alt={image.alt}
 						className="w-auto h-auto shadow-md"
 						width={570}

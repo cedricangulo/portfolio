@@ -7,6 +7,24 @@ import {
 } from "../ui/carousel"
 import ImageRender from "../shared/image-render"
 
+const imagesUrl = [
+	"XLJnqTgGVh2yzFA1BGGpSqIVFghX4lG2mfzHP869YMyEDLJe",
+	"XLJnqTgGVh2y9J1NUPhQoCX4LWyvdIFSiZ2Jel5pTt703wYR",
+	"XLJnqTgGVh2yxCS6Xo7b6ZuGqAYgJcld1BMXNWR5LK9o8exj",
+	"XLJnqTgGVh2yoTShZndvuYCEShkIc7KQRmAGX6UjD5NVePdp",
+	"XLJnqTgGVh2yUz0LWyuVykJKLRtwfPhDTQaGnuIdBzNYms2q",
+	"XLJnqTgGVh2yusvWZmfKCA2lawgvUodEj8OR1r9WySFB6sq7",
+	"XLJnqTgGVh2yu8Yer5fKCA2lawgvUodEj8OR1r9WySFB6sq7",
+	"XLJnqTgGVh2yIDaZJqogqDwuQNEpVJTsR9WnlXj0YHZ5Lz1k",
+	"XLJnqTgGVh2yzvEZAGpSqIVFghX4lG2mfzHP869YMyEDLJeb",
+	"XLJnqTgGVh2yC7E7HOJTSeqlnaW74LRU025I8o3rMx9DvAbG",
+	"XLJnqTgGVh2yYTLnqEuDmLAVBbonEQp4dC6fltP1v0sNOTai",
+	"XLJnqTgGVh2yqzSGzEMLPtO9GS4Bjg8wDdcUrIqWkCY5emHM",
+	"XLJnqTgGVh2yb0jgZl6F61mhrJSYVg35Rt8nUG94vwpEq2Xb",
+	"XLJnqTgGVh2y8gyXha2HPbiBv6EgI17KOo5AxDFleTXQ9wRz",
+	"XLJnqTgGVh2yG5wlL0TblGkf859dMrs7nYaeICzSigF2TW0h",
+]
+
 const Carousell = () => {
 	return (
 		<Carousel
@@ -15,13 +33,13 @@ const Carousell = () => {
 		>
 			<div className="relative basis-3/4 ">
 				<CarouselMainContainer className="h-96">
-					{Array.from({ length: 15 }).map((_, index) => (
+					{imagesUrl.map((_, index) => (
 						<SliderMainItem
 							key={index}
 							className="flex items-center justify-center h-52 rounded-md"
 						>
 							<ImageRender
-								src={`/images/photography/${index + 1}.jpg`}
+								src={`https://sow4xmup6y.ufs.sh/f/${_}`}
 								alt={`${index}`}
 								width={384}
 								height={384}
@@ -32,7 +50,7 @@ const Carousell = () => {
 				</CarouselMainContainer>
 			</div>
 			<CarouselThumbsContainer className="rounded-md h-96 basis-1/4">
-				{Array.from({ length: 15 }).map((_, index) => (
+				{imagesUrl.map((_, index) => (
 					<SliderThumbItem
 						key={index}
 						index={index}
@@ -40,10 +58,10 @@ const Carousell = () => {
 					>
 						<span className="flex items-center justify-center h-full w-full rounded-md cursor-pointer">
 							<ImageRender
-								src={`/images/photography/${index + 1}.jpg`}
+								src={`https://sow4xmup6y.ufs.sh/f/${_}`}
 								alt={`${index}`}
-								width={384}
-								height={384}
+								width={108}
+								height={108}
 								className="rounded-md"
 							/>
 						</span>
