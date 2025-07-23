@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'avatars.githubusercontent.com',
       },
+      {
+        protocol: "https",
+        hostname: "sow4xmup6y.ufs.sh",
+        port: "",
+        pathname: "/f/**",
+      },
     ],
   },
 };
