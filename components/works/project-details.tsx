@@ -138,7 +138,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				className="w-full sm:w-3/4"
 				aria-labelledby="languages-heading"
 			>
-				{work?.id === 1 || work?.id === 5 ? (
+				{work?.id === 1 || work?.id === 4 ? (
 					<BranchTab workId={work.id} />
 				) : (
 					<LangList lang={work?.langs} />

@@ -79,7 +79,7 @@ export const worksMeta = [
 					bg: "bg-[#fcb32c]",
 					fill: "fill-[#fcb32c]",
 				},
-				langWidth: 66.1,
+				langWidth: 63.3,
 			},
 			{
 				langName: "TypeScript",
@@ -87,7 +87,7 @@ export const worksMeta = [
 					bg: "bg-[#3178c6]",
 					fill: "fill-[#3178c6]",
 				},
-				langWidth: 30.3,
+				langWidth: 33.2,
 			},
 			{
 				langName: "CSS",
@@ -95,7 +95,7 @@ export const worksMeta = [
 					bg: "bg-[#1572b6]",
 					fill: "fill-[#1572b6]",
 				},
-				langWidth: 3.5,
+				langWidth: 3.3,
 			},
 			{
 				langName: "JavaScript",
@@ -103,7 +103,7 @@ export const worksMeta = [
 					bg: "bg-[#f7df1e]",
 					fill: "fill-[#f7df1e]",
 				},
-				langWidth: 0.1,
+				langWidth: 0.2,
 			},
 		],
 		images: [

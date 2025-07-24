@@ -81,7 +81,7 @@ const tabsData = [
 					bg: "bg-[#3178c6]",
 					fill: "fill-[#3178c6]",
 				},
-				langWidth: 95.0,
+				langWidth: 95.2,
 			},
 			{
 				langName: "JavaScript",
@@ -89,7 +89,7 @@ const tabsData = [
 					bg: "bg-[#f7df1e]",
 					fill: "fill-[#f7df1e]",
 				},
-				langWidth: 2.4,
+				langWidth: 2.3,
 			},
 			{
 				langName: "CSS",
@@ -97,7 +97,7 @@ const tabsData = [
 					bg: "bg-[#1572b6]",
 					fill: "fill-[#1572b6]",
 				},
-				langWidth: 2.3,
+				langWidth: 2.2,
 			},
 			{
 				langName: "HTML",
@@ -135,7 +135,7 @@ const tabsData = [
 
 const BranchTab = ({ workId }: { workId: number }) => {
 	const filteredTabsData =
-		workId === 5
+		workId === 4
 			? tabsData.filter((tab) => tab.value === "main" || tab.value === "migrate-next-app")
 			: tabsData.filter((tab) => tab.value === "frontend" || tab.value === "backend")
 
