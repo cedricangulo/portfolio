@@ -7,7 +7,7 @@ export default function Footer() {
 		<footer className="max-h-[9rem] flex items-center justify-center gap-2 min-h-24 flex-col py-8 bg-transparent text-sm">
 			<div className="inline-flex gap-4 sec-text">
 				<Link
-					href="https://github.com/bryan308"
+					href="https://github.com/cedricangulo"
 					target="_blank"
 					aria-label="GitHub icon"
 				>

@@ -39,7 +39,7 @@ export const worksMeta = [
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
-				link: "https://github.com/bryan308",
+				link: "https://github.com/cedricangulo",
 				fallback: "CA"
 			},
 		],
@@ -53,7 +53,7 @@ export const worksMeta = [
 				alt: "All Cards Page",
 			},
 		],
-		github: "https://github.com/bryan308/pokemon",
+		github: "https://github.com/cedricangulo/pokemon",
 		href: "https://pokemon-proxx.vercel.app",
 	},
 	{
@@ -120,7 +120,7 @@ export const worksMeta = [
 				alt: "Guides Page",
 			},
 		],
-		github: "https://github.com/bryan308/ca-resources",
+		github: "https://github.com/cedricangulo/ca-resources",
 		href: "https://ca-resources.vercel.app",
 	},
 	{
@@ -177,7 +177,7 @@ export const worksMeta = [
 				alt: "Compilation for Mobile View Pages",
 			},
 		],
-		github: "https://github.com/bryan308/WebWise",
+		github: "https://github.com/cedricangulo/WebWise",
 		href: "https://webwisee.vercel.app",
 	},
 	{
@@ -242,7 +242,7 @@ export const worksMeta = [
 				alt: "Reach us page",
 			},
 		],
-		github: "https://github.com/bryan308/technodyssey",
+		github: "https://github.com/cedricangulo/technodyssey",
 		href: "",
 	},
 	{
@@ -271,7 +271,7 @@ export const worksMeta = [
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
-				link: "https://github.com/bryan308",
+				link: "https://github.com/cedricangulo",
 				fallback: "CA"
 			},
 		],
@@ -319,7 +319,7 @@ export const worksMeta = [
 				alt: "Schedules page",
 			},
 		],
-		github: "https://github.com/bryan308/sumbsit1a",
+		github: "https://github.com/cedricangulo/sumbsit1a",
 		href: "https://sumacabbsit1a.vercel.app",
 	}
 ]
