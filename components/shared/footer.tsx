@@ -18,7 +18,7 @@ export default function Footer() {
 					/>
 				</Link>
 				<Link
-					href="https://www.facebook.com/bryan308.20"
+					href="https://www.facebook.com/cedricangulo.21"
 					target="_blank"
 					aria-label="Facebook icon"
 				>
