@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import { easeInOut } from "motion"
 import { motion } from "motion/react"
 import { lexend } from "@/lib/fonts"
 
@@ -19,7 +20,7 @@ const PageTitle = ({ title, subheader, delay = 0, duration = 0.3 }: PageTitlePro
 			transition={{
 				delay: delay,
 				duration: duration,
-				ease: "easeInOut",
+				ease: easeInOut,
 				repeat: 0,
 				repeatType: "loop",
 			}}

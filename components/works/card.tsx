@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"
+import { easeInOut } from "motion"
 import ImageRender from "@/components/shared/image-render"
 import Link from "next/link"
 
@@ -18,7 +19,7 @@ export const Card: React.FC<{
 			transition={{
 				delay: 0.1 * index,
 				duration: 0.3,
-				ease: "easeInOut",
+				ease: easeInOut,
 			}}
 		>
 			<Link href={`/works/${index + 1}`}>

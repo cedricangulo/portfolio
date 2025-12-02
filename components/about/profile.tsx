@@ -11,7 +11,7 @@ const Profile = () => {
 			className="lg:w-1/4 flex justify-center items-center xl:mb-0"
 		>
 			<TiltedCard
-				imageSrc="https://sow4xmup6y.ufs.sh/f/XLJnqTgGVh2y8ZikX72HPbiBv6EgI17KOo5AxDFleTXQ9wRz"
+				imageSrc="https://sow4xmup6y.ufs.sh/f/XLJnqTgGVh2yU3txuBVykJKLRtwfPhDTQaGnuIdBzNYms2q3"
 				altText="ME"
 				captionText=""
 				containerHeight="300px"

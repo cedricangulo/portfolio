@@ -4,6 +4,7 @@ import { lexend } from "@/lib/fonts"
 import React from "react"
 import AnnButton from "../shared/announcement-btn"
 import Image from "next/image"
+import { easeInOut } from "motion"
 import { motion } from "motion/react"
 
 const buttonData = [
@@ -37,7 +38,7 @@ const AnimatefadeIn = (delay: number = 0) => ({
 	initial: { opacity: 0, filter: "blur(4px)" },
 	whileInView: { opacity: 1, filter: "blur(0)" },
 	viewport: { amount: 0.5, once: false },
-	transition: { delay, duration: 0.3, ease: "easeInOut" },
+	transition: { delay, duration: 0.3, ease: easeInOut },
 })
 
 const OldPortfolioSection: React.FC = () => {
