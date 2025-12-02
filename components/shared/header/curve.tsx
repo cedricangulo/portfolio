@@ -1,26 +1,33 @@
-import { motion } from "motion/react"
+"use client"
+
+import { motion, cubicBezier } from "motion/react"
+import { useState, useEffect } from "react"
+import { Variants } from "motion/react"
 
 export default function Curve() {
-	const initialPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${window.innerHeight} Q-100 ${
-		window.innerHeight / 2
-	} 100 0`
-	const targetPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${window.innerHeight} Q100 ${
-		window.innerHeight / 2
-	} 100 0`
+	const [curve, setCurve] = useState<Variants | null>(null)
 
-	const curve = {
-		initial: {
-			d: initialPath,
-		},
-		enter: {
-			d: targetPath,
-			transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
-		},
-		exit: {
-			d: initialPath,
-			transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
-		},
-	}
+	useEffect(() => {
+		const h = window.innerHeight
+		const initialPath = `M100 0 L200 0 L200 ${h} L100 ${h} Q-100 ${h / 2} 100 0`
+		const targetPath = `M100 0 L200 0 L200 ${h} L100 ${h} Q100 ${h / 2} 100 0`
+
+		setCurve({
+			initial: {
+				d: initialPath,
+			},
+			enter: {
+				d: targetPath,
+				transition: { duration: 1, ease: cubicBezier(0.76, 0, 0.24, 1) },
+			},
+			exit: {
+				d: initialPath,
+				transition: { duration: 0.8, ease: cubicBezier(0.76, 0, 0.24, 1) },
+			},
+		})
+	}, [])
+
+	if (!curve) return null
 
 	return (
 		<svg className="fill-purple-500 transition-[fill] absolute top-0 left-[-99px] w-[100px] h-full stroke-none">
