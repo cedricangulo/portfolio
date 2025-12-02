@@ -12,7 +12,7 @@ const getMotionProps = (delay: number = 0) => ({
 	initial: { opacity: 0, y: -20, filter: "blur(2px)" },
 	animate: { opacity: 1, y: 0, filter: "0" },
 	viewport: { once: true, amount: 0.5 },
-	transition: { type: "spring", damping: 15, stiffness: 100, duration: 0.3, delay },
+	transition: { type: "spring" as const, damping: 15, stiffness: 100, delay },
 })
 
 export const Contents = () => {
