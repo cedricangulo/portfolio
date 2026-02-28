@@ -1,22 +1,24 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { useTheme } from "next-themes"
-import { LoadingIcon, MoonIcon, SunIcon } from "@/public/icons"
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { LoadingIcon, MoonIcon, SunIcon } from "@/public/icons";
 
 export function ModeToggle() {
-	const { setTheme, theme } = useTheme()
-	const [mounted, setMounted] = useState(false)
+	const { setTheme, theme } = useTheme();
+	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => {
-		setMounted(true)
-	}, [])
+		setMounted(true);
+	}, []);
 
 	if (!mounted) {
-		return <LoadingIcon className="text-muted-foreground w-12 h-12 md:w-5 md:h-5 animate-spin" />
+		return (
+			<LoadingIcon className="text-muted-foreground w-12 h-12 md:w-5 md:h-5 animate-spin" />
+		);
 	}
 
-	const isLight = theme === "light"
+	const isLight = theme === "light";
 
 	return (
 		<button
@@ -30,5 +32,5 @@ export function ModeToggle() {
 			)}
 			<span className="sr-only">Toggle theme</span>
 		</button>
-	)
+	);
 }

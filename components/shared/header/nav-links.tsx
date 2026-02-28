@@ -1,11 +1,16 @@
-import Link from "next/link"
+import { motion } from "motion/react";
+import Link from "next/link";
+import type { INavLink } from "../interface/nav";
+import { slide } from "./anim";
 
-import { motion } from "motion/react"
-import { slide } from "./anim"
-
-import { INavLink } from "../interface/nav"
-
-export default function NavLink({ i, href, className, setSidebarOpen, children, ...props }: INavLink) {
+export default function NavLink({
+	i,
+	href,
+	className,
+	setSidebarOpen,
+	children,
+	...props
+}: INavLink) {
 	return (
 		<motion.div
 			exit="exit"
@@ -17,12 +22,9 @@ export default function NavLink({ i, href, className, setSidebarOpen, children, 
 			onClick={() => setSidebarOpen(false)}
 			{...props}
 		>
-			<Link
-				href={href}
-				className={className}
-			>
+			<Link href={href} className={className}>
 				{children}
 			</Link>
 		</motion.div>
-	)
+	);
 }

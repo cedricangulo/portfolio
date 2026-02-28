@@ -1,11 +1,11 @@
+import ImageRender from "../shared/image-render";
 import {
 	Carousel,
 	CarouselMainContainer,
 	CarouselThumbsContainer,
 	SliderMainItem,
 	SliderThumbItem,
-} from "../ui/carousel"
-import ImageRender from "../shared/image-render"
+} from "../ui/carousel";
 
 const imagesUrl = [
 	"XLJnqTgGVh2yzFA1BGGpSqIVFghX4lG2mfzHP869YMyEDLJe",
@@ -23,7 +23,7 @@ const imagesUrl = [
 	"XLJnqTgGVh2yb0jgZl6F61mhrJSYVg35Rt8nUG94vwpEq2Xb",
 	"XLJnqTgGVh2y8gyXha2HPbiBv6EgI17KOo5AxDFleTXQ9wRz",
 	"XLJnqTgGVh2yG5wlL0TblGkf859dMrs7nYaeICzSigF2TW0h",
-]
+];
 
 const Carousell = () => {
 	return (
@@ -69,7 +69,7 @@ const Carousell = () => {
 				))}
 			</CarouselThumbsContainer>
 		</Carousel>
-	)
-}
+	);
+};
 
-export default Carousell
+export default Carousell;

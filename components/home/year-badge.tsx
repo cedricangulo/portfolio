@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
-import { cn } from "@/lib/utils"
-import { caveat } from "@/lib/fonts"
+import { motion } from "motion/react";
+import { caveat } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 export const YearBadge = () => {
 	return (
@@ -14,7 +14,10 @@ export const YearBadge = () => {
 		>
 			3rd year{" "}
 			<motion.span
-				animate={{ rotate: [0, -10, 10, 0, -10, 10, 0], transformOrigin: "left center" }}
+				animate={{
+					rotate: [0, -10, 10, 0, -10, 10, 0],
+					transformOrigin: "left center",
+				}}
 				transition={{
 					repeat: Infinity,
 					duration: 1,
@@ -25,5 +28,5 @@ export const YearBadge = () => {
 				🤙
 			</motion.span>
 		</span>
-	)
-}
+	);
+};

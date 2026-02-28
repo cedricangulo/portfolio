@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import AnnButton from "../shared/announcement-btn"
-import LangList from "./lang-list"
 import {
 	Tabs,
 	TabsContent,
 	TabsContents,
 	TabsList,
 	TabsTrigger,
-} from "@/components/animate-ui/tabs"
+} from "@/components/animate-ui/tabs";
+import AnnButton from "../shared/announcement-btn";
+import LangList from "./lang-list";
 
 const tabsData = [
 	{
@@ -131,32 +131,30 @@ const tabsData = [
 			},
 		],
 	},
-]
+];
 
 const BranchTab = ({ workId }: { workId: number }) => {
 	const filteredTabsData =
 		workId === 4
-			? tabsData.filter((tab) => tab.value === "main" || tab.value === "migrate-next-app")
-			: tabsData.filter((tab) => tab.value === "frontend" || tab.value === "backend")
+			? tabsData.filter(
+					(tab) => tab.value === "main" || tab.value === "migrate-next-app"
+				)
+			: tabsData.filter(
+					(tab) => tab.value === "frontend" || tab.value === "backend"
+				);
 
 	return (
 		<Tabs defaultValue={filteredTabsData[0].value}>
 			<TabsList>
 				{filteredTabsData.map((tab) => (
-					<TabsTrigger
-						key={tab.value}
-						value={tab.value}
-					>
+					<TabsTrigger key={tab.value} value={tab.value}>
 						{tab.label}
 					</TabsTrigger>
 				))}
 			</TabsList>
 			<TabsContents className="mx-1 mb-1 -mt-2 rounded-sm h-full bg-background">
 				{filteredTabsData.map((tab) => (
-					<TabsContent
-						key={tab.value}
-						value={tab.value}
-					>
+					<TabsContent key={tab.value} value={tab.value}>
 						{tab.announcement && (
 							<AnnButton
 								className="my-4 block"
@@ -173,7 +171,7 @@ const BranchTab = ({ workId }: { workId: number }) => {
 				))}
 			</TabsContents>
 		</Tabs>
-	)
-}
+	);
+};
 
-export default BranchTab
+export default BranchTab;

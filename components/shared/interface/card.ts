@@ -1,11 +1,11 @@
 export type TButton = {
-	i: number
-	l: TList
-}
+	i: number;
+	l: TList;
+};
 
 export type TList = {
-	src: string
-	title: string
-	text: string
-	tags: string[]
-}
+	src: string;
+	title: string;
+	text: string;
+	tags: string[];
+};

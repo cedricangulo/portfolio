@@ -1,22 +1,23 @@
-"use client"
+"use client";
 
-import React, { ReactNode, useEffect } from "react"
-import Lenis from "lenis"
+import Lenis from "lenis";
+import type React from "react";
+import { type ReactNode, useEffect } from "react";
 
 const LenisWrapper: React.FC<{ children: ReactNode }> = ({ children }) => {
 	useEffect(() => {
-		const lenis = new Lenis()
+		const lenis = new Lenis();
 
 		function raf(time: number) {
-			lenis.raf(time)
-			requestAnimationFrame(raf)
+			lenis.raf(time);
+			requestAnimationFrame(raf);
 		}
 
-		requestAnimationFrame(raf)
-	})
+		requestAnimationFrame(raf);
+	});
 
-	return <div>{children}</div>
-}
-LenisWrapper.displayName = "lenis wrapper"
+	return <div>{children}</div>;
+};
+LenisWrapper.displayName = "lenis wrapper";
 
-export default LenisWrapper
+export default LenisWrapper;

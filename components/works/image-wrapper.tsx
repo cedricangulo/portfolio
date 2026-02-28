@@ -1,53 +1,51 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ImageZoom } from "fumadocs-ui/components/image-zoom"
-import { motion } from "motion/react"
-import { Button } from "@/components/ui/button"
-import { getMotionProps } from "."
-import { InformationCircleIcon } from "@/public/icons"
+import { ImageZoom } from "fumadocs-ui/components/image-zoom";
+import { motion } from "motion/react";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { InformationCircleIcon } from "@/public/icons";
+import { getMotionProps } from ".";
 
 interface WorkDetails {
-	id: number
-	title: string
-	paragraphs: string[]
-	fontFamily: { fonts: { className: string }; text: string }[]
-	colorScheme: { content: string; color: string; textColor: number }[]
+	id: number;
+	title: string;
+	paragraphs: string[];
+	fontFamily: { fonts: { className: string }; text: string }[];
+	colorScheme: { content: string; color: string; textColor: number }[];
 	langs?: {
-		langName: string
-		langColor: { bg: string; fill: string }
-		langWidth: number
-	}[]
-	images: { src: string; alt: string }[]
+		langName: string;
+		langColor: { bg: string; fill: string };
+		langWidth: number;
+	}[];
+	images: { src: string; alt: string }[];
 }
 
 const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
-	const [showAllImages, setShowAllImages] = useState(false)
+	const [showAllImages, setShowAllImages] = useState(false);
 
 	if (!work || !work.images) {
-		return null
+		return null;
 	}
 
 	return (
-		<motion.div
-			{...getMotionProps(0.6)}
-			className="w-full"
-		>
-			{(showAllImages ? work.images : work.images.slice(0, 2)).map((image, index) => (
-				<figure
-					key={index}
-					className="mb-8 text-center"
-				>
-					<ImageZoom
-						src={`https://sow4xmup6y.ufs.sh/f/${image.src}`}
-						alt={image.alt}
-						className="w-auto h-auto shadow-md"
-						width={570}
-						height={325}
-					/>
-					<figcaption className="mt-4 text-sm italic text-muted-foreground">{image.alt}</figcaption>
-				</figure>
-			))}
+		<motion.div {...getMotionProps(0.6)} className="w-full">
+			{(showAllImages ? work.images : work.images.slice(0, 2)).map(
+				(image, index) => (
+					<figure key={`image-${index + 1}`} className="mb-8 text-center">
+						<ImageZoom
+							src={`https://sow4xmup6y.ufs.sh/f/${image.src}`}
+							alt={image.alt}
+							className="w-auto h-auto shadow-md"
+							width={570}
+							height={325}
+						/>
+						<figcaption className="mt-4 text-sm italic text-muted-foreground">
+							{image.alt}
+						</figcaption>
+					</figure>
+				)
+			)}
 			<div className="grid place-items-center mt-4">
 				{work.images.length > 2 && (
 					<Button
@@ -65,7 +63,7 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
 				</span>
 			)}
 		</motion.div>
-	)
-}
+	);
+};
 
-export default ImageWrapper
+export default ImageWrapper;

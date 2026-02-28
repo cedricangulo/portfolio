@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
-import { easeInOut } from "motion"
-import ImageRender from "@/components/shared/image-render"
-import Link from "next/link"
+import { easeInOut } from "motion";
+import { motion } from "motion/react";
+import Link from "next/link";
+import ImageRender from "@/components/shared/image-render";
 
 export const Card: React.FC<{
-	src: string
-	title: string
-	text: string
-	index: number
+	src: string;
+	title: string;
+	text: string;
+	index: number;
 }> = ({ src, title, text, index }) => {
 	return (
 		<motion.div
@@ -22,7 +22,7 @@ export const Card: React.FC<{
 				ease: easeInOut,
 			}}
 		>
-			<Link href={`/works/${index + 1}`}>
+			<Link href={`/works/${index + 1}`} scroll>
 				<article className="mt-8 border border-border hover:border-primary rounded-xl p-1 shadow-sm transition-colors duration-300">
 					<div className="relative rounded-lg overflow-hidden group">
 						<ImageRender
@@ -32,18 +32,20 @@ export const Card: React.FC<{
 							height={355}
 							className="w-full rounded-lg z-0"
 						/>
-						<div className="absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-black h-1/2 w-full z-10 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-100" />
+						<div className="absolute bottom-0 left-0 bg-linear-to-b from-transparent to-black h-1/2 w-full z-10 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-100" />
 						<div className="absolute bottom-0 left-0 p-4 z-20 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
-							<h4 className="text-white text-xl font-medium mb-1.5 md:group-hover:delay-300">
+							<h4 className="text-[#f7f4fe] text-xl font-medium mb-1.5 md:group-hover:delay-300">
 								{title}
 							</h4>
-							<p className="text-white text-sm md:group-hover:delay-1000">{text}</p>
+							<p className="text-[#f7f4fe] text-sm md:group-hover:delay-1000">
+								{text}
+							</p>
 						</div>
 					</div>
 				</article>
 			</Link>
 		</motion.div>
-	)
-}
+	);
+};
 
-Card.displayName = "Card"
+Card.displayName = "Card";

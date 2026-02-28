@@ -1,17 +1,25 @@
-import Link from "next/link"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 interface AnnButtonProps {
-	className?: string
-	href: string
-	icon: React.ReactNode
-	text: string
-	from: string
-	via: string
-	to: string
+	className?: string;
+	href: string;
+	icon: React.ReactNode;
+	text: string;
+	from: string;
+	via: string;
+	to: string;
 }
 
-function AnnButton({ className, href, icon, text, from, via, to }: AnnButtonProps) {
+function AnnButton({
+	className,
+	href,
+	icon,
+	text,
+	from,
+	via,
+	to,
+}: AnnButtonProps) {
 	return (
 		<Link
 			href={`${href}`}
@@ -43,7 +51,7 @@ function AnnButton({ className, href, icon, text, from, via, to }: AnnButtonProp
 			</span>
 			<ChevronRight className="ml-1 size-4 text-muted-foreground" />
 		</Link>
-	)
+	);
 }
 
-export default AnnButton
+export default AnnButton;

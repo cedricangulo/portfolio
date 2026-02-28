@@ -1,10 +1,8 @@
-"use client"
+"use client";
 
-import React from "react"
-import Link from "next/link"
-import { motion } from "motion/react"
-
-import { getMotionProps } from "."
+import { motion } from "motion/react";
+import Link from "next/link";
+import React from "react";
 import {
 	ArrowUpRightIcon,
 	GithubIcon,
@@ -12,30 +10,36 @@ import {
 	LinkIcon,
 	PaintBoardIcon,
 	SourceCodeIcon,
-} from "@/public/icons"
+} from "@/public/icons";
+import { AvatarGroup, AvatarGroupTooltip } from "../animate-ui/avatar-group";
 
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
-import { Button } from "../ui/button"
-import { AvatarGroup, AvatarGroupTooltip } from "../animate-ui/avatar-group"
-import BranchTab from "./branch-tab"
-import ColorScheme from "./color-scheme"
-import LangList from "./lang-list"
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Button } from "../ui/button";
+import { getMotionProps } from ".";
+import BranchTab from "./branch-tab";
+import ColorScheme from "./color-scheme";
+import LangList from "./lang-list";
 
 interface WorkDetails {
-	id: number
-	title: string
-	contributors?: { name: string; link: string; avatar: string; fallback: string }[]
-	paragraphs: string[]
-	fontFamily: { fonts: { className: string }; text: string }[]
-	colorScheme: { content: string; color: string; textColor: number }[]
+	id: number;
+	title: string;
+	contributors?: {
+		name: string;
+		link: string;
+		avatar: string;
+		fallback: string;
+	}[];
+	paragraphs: string[];
+	fontFamily: { fonts: { className: string }; text: string }[];
+	colorScheme: { content: string; color: string; textColor: number }[];
 	langs?: {
-		langName: string
-		langColor: { bg: string; fill: string }
-		langWidth: number
-	}[]
-	images: { src: string; alt: string }[]
-	github: string
-	href: string
+		langName: string;
+		langColor: { bg: string; fill: string };
+		langWidth: number;
+	}[];
+	images: { src: string; alt: string }[];
+	github: string;
+	href: string;
 }
 
 const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
@@ -45,20 +49,14 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 			className="mt-24 transition-all"
 			aria-labelledby="project-details-title"
 		>
-			<h3
-				id="project-details-title"
-				className="sr-only"
-			>
+			<h3 id="project-details-title" className="sr-only">
 				Project Details for {work?.title}
 			</h3>
 			<h4
 				id="colors-fonts-heading"
 				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mb-2 tracking-tight"
 			>
-				<PaintBoardIcon
-					className="size-4 text-primary"
-					aria-hidden="true"
-				/>
+				<PaintBoardIcon className="size-4 text-primary" aria-hidden="true" />
 				<span>Colors & Typefaces</span>
 			</h4>
 			<div aria-labelledby="colors-fonts-heading">
@@ -89,10 +87,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 						id="contributors-heading"
 						className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mb-2 tracking-tight mt-16"
 					>
-						<GitMergeIcon
-							className="size-5 text-primary"
-							aria-hidden="true"
-						/>
+						<GitMergeIcon className="size-5 text-primary" aria-hidden="true" />
 						<span>Contributors</span>
 					</h4>
 					<AvatarGroup
@@ -128,16 +123,10 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				id="languages-heading"
 				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mt-16 tracking-tight"
 			>
-				<SourceCodeIcon
-					className="size-5 text-primary"
-					aria-hidden="true"
-				/>
+				<SourceCodeIcon className="size-5 text-primary" aria-hidden="true" />
 				<span>Language Used</span>
 			</h4>
-			<div
-				className="w-full sm:w-3/4"
-				aria-labelledby="languages-heading"
-			>
+			<div className="w-full sm:w-3/4" aria-labelledby="languages-heading">
 				{work?.id === 1 || work?.id === 4 ? (
 					<BranchTab workId={work.id} />
 				) : (
@@ -148,20 +137,11 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				id="links-heading"
 				className="inline-flex gap-1 items-center scroll-m-20 font-medium text-foreground mb-2 mt-16 tracking-tight"
 			>
-				<LinkIcon
-					className="size-4 text-primary"
-					aria-hidden="true"
-				/>{" "}
+				<LinkIcon className="size-4 text-primary" aria-hidden="true" />{" "}
 				{work?.href ? <span>Links</span> : <span>Link</span>}
 			</h4>
-			<div
-				className="flex gap-2"
-				aria-labelledby="links-heading"
-			>
-				<Button
-					variant="secondary"
-					asChild
-				>
+			<div className="flex gap-2" aria-labelledby="links-heading">
+				<Button variant="secondary" asChild>
 					<Link
 						href={work?.github || ""}
 						target="_blank"
@@ -174,10 +154,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 					</Link>
 				</Button>
 				{work?.href ? (
-					<Button
-						variant="secondary"
-						asChild
-					>
+					<Button variant="secondary" asChild>
 						<Link
 							href={work?.href || ""}
 							target="_blank"
@@ -192,7 +169,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				) : null}
 			</div>
 		</motion.section>
-	)
-}
+	);
+};
 
-export default ProjectDetails
+export default ProjectDetails;

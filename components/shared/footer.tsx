@@ -1,6 +1,6 @@
-import Link from "next/link"
-import Image from "next/image"
-import { FacebookFilledIcon, GithubFilledIcon } from "@/public/icons"
+import Image from "next/image";
+import Link from "next/link";
+import { FacebookFilledIcon, GithubFilledIcon } from "@/public/icons";
 
 export default function Footer() {
 	return (
@@ -43,5 +43,5 @@ export default function Footer() {
 				</Link>
 			</div>
 		</footer>
-	)
+	);
 }

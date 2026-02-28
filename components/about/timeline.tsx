@@ -1,9 +1,6 @@
-"use client"
+"use client";
 
-import { lexend } from "@/lib/fonts"
-import { timeline } from "../shared/interface/about-meta"
-import { motion } from "motion/react"
-
+import { motion } from "motion/react";
 import {
 	Timeline,
 	TimelineContent,
@@ -13,8 +10,10 @@ import {
 	TimelineItem,
 	TimelineSeparator,
 	TimelineTitle,
-} from "@/components/ui/timeline"
-import { AnimateFadeIn } from "."
+} from "@/components/ui/timeline";
+import { lexend } from "@/lib/fonts";
+import { timeline } from "../shared/interface/about-meta";
+import { AnimateFadeIn } from ".";
 
 const TimelineContainer: React.FC = () => {
 	return (
@@ -28,10 +27,7 @@ const TimelineContainer: React.FC = () => {
 			<motion.div {...AnimateFadeIn(0.15)}>
 				<Timeline defaultValue={6}>
 					{timeline.map((item, idx) => (
-						<TimelineItem
-							key={idx}
-							step={idx + 1}
-						>
+						<TimelineItem key={idx} step={idx + 1}>
 							<TimelineHeader>
 								<TimelineSeparator />
 								<TimelineDate>{item.date}</TimelineDate>
@@ -44,8 +40,8 @@ const TimelineContainer: React.FC = () => {
 				</Timeline>
 			</motion.div>
 		</div>
-	)
-}
-TimelineContainer.displayName = "Timeline"
+	);
+};
+TimelineContainer.displayName = "Timeline";
 
-export default TimelineContainer
+export default TimelineContainer;

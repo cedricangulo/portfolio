@@ -1,18 +1,23 @@
-"use client"
+"use client";
 
-import React from "react"
-import { easeInOut } from "motion"
-import { motion } from "motion/react"
-import { lexend } from "@/lib/fonts"
+import { easeInOut } from "motion";
+import { motion } from "motion/react";
+import React from "react";
+import { lexend } from "@/lib/fonts";
 
 interface PageTitleProps {
-	title: string
-	subheader: string
-	delay?: number
-	duration?: number
+	title: string;
+	subheader: string;
+	delay?: number;
+	duration?: number;
 }
 
-const PageTitle = ({ title, subheader, delay = 0, duration = 0.3 }: PageTitleProps) => {
+const PageTitle = ({
+	title,
+	subheader,
+	delay = 0,
+	duration = 0.3,
+}: PageTitleProps) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0, filter: "blur(8px)" }}
@@ -35,7 +40,7 @@ const PageTitle = ({ title, subheader, delay = 0, duration = 0.3 }: PageTitlePro
 				{subheader}
 			</p>
 		</motion.div>
-	)
-}
+	);
+};
 
-export default PageTitle
+export default PageTitle;

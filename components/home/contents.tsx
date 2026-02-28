@@ -1,26 +1,23 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "motion/react"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { YearBadge } from "@/components/home"
-import { lexend } from "@/lib/fonts"
-import { MailIcon } from "@/public/icons"
+import { motion } from "motion/react";
+import Link from "next/link";
+import { YearBadge } from "@/components/home";
+import { Button } from "@/components/ui/button";
+import { lexend } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+import { MailIcon } from "@/public/icons";
 
 const getMotionProps = (delay: number = 0) => ({
 	initial: { opacity: 0, y: -20, filter: "blur(2px)" },
 	animate: { opacity: 1, y: 0, filter: "0" },
 	viewport: { once: true, amount: 0.5 },
 	transition: { type: "spring" as const, damping: 15, stiffness: 100, delay },
-})
+});
 
 export const Contents = () => {
 	return (
-		<section
-			className="h-screen flex mx-0 sm:mx-auto"
-			aria-label="Home"
-		>
+		<section className="h-screen flex mx-0 sm:mx-auto" aria-label="Home">
 			<div className="w-full flex sm:items-center justify-center flex-col gap-2">
 				<motion.p
 					{...getMotionProps(0)}
@@ -68,37 +65,24 @@ export const Contents = () => {
 					role="navigation"
 					aria-label="Main actions"
 				>
-					<Button
-						variant="secondary"
-						size={"lg"}
-						asChild
-					>
+					<Button variant="secondary" size={"lg"} asChild>
 						<Link
 							href="mailto:cdrcangulo@gmail.com"
 							target="_blank"
 							aria-label="Email me at cdrcangulo@gmail.com"
 							rel="noopener noreferrer"
 						>
-							<MailIcon
-								className="size-5"
-								aria-hidden="true"
-							/>
+							<MailIcon className="size-5" aria-hidden="true" />
 							<span>cdrcangulo@gmail.com</span>
 						</Link>
 					</Button>
-					<Button
-						size={"lg"}
-						asChild
-					>
-						<Link
-							href="/works"
-							aria-label="View my works"
-						>
+					<Button size={"lg"} asChild>
+						<Link href="/#works" aria-label="View my works">
 							Works
 						</Link>
 					</Button>
 				</motion.div>
 			</div>
 		</section>
-	)
-}
+	);
+};

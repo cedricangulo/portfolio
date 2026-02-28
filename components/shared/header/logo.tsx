@@ -1,20 +1,26 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { cn } from "@/lib/utils"
-import { motion, AnimatePresence } from "motion/react"
+import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
-export default function Logo({ state, className }: { state: boolean; className: string | null }) {
-	const [delayedState, setDelayedState] = useState(state)
+export default function Logo({
+	state,
+	className,
+}: {
+	state: boolean;
+	className: string | null;
+}) {
+	const [delayedState, setDelayedState] = useState(state);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			setDelayedState(state)
-		}, 100)
+			setDelayedState(state);
+		}, 100);
 
-		return () => clearTimeout(timer)
-	}, [state])
+		return () => clearTimeout(timer);
+	}, [state]);
 
 	return (
 		<AnimatePresence mode="wait">
@@ -54,5 +60,5 @@ export default function Logo({ state, className }: { state: boolean; className: 
 				</motion.div>
 			)}
 		</AnimatePresence>
-	)
+	);
 }

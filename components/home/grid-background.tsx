@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
-import { cn } from "@/lib/utils"
+import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
 
 export const GridBackground = () => {
 	return (
@@ -34,11 +34,7 @@ export const GridBackground = () => {
 					></path>
 				</pattern>
 			</defs>
-			<rect
-				fill="url(#grid-:r2:)"
-				width="100%"
-				height="100%"
-			></rect>
+			<rect fill="url(#grid-:r2:)" width="100%" height="100%"></rect>
 		</motion.svg>
-	)
-}
+	);
+};

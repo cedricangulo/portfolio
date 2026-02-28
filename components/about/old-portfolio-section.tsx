@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { lexend } from "@/lib/fonts"
-import React from "react"
-import AnnButton from "../shared/announcement-btn"
-import Image from "next/image"
-import { easeInOut } from "motion"
-import { motion } from "motion/react"
+import { easeInOut } from "motion";
+import { motion } from "motion/react";
+import Image from "next/image";
+import type React from "react";
+import { lexend } from "@/lib/fonts";
+import AnnButton from "../shared/announcement-btn";
 
 const buttonData = [
 	{
@@ -32,14 +32,14 @@ const buttonData = [
 		via: "#eff6e0",
 		to: "#1a627e",
 	},
-]
+];
 
 const AnimatefadeIn = (delay: number = 0) => ({
 	initial: { opacity: 0, filter: "blur(4px)" },
 	whileInView: { opacity: 1, filter: "blur(0)" },
 	viewport: { amount: 0.5, once: false },
 	transition: { delay, duration: 0.3, ease: easeInOut },
-})
+});
 
 const OldPortfolioSection: React.FC = () => {
 	return (
@@ -52,20 +52,12 @@ const OldPortfolioSection: React.FC = () => {
 			</motion.h2>
 			<div className="flex items-center flex-col md:flex-row gap-0 md:gap-4 my-8">
 				{buttonData.map((b, index) => (
-					<motion.div
-						{...AnimatefadeIn(0.25 * index)}
-						key={index}
-					>
+					<motion.div {...AnimatefadeIn(0.25 * index)} key={index}>
 						<AnnButton
 							className="my-4 md:my-0"
 							href={b.href}
 							icon={
-								<Image
-									src={b.iconSrc}
-									alt={b.alt}
-									width={20}
-									height={20}
-								/>
+								<Image src={b.iconSrc} alt={b.alt} width={20} height={20} />
 							}
 							text="@cdrcangulo"
 							from={b.from}
@@ -76,8 +68,8 @@ const OldPortfolioSection: React.FC = () => {
 				))}
 			</div>
 		</div>
-	)
-}
-OldPortfolioSection.displayName = "Old portfolio section"
+	);
+};
+OldPortfolioSection.displayName = "Old portfolio section";
 
-export default OldPortfolioSection
+export default OldPortfolioSection;

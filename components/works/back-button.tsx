@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
-import { ArrowLeftIcon } from "@/public/icons"
-import Link from "next/link"
-import { getMotionProps } from "."
+import { motion } from "motion/react";
+import Link from "next/link";
+import { ArrowLeftIcon } from "@/public/icons";
+import { getMotionProps } from ".";
 
 const BackButton = () => {
 	return (
@@ -12,7 +12,7 @@ const BackButton = () => {
 			className="group my-8 w-fit mx-auto md:mx-0"
 		>
 			<Link
-				href="/works"
+				href="/#works"
 				className="text-foreground inline-flex gap-1 group-hover:text-primary hover:gap-0 text-lg items-center italic transition-all"
 				aria-label="Back to works"
 			>
@@ -20,7 +20,7 @@ const BackButton = () => {
 				Back
 			</Link>
 		</motion.nav>
-	)
-}
+	);
+};
 
-export default BackButton
+export default BackButton;

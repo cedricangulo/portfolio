@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { lexend } from "@/lib/fonts"
-import { motion } from "motion/react"
-import { getMotionProps } from "."
+import { motion } from "motion/react";
+import { lexend } from "@/lib/fonts";
+import { getMotionProps } from ".";
 
 const ProjectTitle = ({ children }: { children: React.ReactNode }) => {
 	return (
@@ -12,7 +12,7 @@ const ProjectTitle = ({ children }: { children: React.ReactNode }) => {
 		>
 			{children}
 		</motion.h2>
-	)
-}
+	);
+};
 
-export default ProjectTitle
+export default ProjectTitle;

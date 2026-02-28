@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 const MailIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -22,7 +22,7 @@ const MailIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const MoonIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -41,7 +41,7 @@ const MoonIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const SunIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -64,7 +64,7 @@ const SunIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinecap="round"
 		/>
 	</svg>
-)
+);
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -90,7 +90,7 @@ const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const GithubFilledIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -108,7 +108,7 @@ const GithubFilledIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		/>
 		<path d="M5.89322 1.25C6.32429 1.25 6.92392 1.3505 7.32982 1.44894C8.04979 1.62356 8.97224 1.95848 9.8331 2.60631C10.5823 2.42952 11.6434 2.22317 13 2.22315C14.3566 2.22312 15.4177 2.42953 16.1669 2.60634C17.0278 1.95849 17.9502 1.62357 18.6702 1.44895C19.0761 1.3505 19.6906 1.25 20.1068 1.25H20.6195L20.8056 1.72771C21.0649 2.3931 21.1586 3.20254 21.1599 3.96175C21.161 4.60091 21.0965 5.24848 20.984 5.81333C21.2885 6.295 21.5728 6.86589 21.7936 7.45193C22.0569 8.15071 22.25 8.92404 22.25 9.6286C22.25 12.0507 21.4385 13.7613 20.1549 14.9682C19.1799 15.8849 17.9698 16.4752 16.7459 16.8944C17.0081 17.2892 17.25 17.811 17.25 18.4951V20.75C17.25 21.6928 17.25 22.1642 16.9571 22.4571C16.6642 22.75 16.1928 22.75 15.25 22.75H10.75C9.80719 22.75 9.33579 22.75 9.04289 22.4571C8.75 22.1642 8.75 21.6928 8.75 20.75V18.4951C8.75 17.811 8.99194 17.2892 9.25414 16.8944C8.03018 16.4752 6.82008 15.8849 5.84507 14.9682C4.56153 13.7613 3.75 12.0507 3.75 9.6286C3.75 8.92404 3.94309 8.15071 4.20638 7.45193C4.4272 6.86589 4.71153 6.29499 5.01601 5.81332C4.90345 5.24848 4.83899 4.6009 4.8401 3.96175C4.8414 3.20254 4.93514 2.3931 5.1944 1.72771L5.38053 1.25H5.89322Z" />
 	</svg>
-)
+);
 
 const FacebookFilledIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -125,7 +125,7 @@ const FacebookFilledIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			d="M5.55869 10.2083C4.47617 10.2083 4.25024 10.4146 4.25024 11.4028V13.1944C4.25024 14.1826 4.47617 14.3889 5.55869 14.3889H8.17557V21.5556C8.17557 22.5438 8.40149 22.75 9.48401 22.75H12.1009C13.1834 22.75 13.4093 22.5438 13.4093 21.5556V14.3889H16.3477C17.1687 14.3889 17.3803 14.2432 17.6058 13.5226L18.1666 11.7309C18.5529 10.4965 18.3148 10.2083 16.9085 10.2083H13.4093V7.22222C13.4093 6.56255 13.9951 6.02778 14.7178 6.02778H18.4418C19.5243 6.02778 19.7502 5.82154 19.7502 4.83333V2.44444C19.7502 1.45624 19.5243 1.25 18.4418 1.25H14.7178C11.1046 1.25 8.17557 3.92386 8.17557 7.22222V10.2083H5.55869Z"
 		/>
 	</svg>
-)
+);
 
 const PaintBoardIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -148,13 +148,7 @@ const PaintBoardIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinecap="round"
 			strokeLinejoin="round"
 		/>
-		<circle
-			cx="9.5"
-			cy="8.5"
-			r="1.5"
-			stroke="currentColor"
-			strokeWidth="1.5"
-		/>
+		<circle cx="9.5" cy="8.5" r="1.5" stroke="currentColor" strokeWidth="1.5" />
 		<circle
 			cx="16.5"
 			cy="9.5"
@@ -163,7 +157,7 @@ const PaintBoardIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeWidth="1.5"
 		/>
 	</svg>
-)
+);
 
 const GitMergeIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -197,7 +191,7 @@ const GitMergeIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const SourceCodeIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -230,7 +224,7 @@ const SourceCodeIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const ArrowUpRightIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -255,7 +249,7 @@ const ArrowUpRightIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const LinkIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -279,7 +273,7 @@ const LinkIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinecap="round"
 		/>
 	</svg>
-)
+);
 
 const ArrowLeftIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -305,7 +299,7 @@ const ArrowLeftIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const InformationCircleIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -336,7 +330,7 @@ const InformationCircleIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const CopyIcon = ({
 	colorScheme,
@@ -370,7 +364,7 @@ const CopyIcon = ({
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const CheckIcon = ({
 	colorScheme,
@@ -397,7 +391,7 @@ const CheckIcon = ({
 			strokeLinejoin="round"
 		/>
 	</svg>
-)
+);
 
 const LoadingIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg
@@ -457,7 +451,7 @@ const LoadingIcon = (props: React.SVGProps<SVGSVGElement>) => (
 			strokeLinecap="round"
 		/>
 	</svg>
-)
+);
 
 export {
 	ArrowLeftIcon,
@@ -476,4 +470,4 @@ export {
 	PaintBoardIcon,
 	SourceCodeIcon,
 	SunIcon,
-}
+};

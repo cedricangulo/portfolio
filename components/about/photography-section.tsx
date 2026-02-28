@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { lexend } from "@/lib/fonts"
-import Link from "next/link"
-import React from "react"
-import Carousell from "./carousel-img"
-import { motion } from "motion/react"
-import { AnimateFadeIn } from "."
+import { motion } from "motion/react";
+import Link from "next/link";
+import type React from "react";
+import { lexend } from "@/lib/fonts";
+import { AnimateFadeIn } from ".";
+import Carousell from "./carousel-img";
 
 const PhotographySection: React.FC = () => {
 	return (
@@ -25,10 +25,11 @@ const PhotographySection: React.FC = () => {
 					{...AnimateFadeIn(0.3)}
 					className="text-foreground text-base font-normal leading-relaxed"
 				>
-					I tried photography using just my phone in year 2022. At that time, I was living in
-					Zambales, but I couldn&apos;t continue it because I didn&apos;t have enough equipment for
-					that hobby and I also lacked confidence back then, so my close friends and my relatives
-					were the only subjects in my pictures. I even have a Facebook page{" "}
+					I tried photography using just my phone in year 2022. At that time, I
+					was living in Zambales, but I couldn&apos;t continue it because I
+					didn&apos;t have enough equipment for that hobby and I also lacked
+					confidence back then, so my close friends and my relatives were the
+					only subjects in my pictures. I even have a Facebook page{" "}
 					<Link
 						href="https://www.facebook.com/capicturessS?mibextid=ZbWKwL"
 						target="_blank"
@@ -49,8 +50,8 @@ const PhotographySection: React.FC = () => {
 				<Carousell />
 			</motion.div>
 		</section>
-	)
-}
-PhotographySection.displayName = "Photography section"
+	);
+};
+PhotographySection.displayName = "Photography section";
 
-export default PhotographySection
+export default PhotographySection;

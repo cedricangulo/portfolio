@@ -1,13 +1,12 @@
-"use client"
+"use client";
 
+import { motion } from "motion/react";
+import { lexend } from "@/lib/fonts";
 // import { Badge } from "@/components/ui/badge"
 // import { cn } from "@/lib/utils"
-import { skills } from "../shared/interface/about-meta"
-
-import { motion } from "motion/react"
-import { lexend } from "@/lib/fonts"
-import { AnimateFadeIn } from "."
-import { Button } from "../ui/button"
+import { skills } from "../shared/interface/about-meta";
+import { Button } from "../ui/button";
+import { AnimateFadeIn } from ".";
 
 const TechStack: React.FC = () => {
 	return (
@@ -25,10 +24,7 @@ const TechStack: React.FC = () => {
 			<ul className="flex max-w-3xl gap-4 flex-wrap items-center justify-center list-none p-0">
 				{skills.map((s, index: number) => {
 					return (
-						<motion.li
-							key={index}
-							{...AnimateFadeIn(0.05 * index)}
-						>
+						<motion.li key={index} {...AnimateFadeIn(0.05 * index)}>
 							<Button variant="outline">
 								<svg
 									role="img"
@@ -44,12 +40,12 @@ const TechStack: React.FC = () => {
 								<span>{s.text}</span>
 							</Button>
 						</motion.li>
-					)
+					);
 				})}
 			</ul>
 		</section>
-	)
-}
-TechStack.displayName = "TechStack"
+	);
+};
+TechStack.displayName = "TechStack";
 
-export default TechStack
+export default TechStack;

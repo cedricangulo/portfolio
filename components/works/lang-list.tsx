@@ -1,4 +1,4 @@
-import { ILangListProps } from "../shared/interface/lang"
+import type { ILangListProps } from "../shared/interface/lang";
 
 function LangList({ lang }: ILangListProps) {
 	return (
@@ -17,17 +17,15 @@ function LangList({ lang }: ILangListProps) {
 							borderTopRightRadius: i === lang?.length - 1 ? "0.5rem" : "0",
 							borderBottomRightRadius: i === lang?.length - 1 ? "0.5rem" : "0",
 						}}
-					></span>
+					/>
 				))}
 			</span>
 			<ul className="list-none">
 				{lang?.map((l, i) => (
-					<li
-						key={i}
-						className="inline"
-					>
+					<li key={i} className="inline">
 						<div className="inline-flex items-center no-underline text-sm mr-3 text-secondary-foreground">
 							<svg
+								aria-label="Language Color Indicator"
 								height="16"
 								viewBox="0 0 16 16"
 								width="16"
@@ -43,7 +41,7 @@ function LangList({ lang }: ILangListProps) {
 				))}
 			</ul>
 		</>
-	)
+	);
 }
 
-export default LangList
+export default LangList;
