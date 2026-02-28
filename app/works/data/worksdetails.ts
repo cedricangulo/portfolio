@@ -1,4 +1,5 @@
-import { geistsans } from "@/lib/fonts"
+import { GeistMono } from "geist/font/mono";
+import { geistsans } from "@/lib/fonts";
 import {
 	anta,
 	electrolize,
@@ -6,8 +7,7 @@ import {
 	orbitron,
 	poppins,
 	tektur,
-} from "../_lib/font"
-import { GeistMono } from "geist/font/mono"
+} from "../_lib/font";
 
 export const worksMeta = [
 	{
@@ -28,19 +28,19 @@ export const worksMeta = [
 				avatar: "https://avatars.githubusercontent.com/u/142586349?v=4",
 				name: "Aldwin Sarte",
 				link: "https://github.com/AldJayR",
-				fallback: "AS"
+				fallback: "AS",
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/141980423?v=4",
 				name: "Leon Laborina",
 				link: "https://github.com/leonlaborina15",
-				fallback: "LL"
+				fallback: "LL",
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
 				link: "https://github.com/cedricangulo",
-				fallback: "CA"
+				fallback: "CA",
 			},
 		],
 		images: [
@@ -266,13 +266,13 @@ export const worksMeta = [
 				avatar: "https://avatars.githubusercontent.com/u/147966338?v=4",
 				name: "AJ Capule",
 				link: "https://github.com/Ryudd07",
-				fallback: "AC"
+				fallback: "AC",
 			},
 			{
 				avatar: "https://avatars.githubusercontent.com/u/117529860?v=4",
 				name: "Cedric Angulo",
 				link: "https://github.com/cedricangulo",
-				fallback: "CA"
+				fallback: "CA",
 			},
 		],
 		langs: [
@@ -321,5 +321,5 @@ export const worksMeta = [
 		],
 		github: "https://github.com/cedricangulo/sumbsit1a",
 		href: "https://sumacabbsit1a.vercel.app",
-	}
-]
+	},
+];

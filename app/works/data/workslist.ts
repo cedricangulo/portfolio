@@ -3,7 +3,14 @@ export const WorkList = [
 		src: "XLJnqTgGVh2ymzi8F39c4WEG6bBVzAyapM3RhxKINnfdZv5i",
 		title: "Pokémon Grading Tool",
 		text: "A specialized tool for Pokemon card analysis with real-time market data integration and automated price comparison.",
-		tags: ["react + vite", "shadcn-ui", "django", "eBay", "TCG market", "playwright"],
+		tags: [
+			"react + vite",
+			"shadcn-ui",
+			"django",
+			"eBay",
+			"TCG market",
+			"playwright",
+		],
 	},
 	{
 		src: "XLJnqTgGVh2y2GRQAxBD4fHUOVLECrxZshYRme6oPWFbAySu",
@@ -53,4 +60,4 @@ export const WorkList = [
 			"download-files",
 		],
 	},
-]
+];

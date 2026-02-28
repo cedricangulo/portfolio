@@ -3,12 +3,13 @@
 @import "fumadocs-ui/css/preset.css";
 @import "tw-animate-css";
 
-@source '../node_modules/fumadocs-ui/dist/**/*.js';
+@source "../node_modules/fumadocs-ui/dist/**/*.js";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-	--animate-skeleton: skeleton 2s cubic-bezier(0.4, 0, 0.6, 1) var(--pulse-delay, 0) infinite;
+	--animate-skeleton: skeleton 2s cubic-bezier(0.4, 0, 0.6, 1)
+		var(--pulse-delay, 0) infinite;
 	--animate-fadeIn: fadeIn 1s ease var(--fadeIn-delay, 0) forwards;
 	--animate-slideIn: slideIn 1s ease var(--slideIn-delay, 0) forwards;
 	--animate-gradient: gradient 8s linear infinite;
@@ -72,8 +73,8 @@
 
 :root {
 	--radius: 0.625rem;
-	--background: oklch(98.51% 0 0);
-	--foreground: oklch(12.94% 0.0273 261.67);
+	--background: #f7f4fe;
+	--foreground: #37195c;
 	--card: oklch(100% 0 0);
 	--card-foreground: oklch(12.94% 0.0273 261.67);
 	--popover: oklch(100% 0 0);
@@ -83,35 +84,35 @@
 	--secondary: oklch(0.95 0.03 307);
 	--secondary-foreground: oklch(21.03% 0.0318 264.65);
 	--muted: oklch(0.95 0.03 307);
-	--muted-foreground: oklch(55.13% 0.0233 264.36);
+	--muted-foreground: #745396;
 	--accent: oklch(0.95 0.03 307);
 	--accent-foreground: oklch(21.03% 0.0318 264.65);
 	--destructive: oklch(0.65 0.25 20);
-	--border: oklch(92.78% 0.0058 264.53);
-	--input: oklch(92.78% 0.0058 264.53);
+	--border: #e3dafa;
+	--input: #e3dafa;
 	--ring: oklch(66.78% 0.1801 298.39);
 	--highlight: oklch(90.23% 0.0604 306.7);
 	--highlight-foreground: oklch(43.83% 0.1983 303.73);
 }
 
 .dark {
-	--background: oklch(0% 0 0);
-	--foreground: oklch(98.43% 0.0017 247.84);
+	--background: #0b060f;
+	--foreground: #e3dafa;
 	--card: oklch(12.94% 0.0273 261.67);
 	--card-foreground: oklch(98.43% 0.0017 247.84);
 	--popover: oklch(12.94% 0.0273 261.67);
 	--popover-foreground: oklch(98.43% 0.0017 247.84);
-	--primary: oklch(67.91% 0.1555 300.31);
+	--primary: oklch(66.78% 0.1801 298.39);
 	--primary-foreground: oklch(98.43% 0.0017 247.84);
-	--secondary: oklch(27.84% 0.0296 256.85);
+	--secondary: oklch(26.772% 0.04729 310.231);
 	--secondary-foreground: oklch(98.43% 0.0017 247.84);
-	--muted: oklch(27.84% 0.0296 256.85);
-	--muted-foreground: oklch(71.37% 0.0192 261.33);
-	--accent: oklch(27.84% 0.0296 256.85);
+	--muted: oklch(26.772% 0.04729 310.231);
+	--muted-foreground: #cebdf5;
+	--accent: oklch(26.772% 0.04729 310.231);
 	--accent-foreground: oklch(98.43% 0.0017 247.84);
 	--destructive: oklch(0.4 0.2 10);
-	--border: oklch(27.84% 0.0296 256.85);
-	--input: oklch(27.84% 0.0296 256.85);
+	--border: oklch(26.772% 0.04729 310.231);
+	--input: oklch(26.772% 0.04729 310.231);
 	--ring: oklch(67.91% 0.1555 300.31);
 	--highlight: oklch(18.22% 0.0952 303.83);
 	--highlight-foreground: oklch(76.76% 0.1497 305.4);
@@ -146,7 +147,7 @@
 
 @layer base {
 	* {
-		@apply border-border outline-ring/50;
+		@apply border-border outline-ring/50 scroll-smooth;
 	}
 	body {
 		@apply bg-background text-foreground;

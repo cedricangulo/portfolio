@@ -1,13 +1,13 @@
-import PageTitle from "@/components/shared/page-title"
-import { Metadata } from "next"
+import type { Metadata } from "next";
+import PageTitle from "@/components/shared/page-title";
 
 export const metadata: Metadata = {
 	title: "Works",
-}
+};
 
 type Props = {
-	children: React.ReactNode
-}
+	children: React.ReactNode;
+};
 
 export default function RootLayout({ children }: Props) {
 	return (
@@ -15,5 +15,5 @@ export default function RootLayout({ children }: Props) {
 			<PageTitle title="Works" subheader="These are the projects I built" />
 			{children}
 		</section>
-	)
+	);
 }
