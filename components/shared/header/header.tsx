@@ -172,7 +172,7 @@ export default function Header() {
 							"before:content-[''] before:block before:h-[1.5px] before:w-6 before:rotate-0 before:transition-all before:duration-600 before:ease-[cubic-bezier(0.76,0,0.24,1)]",
 							"after:content-[''] after:block after:h-[1.5px] after:w-6 after:rotate-0 after:transition-all after:duration-600 after:ease-[cubic-bezier(0.76,0,0.24,1)]",
 							sidebarOpen
-								? "before:rotate-45 before:translate-y-[0.438rem] after:-rotate-45 after:translate-y-1.5"
+								? "before:rotate-45 before:translate-y-[0.438rem] after:-rotate-45 after:-translate-y-1.5"
 								: "before:rotate-0 after:rotate-0"
 						)}
 					/>

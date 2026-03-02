@@ -4,6 +4,7 @@ import { easeInOut } from "motion";
 import { motion } from "motion/react";
 import Link from "next/link";
 import ImageRender from "@/components/shared/image-render";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const textVariants = {
 	initial: { opacity: 0, y: 20, filter: "blur(4px)" },
@@ -19,13 +20,16 @@ export const Card: React.FC<{
 	slug?: string;
 	index: number;
 }> = ({ src, title, text, slug, index }) => {
+	const isMobile = useIsMobile();
+	const animateState = isMobile ? "whileHover" : "animate";
+
 	const cardContent = (
 		<motion.article
 			className="border border-border hover:border-primary rounded-xl p-1 shadow-sm transition-colors duration-300"
 			aria-disabled={!slug}
-			whileHover="whileHover"
+			whileHover={!isMobile ? "whileHover" : undefined}
 			initial="animate"
-			animate="animate"
+			animate={animateState}
 		>
 			<div className="relative rounded-lg overflow-hidden group">
 				<ImageRender
@@ -36,7 +40,7 @@ export const Card: React.FC<{
 					className="w-full rounded-lg z-0"
 				/>
 				<div className="absolute bottom-0 left-0 bg-linear-to-b from-transparent to-black h-1/2 w-full z-10 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-100" />
-				<div className="absolute bottom-0 left-0 p-4 z-20 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+				<div className="absolute bottom-0 left-0 p-4 z-20">
 					<motion.h4
 						className="text-[#f7f4fe] text-xl font-medium mb-1.5"
 						variants={textVariants}
