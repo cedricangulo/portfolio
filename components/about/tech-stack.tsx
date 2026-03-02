@@ -19,12 +19,12 @@ const TechStack: React.FC = () => {
 				{...AnimateFadeIn()}
 				className={`${lexend.className} text-3xl font-medium text-foreground`}
 			>
-				Tech Stack
+				Technologies I Use
 			</motion.h2>
 			<ul className="flex max-w-3xl gap-4 flex-wrap items-center justify-center list-none p-0">
 				{skills.map((s, index: number) => {
 					return (
-						<motion.li key={index} {...AnimateFadeIn(0.05 * index)}>
+						<motion.li key={`t-${index + 1}`} {...AnimateFadeIn(0.05 * index)}>
 							<Button variant="outline">
 								<svg
 									role="img"

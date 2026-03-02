@@ -22,6 +22,7 @@ export function ModeToggle() {
 
 	return (
 		<button
+			type="button"
 			className="w-12 h-12 md:w-5 md:h-5"
 			onClick={() => setTheme(isLight ? "dark" : "light")}
 		>

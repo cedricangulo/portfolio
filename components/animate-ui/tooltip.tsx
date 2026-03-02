@@ -247,7 +247,7 @@ const TooltipOverlay: React.FC = () => {
 
 	return (
 		<AnimatePresence>
-			{currentTooltip && currentTooltip.content && position && (
+			{currentTooltip?.content && position && (
 				<TooltipPortal>
 					<motion.div
 						className="fixed z-50"

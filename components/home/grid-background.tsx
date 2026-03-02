@@ -11,9 +11,9 @@ export const GridBackground = () => {
 			transition={{ duration: 1, delay: 1 }}
 			className={cn(
 				"h-full w-full",
-				"sm:[mask-image:radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
-				"[mask-image:radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
-				"pointer-events-none absolute inset-0 left-1/2 top-0 max-w-[800px] -translate-x-1/2 text-primary/50",
+				"sm:mask-[radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
+				"mask-[radial-gradient(ellipse_60%_30%_at_50%_50%,#121212_0%,transparent_100%)]",
+				"pointer-events-none absolute inset-0 left-1/2 top-0 max-w-200 -translate-x-1/2 text-primary/50",
 				"[mask-image:linear-gradient(transparent,black_20%), linear-gradient(black_20%, transparent)]"
 			)}
 		>
@@ -22,8 +22,8 @@ export const GridBackground = () => {
 					id="grid-:r2:"
 					x="0"
 					y="-53.5"
-					width="40"
-					height="40"
+					width="64"
+					height="64"
 					patternUnits="userSpaceOnUse"
 				>
 					<path

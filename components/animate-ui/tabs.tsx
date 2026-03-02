@@ -83,7 +83,7 @@ const Tabs = React.forwardRef<HTMLDivElement, TabsProps>(
 		return (
 			<TabsContext.Provider
 				value={{
-					activeValue: (value ?? activeValue)!,
+					activeValue: value ?? activeValue ?? "",
 					handleValueChange,
 					registerTrigger,
 				}}
@@ -135,7 +135,7 @@ const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>(
 					ref={ref}
 					role="tablist"
 					className={cn(
-						"bg-muted text-muted-foreground inline-flex h-10 w-fit items-center justify-center rounded-lg p-[4px]",
+						"bg-muted text-muted-foreground inline-flex h-10 w-fit items-center justify-center rounded-lg p-1",
 						className
 					)}
 				>
@@ -174,7 +174,7 @@ const TabsTrigger = React.forwardRef<HTMLButtonElement, TabsTriggerProps>(
 					onClick={() => handleValueChange(value)}
 					data-state={activeValue === value ? "active" : "inactive"}
 					className={cn(
-						"inline-flex cursor-pointer items-center size-full justify-center whitespace-nowrap rounded-sm px-2 py-1 text-sm font-medium ring-offset-background transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:text-foreground z-[1]",
+						"inline-flex cursor-pointer items-center size-full justify-center whitespace-nowrap rounded-sm px-2 py-1 text-sm font-medium ring-offset-background transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:text-foreground z-1",
 						className
 					)}
 				>
@@ -222,11 +222,14 @@ const TabsContents = React.forwardRef<HTMLDivElement, TabsContentsProps>(
 			<div ref={ref} className={cn("overflow-hidden", className)}>
 				<motion.div
 					className="flex -mx-2"
-					animate={{ x: activeIndex * -100 + "%" }}
+					animate={{ x: `${activeIndex * -100}%` }}
 					transition={transition}
 				>
-					{childrenArray.map((child, index) => (
-						<div key={index} className="w-full shrink-0 px-2">
+					{childrenArray.map((child) => (
+						<div
+							key={(child as React.ReactElement).key}
+							className="w-full shrink-0 px-2"
+						>
 							{child}
 						</div>
 					))}

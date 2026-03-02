@@ -263,14 +263,32 @@ const MotionHighlight = React.forwardRef<HTMLDivElement, MotionHighlightProps>(
 				{controlledItems
 					? render(children)
 					: render(
-							React.Children.map(children, (child, index) => (
-								<MotionHighlightItem
-									key={index}
-									className={props?.itemsClassName}
-								>
-									{child}
-								</MotionHighlightItem>
-							))
+							React.Children.map(children, (child) => {
+								const childProps = React.isValidElement(child)
+									? (child.props as {
+											id?: string | number;
+											"data-value"?: string | number;
+										})
+									: undefined;
+
+								return (
+									<MotionHighlightItem
+										key={
+											React.isValidElement(child)
+												? String(
+														child.key ??
+															childProps?.id ??
+															childProps?.["data-value"] ??
+															"item"
+													)
+												: "item"
+										}
+										className={props?.itemsClassName}
+									>
+										{child}
+									</MotionHighlightItem>
+								);
+							})
 						)}
 			</MotionHighlightContext.Provider>
 		);
@@ -415,7 +433,6 @@ const MotionHighlightItem = React.forwardRef<
 						className: cn("relative", element.props.className),
 						...(!withoutDataAttributes && {
 							"data-active": isActive ? "true" : "false",
-							"aria-selected": isActive,
 							"data-disabled": isDisabled ? "true" : "false",
 							"data-value": childValue,
 						}),
@@ -452,7 +469,6 @@ const MotionHighlightItem = React.forwardRef<
 										},
 									}}
 									data-active={isActive ? "true" : "false"}
-									aria-selected={isActive}
 									data-disabled={isDisabled ? "true" : "false"}
 									data-value={childValue}
 								/>
@@ -460,10 +476,9 @@ const MotionHighlightItem = React.forwardRef<
 						</AnimatePresence>
 
 						<div
-							className={cn("relative z-[1]", className)}
+							className={cn("relative z-1", className)}
 							data-active={isActive ? "true" : "false"}
 							data-value={childValue}
-							aria-selected={isActive}
 							data-disabled={isDisabled ? "true" : "false"}
 						>
 							{children}
@@ -493,7 +508,6 @@ const MotionHighlightItem = React.forwardRef<
 						}),
 				...(!withoutDataAttributes && {
 					"data-active": isActive ? "true" : "false",
-					"aria-selected": isActive,
 					"data-disabled": isDisabled ? "true" : "false",
 					"data-value": childValue,
 				}),
@@ -507,7 +521,6 @@ const MotionHighlightItem = React.forwardRef<
 				className={cn(mode === "children" && "relative", className)}
 				data-active={isActive ? "true" : "false"}
 				data-value={childValue}
-				aria-selected={isActive}
 				data-disabled={isDisabled ? "true" : "false"}
 				{...props}
 				{...(hover
@@ -551,7 +564,6 @@ const MotionHighlightItem = React.forwardRef<
 									},
 								}}
 								data-active={isActive ? "true" : "false"}
-								aria-selected={isActive}
 								data-disabled={isDisabled ? "true" : "false"}
 								data-value={childValue}
 							/>

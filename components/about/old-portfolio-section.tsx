@@ -52,7 +52,7 @@ const OldPortfolioSection: React.FC = () => {
 			</motion.h2>
 			<div className="flex items-center flex-col md:flex-row gap-0 md:gap-4 my-8">
 				{buttonData.map((b, index) => (
-					<motion.div {...AnimatefadeIn(0.25 * index)} key={index}>
+					<motion.div {...AnimatefadeIn(0.25 * index)} key={b.href}>
 						<AnnButton
 							className="my-4 md:my-0"
 							href={b.href}

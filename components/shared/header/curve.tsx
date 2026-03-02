@@ -30,6 +30,7 @@ export default function Curve() {
 
 	return (
 		<svg className="fill-purple-500 transition-[fill] absolute top-0 left-[-99px] w-[100px] h-full stroke-none">
+			<title>Menu curve</title>
 			<motion.path
 				exit="exit"
 				animate="enter"

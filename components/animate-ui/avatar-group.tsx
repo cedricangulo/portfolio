@@ -96,18 +96,30 @@ const AvatarGroup = React.forwardRef<HTMLDivElement, AvatarGroupProps>(
 					className={cn("flex flex-row -space-x-2 items-center h-8", className)}
 					{...props}
 				>
-					{children?.map((child, index) => (
-						<Avatar
-							key={index}
-							index={index}
-							invertZIndex={invertZIndex}
-							transition={transition}
-							translate={translate}
-							{...tooltipProps}
-						>
-							{child}
-						</Avatar>
-					))}
+					{children?.map((child, index) => {
+						const childProps = child.props as {
+							id?: string | number;
+							"data-value"?: string | number;
+						};
+
+						return (
+							<Avatar
+								key={String(
+									child.key ??
+										childProps.id ??
+										childProps["data-value"] ??
+										"avatar"
+								)}
+								index={index}
+								invertZIndex={invertZIndex}
+								transition={transition}
+								translate={translate}
+								{...tooltipProps}
+							>
+								{child}
+							</Avatar>
+						);
+					})}
 				</div>
 			</TooltipProvider>
 		);

@@ -27,7 +27,7 @@ const TimelineContainer: React.FC = () => {
 			<motion.div {...AnimateFadeIn(0.15)}>
 				<Timeline defaultValue={6}>
 					{timeline.map((item, idx) => (
-						<TimelineItem key={idx} step={idx + 1}>
+						<TimelineItem key={`${item.date}-${item.title}`} step={idx + 1}>
 							<TimelineHeader>
 								<TimelineSeparator />
 								<TimelineDate>{item.date}</TimelineDate>

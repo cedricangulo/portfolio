@@ -33,14 +33,14 @@ const Carousell = () => {
 		>
 			<div className="relative basis-3/4 ">
 				<CarouselMainContainer className="h-96">
-					{imagesUrl.map((_, index) => (
+					{imagesUrl.map((imageUrl, index) => (
 						<SliderMainItem
-							key={index}
+							key={imageUrl}
 							className="flex items-center justify-center h-52 rounded-md"
 						>
 							<ImageRender
-								src={`https://sow4xmup6y.ufs.sh/f/${_}`}
-								alt={`${index}`}
+								src={`https://sow4xmup6y.ufs.sh/f/${imageUrl}`}
+								alt={`Carousel image ${index + 1}`}
 								width={384}
 								height={384}
 								className="rounded-md"
@@ -50,16 +50,16 @@ const Carousell = () => {
 				</CarouselMainContainer>
 			</div>
 			<CarouselThumbsContainer className="rounded-md h-96 basis-1/4">
-				{imagesUrl.map((_, index) => (
+				{imagesUrl.map((imageUrl, index) => (
 					<SliderThumbItem
-						key={index}
+						key={`${imageUrl}-thumb`}
 						index={index}
 						className="rounded-md bg-transparent"
 					>
 						<span className="flex items-center justify-center h-full w-full rounded-md cursor-pointer">
 							<ImageRender
-								src={`https://sow4xmup6y.ufs.sh/f/${_}`}
-								alt={`${index}`}
+								src={`https://sow4xmup6y.ufs.sh/f/${imageUrl}`}
+								alt={`Carousel thumbnail ${index + 1}`}
 								width={108}
 								height={108}
 								className="rounded-md"

@@ -3,7 +3,7 @@
 import { AnimatePresence } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "../../ui/button";
 import HeaderMenu, { navLinks } from "./header-menu";
@@ -14,7 +14,7 @@ export default function Header() {
 	const pathname = usePathname();
 	const [sidebarOpen, setSidebarOpen] = useState(false);
 	const [activeSection, setActiveSection] = useState<
-		"home" | "works" | "about"
+		"home" | "works" | "contact" | "about"
 	>("home");
 	const menuButtonRef = useRef<HTMLButtonElement>(null);
 	const isWorksDetail = pathname.startsWith("/works/");
@@ -55,7 +55,7 @@ export default function Header() {
 			return;
 		}
 
-		const validSectionIds = ["home", "works", "about"] as const;
+		const validSectionIds = ["home", "works", "contact", "about"] as const;
 
 		const updateFromHash = () => {
 			const hashSection = window.location.hash.replace("#", "");
@@ -75,12 +75,19 @@ export default function Header() {
 					id: sectionId,
 					element: document.getElementById(sectionId),
 				}))
-				.filter((item) => item.element);
+				.filter(
+					(
+						item
+					): item is {
+						id: (typeof validSectionIds)[number];
+						element: HTMLElement;
+					} => item.element instanceof HTMLElement
+				);
 
 			if (!sectionElements.length) return;
 
 			const inView = sectionElements.find((item) => {
-				const rect = item.element!.getBoundingClientRect();
+				const rect = item.element.getBoundingClientRect();
 				return rect.top <= headerOffset && rect.bottom > headerOffset;
 			});
 
@@ -93,7 +100,7 @@ export default function Header() {
 				.map((item) => ({
 					id: item.id,
 					distance: Math.abs(
-						item.element!.getBoundingClientRect().top - headerOffset
+						item.element.getBoundingClientRect().top - headerOffset
 					),
 				}))
 				.sort((a, b) => a.distance - b.distance)[0];
@@ -162,10 +169,10 @@ export default function Header() {
 					<div
 						className={cn(
 							"flex gap-3 flex-col justify-center items-center w-full h-full pointer-events-none after:bg-foreground before:bg-foreground",
-							"before:content-[''] before:block before:h-[1.5px] before:w-[24px] before:rotate-0 before:transition-all before:duration-[600ms] before:ease-[cubic-bezier(0.76,0,0.24,1)]",
-							"after:content-[''] after:block after:h-[1.5px] after:w-[24px] after:rotate-0 after:transition-all after:duration-[600ms] after:ease-[cubic-bezier(0.76,0,0.24,1)]",
+							"before:content-[''] before:block before:h-[1.5px] before:w-6 before:rotate-0 before:transition-all before:duration-600 before:ease-[cubic-bezier(0.76,0,0.24,1)]",
+							"after:content-[''] after:block after:h-[1.5px] after:w-6 after:rotate-0 after:transition-all after:duration-600 after:ease-[cubic-bezier(0.76,0,0.24,1)]",
 							sidebarOpen
-								? "before:rotate-45 before:translate-y-[0.438rem] after:-rotate-45 after:translate-y-[-0.375rem]"
+								? "before:rotate-45 before:translate-y-[0.438rem] after:-rotate-45 after:translate-y-1.5"
 								: "before:rotate-0 after:rotate-0"
 						)}
 					/>

@@ -10,6 +10,7 @@ export const navLinks = [
 	{ title: "Home", href: "/#home", section: "home" as const },
 	{ title: "Works", href: "/#works", section: "works" as const },
 	{ title: "About", href: "/#about", section: "about" as const },
+	{ title: "Contact", href: "/#contact", section: "contact" as const },
 ];
 
 export default function HeaderMenu({
