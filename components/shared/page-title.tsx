@@ -2,7 +2,6 @@
 
 import { easeInOut } from "motion";
 import { motion } from "motion/react";
-import React from "react";
 import { lexend } from "@/lib/fonts";
 
 interface PageTitleProps {
@@ -29,7 +28,7 @@ const PageTitle = ({
 				repeat: 0,
 				repeatType: "loop",
 			}}
-			className="lg:min-w-[62.5rem] w-full h-[7.5rem] pt-8"
+			className="lg:min-w-250 w-full h-30 pt-8"
 		>
 			<h1
 				className={`${lexend.className} text-foreground text-center lg:text-left m-auto text-5xl font-extrabold tracking-tight leading-none uppercase`}

@@ -25,10 +25,12 @@ export function ProgressiveBlur({
 }: ProgressiveBlurProps) {
 	const layers = Math.max(blurLayers, 2);
 	const segmentSize = 1 / (blurLayers + 1);
+	const layerSteps = Array.from({ length: layers }, (_, layer) => layer + 1);
 
 	return (
 		<div className={cn("relative", className)}>
-			{Array.from({ length: layers }).map((_, index) => {
+			{layerSteps.map((layer) => {
+				const index = layer - 1;
 				const angle = GRADIENT_ANGLES[direction];
 				const gradientStops = [
 					index * segmentSize,
@@ -44,7 +46,7 @@ export function ProgressiveBlur({
 
 				return (
 					<motion.div
-						key={index}
+						key={`blur-layer-${layer}`}
 						className="pointer-events-none absolute inset-0 rounded-[inherit]"
 						style={{
 							maskImage: gradient,

@@ -6,7 +6,7 @@ function LangList({ lang }: ILangListProps) {
 			<span className="w-full inline-flex rounded-lg gap-1">
 				{lang?.map((l, i) => (
 					<span
-						key={i}
+						key={`${l.langName}-${l.langWidth}`}
 						className={l.langColor.bg}
 						style={{
 							display: "inline-block",
@@ -21,8 +21,8 @@ function LangList({ lang }: ILangListProps) {
 				))}
 			</span>
 			<ul className="list-none">
-				{lang?.map((l, i) => (
-					<li key={i} className="inline">
+				{lang?.map((l) => (
+					<li key={`${l.langName}-item`} className="inline">
 						<div className="inline-flex items-center no-underline text-sm mr-3 text-secondary-foreground">
 							<svg
 								aria-label="Language Color Indicator"

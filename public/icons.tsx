@@ -9,6 +9,7 @@ const MailIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Mail icon</title>
 		<path
 			d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6"
 			stroke="currentColor"
@@ -33,6 +34,7 @@ const MoonIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Moon icon</title>
 		<path
 			d="M21.5 14.0784C20.3003 14.7189 18.9301 15.0821 17.4751 15.0821C12.7491 15.0821 8.91792 11.2509 8.91792 6.52485C8.91792 5.06986 9.28105 3.69968 9.92163 2.5C5.66765 3.49698 2.5 7.31513 2.5 11.8731C2.5 17.1899 6.8101 21.5 12.1269 21.5C16.6849 21.5 20.503 18.3324 21.5 14.0784Z"
 			stroke="currentColor"
@@ -52,6 +54,7 @@ const SunIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Sun icon</title>
 		<path
 			d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z"
 			stroke="currentColor"
@@ -75,6 +78,7 @@ const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>GitHub icon</title>
 		<path
 			d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17"
 			stroke="currentColor"
@@ -101,6 +105,7 @@ const GithubFilledIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill="none"
 		{...props}
 	>
+		<title>GitHub filled icon</title>
 		<path
 			fillRule="evenodd"
 			clipRule="evenodd"
@@ -119,6 +124,7 @@ const FacebookFilledIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill="none"
 		{...props}
 	>
+		<title>Facebook filled icon</title>
 		<path
 			fillRule="evenodd"
 			clipRule="evenodd"
@@ -136,6 +142,7 @@ const PaintBoardIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Paint board icon</title>
 		<path
 			d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C12.8417 22 14 22.1163 14 21C14 20.391 13.6832 19.9212 13.3686 19.4544C12.9082 18.7715 12.4523 18.0953 13 17C13.6667 15.6667 14.7778 15.6667 16.4815 15.6667C17.3334 15.6667 18.3334 15.6667 19.5 15.5C21.601 15.1999 22 13.9084 22 12Z"
 			stroke="currentColor"
@@ -168,6 +175,7 @@ const GitMergeIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Git merge icon</title>
 		<path
 			d="M7 20C8.10457 20 9 19.1046 9 18C9 16.8954 8.10457 16 7 16C5.89543 16 5 16.8954 5 18C5 19.1046 5.89543 20 7 20Z"
 			stroke="currentColor"
@@ -202,6 +210,7 @@ const SourceCodeIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Source code icon</title>
 		<path
 			d="M17 8L18.8398 9.85008C19.6133 10.6279 20 11.0168 20 11.5C20 11.9832 19.6133 12.3721 18.8398 13.1499L17 15"
 			stroke="currentColor"
@@ -235,6 +244,7 @@ const ArrowUpRightIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Arrow up right icon</title>
 		<path
 			d="M16.5 7.5L6 18"
 			stroke="currentColor"
@@ -260,6 +270,7 @@ const LinkIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Link icon</title>
 		<path
 			d="M13.5 17H17C19.7614 17 22 14.7614 22 12C22 9.23858 19.7614 7 17 7H13.5M10.5 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H10.5"
 			stroke="currentColor"
@@ -284,6 +295,7 @@ const ArrowLeftIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Arrow left icon</title>
 		<path
 			d="M3.99982 11.9998L19.9998 11.9998"
 			stroke="currentColor"
@@ -310,6 +322,7 @@ const InformationCircleIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Information icon</title>
 		<path
 			d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
 			stroke="currentColor"
@@ -344,11 +357,12 @@ const CopyIcon = ({
 		className={cn(
 			"size-4 opacity-0",
 			"group-hover:opacity-100 transition-opacity duration-200 ease-in-out",
-			colorScheme == 1 ? "text-neutral-950" : "text-neutral-50"
+			colorScheme === 1 ? "text-neutral-950" : "text-neutral-50"
 		)}
 		fill={"none"}
 		{...props}
 	>
+		<title>Copy icon</title>
 		<path
 			d="M9 15C9 12.1716 9 10.7574 9.87868 9.87868C10.7574 9 12.1716 9 15 9L16 9C18.8284 9 20.2426 9 21.1213 9.87868C22 10.7574 22 12.1716 22 15V16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H15C12.1716 22 10.7574 22 9.87868 21.1213C9 20.2426 9 18.8284 9 16L9 15Z"
 			stroke="currentColor"
@@ -378,11 +392,12 @@ const CheckIcon = ({
 		className={cn(
 			"size-4 opacity-0",
 			"group-hover:opacity-100 transition-opacity duration-200 ease-in-out",
-			colorScheme == 1 ? "text-neutral-950" : "text-neutral-50"
+			colorScheme === 1 ? "text-neutral-950" : "text-neutral-50"
 		)}
 		fill={"none"}
 		{...props}
 	>
+		<title>Check icon</title>
 		<path
 			d="M5 14.5C5 14.5 6.5 14.5 8.5 18C8.5 18 14.0588 8.83333 19 7"
 			stroke="currentColor"
@@ -402,6 +417,7 @@ const LoadingIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		fill={"none"}
 		{...props}
 	>
+		<title>Loading icon</title>
 		<path
 			d="M12 3V6"
 			stroke="currentColor"

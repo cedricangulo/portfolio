@@ -3,7 +3,7 @@ import type { Dispatch, SetStateAction } from "react";
 export interface INavMenu {
 	sidebarOpen: boolean;
 	setSidebarOpen: Dispatch<SetStateAction<boolean>>;
-	activeSection: "home" | "works" | "about";
+	activeSection: "home" | "works" | "about" | "contact";
 	isWorksDetail: boolean;
 }
 

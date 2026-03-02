@@ -18,7 +18,7 @@ export default function ColorScheme({
 	const [copied, setCopied] = useState(false);
 
 	const handleCopy = () => {
-		if (navigator.clipboard && navigator.clipboard.writeText) {
+		if (navigator.clipboard?.writeText) {
 			navigator.clipboard
 				.writeText(content)
 				.then(() => {
@@ -56,7 +56,8 @@ export default function ColorScheme({
 		<TooltipProvider>
 			<Tooltip>
 				<TooltipTrigger>
-					<div
+					<button
+						type="button"
 						onClick={handleCopy}
 						className={`${color} flex items-center justify-center relative h-8 w-full cursor-pointer group`}
 					>
@@ -65,7 +66,7 @@ export default function ColorScheme({
 						) : (
 							<CopyIcon colorScheme={textColor} />
 						)}
-					</div>
+					</button>
 				</TooltipTrigger>
 				<TooltipContent>{content}</TooltipContent>
 			</Tooltip>
