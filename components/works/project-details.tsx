@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import React from "react";
 import {
 	ArrowUpRightIcon,
 	GithubIcon,
@@ -22,6 +21,7 @@ import LangList from "./lang-list";
 
 interface WorkDetails {
 	id: number;
+	slug: string;
 	title: string;
 	contributors?: {
 		name: string;
@@ -59,11 +59,11 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				<PaintBoardIcon className="size-4 text-primary" aria-hidden="true" />
 				<span>Colors & Typefaces</span>
 			</h4>
-			<div aria-labelledby="colors-fonts-heading">
+			<div>
 				<div className="flex flex-nowrap w-full mb-4">
-					{work?.colorScheme.map((color, index) => (
+					{work?.colorScheme.map((color) => (
 						<ColorScheme
-							key={index}
+							key={`${color.content}-${color.color}`}
 							content={color.content}
 							color={color.color}
 							textColor={color.textColor}
@@ -71,9 +71,9 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 					))}
 				</div>
 				<div>
-					{work?.fontFamily.map((f, index) => (
+					{work?.fontFamily.map((f) => (
 						<p
-							key={index}
+							key={`${f.text}-${f.fonts.className}`}
 							className={`${f.fonts.className} text-2xl text-foreground`}
 						>
 							{f.text}
@@ -94,27 +94,23 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 						className="flex flex-wrap gap-2"
 						aria-labelledby="contributors-heading"
 					>
-						{work.contributors.map((contributor, index) => (
-							<React.Fragment key={index}>
-								<Link
-									href={contributor.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="w-fit focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-									aria-label={`${contributor.name}'s avatar`}
-								>
-									<Avatar
-										key={index}
-										className="size-12 border-3 border-background cursor-pointer"
-									>
-										<AvatarImage src={contributor.avatar} />
-										<AvatarFallback>{contributor.fallback}</AvatarFallback>
-										<AvatarGroupTooltip>
-											<p>{contributor.name}</p>
-										</AvatarGroupTooltip>
-									</Avatar>
-								</Link>
-							</React.Fragment>
+						{work.contributors.map((contributor) => (
+							<Link
+								key={contributor.link}
+								href={contributor.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-fit focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+								aria-label={`${contributor.name}'s avatar`}
+							>
+								<Avatar className="size-12 border-3 border-background cursor-pointer">
+									<AvatarImage src={contributor.avatar} />
+									<AvatarFallback>{contributor.fallback}</AvatarFallback>
+									<AvatarGroupTooltip>
+										<p>{contributor.name}</p>
+									</AvatarGroupTooltip>
+								</Avatar>
+							</Link>
 						))}
 					</AvatarGroup>
 				</>
@@ -126,9 +122,10 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				<SourceCodeIcon className="size-5 text-primary" aria-hidden="true" />
 				<span>Language Used</span>
 			</h4>
-			<div className="w-full sm:w-3/4" aria-labelledby="languages-heading">
-				{work?.id === 1 || work?.id === 4 ? (
-					<BranchTab workId={work.id} />
+			<div className="w-full sm:w-3/4">
+				{work?.slug === "pokemon-grading-tool" ||
+				work?.slug === "techno-odyssey" ? (
+					<BranchTab workSlug={work.slug} />
 				) : (
 					<LangList lang={work?.langs} />
 				)}
@@ -140,7 +137,7 @@ const ProjectDetails = ({ work }: { work?: WorkDetails }) => {
 				<LinkIcon className="size-4 text-primary" aria-hidden="true" />{" "}
 				{work?.href ? <span>Links</span> : <span>Link</span>}
 			</h4>
-			<div className="flex gap-2" aria-labelledby="links-heading">
+			<div className="flex gap-2">
 				<Button variant="secondary" asChild>
 					<Link
 						href={work?.github || ""}

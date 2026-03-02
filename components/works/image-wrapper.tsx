@@ -9,6 +9,7 @@ import { getMotionProps } from ".";
 
 interface WorkDetails {
 	id: number;
+	slug: string;
 	title: string;
 	paragraphs: string[];
 	fontFamily: { fonts: { className: string }; text: string }[];
@@ -56,7 +57,7 @@ const ImageWrapper = ({ work }: { work?: WorkDetails }) => {
 					</Button>
 				)}
 			</div>
-			{work.id === 8 && (
+			{work.slug === "lanceit" && (
 				<span className="mt-12 inline-flex items-center gap-4 text-xs p-4 rounded-lg text-yellow-800 dark:text-yellow-50 border border-yellow-500 dark:border-yellow-600 bg-yellow-200/50 dark:bg-yellow-950">
 					<InformationCircleIcon className="size-6 text-yellow-600 dark:text-yellow-200" />
 					The data listed above are merely sample data from the internet.

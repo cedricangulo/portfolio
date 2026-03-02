@@ -133,9 +133,9 @@ const tabsData = [
 	},
 ];
 
-const BranchTab = ({ workId }: { workId: number }) => {
+const BranchTab = ({ workSlug }: { workSlug: string }) => {
 	const filteredTabsData =
-		workId === 4
+		workSlug === "techno-odyssey"
 			? tabsData.filter(
 					(tab) => tab.value === "main" || tab.value === "migrate-next-app"
 				)

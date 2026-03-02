@@ -12,6 +12,7 @@ import {
 export const worksMeta = [
 	{
 		id: 1,
+		slug: "pokemon-grading-tool",
 		title: "Pokémon Grading Tool",
 		paragraphs: [
 			"As a frontend developer, I had the opportunity to contribute to the development of the Pokémon Card Analysis Tool. This comprehensive tool is designed to provide users with the necessary information to make informed decisions regarding their card collection and trades.",
@@ -58,6 +59,7 @@ export const worksMeta = [
 	},
 	{
 		id: 2,
+		slug: "ca-resources",
 		title: "CA Resources",
 		paragraphs: [
 			"It is a website designed to improve productivity, especially for web development, among other fields in education. It provides the most valuable resources and guides.",
@@ -125,6 +127,7 @@ export const worksMeta = [
 	},
 	{
 		id: 3,
+		slug: "webwise",
 		title: "WebWise",
 		paragraphs: [
 			"WebWise is a comprehensive case study for our first-year, second-semester IT Web Systems Technology (ITWST) subject. Our goal was to create a free, user-friendly platform for learning web development.",
@@ -182,6 +185,7 @@ export const worksMeta = [
 	},
 	{
 		id: 4,
+		slug: "techno-odyssey",
 		title: "Techno Odyssey",
 		paragraphs: [
 			"This project was my submission for the Technoday 2024 event at our school. This project showcased the latest news and advancements in technology.",
@@ -247,6 +251,7 @@ export const worksMeta = [
 	},
 	{
 		id: 5,
+		slug: "class-directory",
 		title: "Class Directory",
 		paragraphs: [
 			"It is designed to provide simple yet essential information about the class. The site includes images of class officers, a class schedule presented using cards, and a list of announcements.",

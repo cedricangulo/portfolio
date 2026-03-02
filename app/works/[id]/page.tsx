@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import {
 	ImageWrapper,
 	Paragraph,
@@ -8,12 +8,26 @@ import {
 import { worksMeta } from "../data/worksdetails";
 
 export function generateStaticParams() {
-	return worksMeta.map((work) => ({ id: work.id.toString() }));
+	return worksMeta.map((work) => ({ id: work.slug }));
 }
 
 async function worksDetails({ params }: { params: Promise<{ id: string }> }) {
-	const { id } = await params;
-	const work = worksMeta.find((work) => work.id.toString() === id);
+	const { id: routeParam } = await params;
+	const isLegacyId = /^\d+$/.test(routeParam);
+
+	if (isLegacyId) {
+		const legacyWork = worksMeta.find(
+			(work) => work.id.toString() === routeParam
+		);
+
+		if (!legacyWork) {
+			notFound();
+		}
+
+		permanentRedirect(`/works/${legacyWork.slug}`);
+	}
+
+	const work = worksMeta.find((entry) => entry.slug === routeParam);
 
 	if (!work) notFound();
 

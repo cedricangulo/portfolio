@@ -1,6 +1,12 @@
 export const WorkList = [
 	{
-		src: "XLJnqTgGVh2ymzi8F39c4WEG6bBVzAyapM3RhxKINnfdZv5i",
+		src: "XLJnqTgGVh2yZwIBYhq8IovlcaMziAnsD1Trw6P2XCNb0ukE",
+		title: "LanceIT",
+		text: "LanceIT (lance-it) is a freelancing platform that helps IT students gain real experience and build their portfolio.",
+	},
+	{
+		src: "XLJnqTgGVh2yM57UXDY1FnJXUsEZgBrp8NT5qM4mkuwC9ORi",
+		slug: "pokemon-grading-tool",
 		title: "Pokémon Grading Tool",
 		text: "A specialized tool for Pokemon card analysis with real-time market data integration and automated price comparison.",
 		tags: [
@@ -13,7 +19,8 @@ export const WorkList = [
 		],
 	},
 	{
-		src: "XLJnqTgGVh2y2GRQAxBD4fHUOVLECrxZshYRme6oPWFbAySu",
+		src: "XLJnqTgGVh2ypSV6sIcUZuRyzh3MogsKOiq0FPE4XxaQ5l9C",
+		slug: "ca-resources",
 		title: "CA Resources",
 		text: "An open-source website that boosts productivity in web development and education by offering valuable resources and guides.",
 		tags: [
@@ -28,7 +35,8 @@ export const WorkList = [
 		],
 	},
 	{
-		src: "XLJnqTgGVh2yv3rCKzbGjG7wMieJuCyp9LlNcSIUxKrZRbY5",
+		src: "XLJnqTgGVh2y3a0OpDP5p1EXywrTAMbuKslkcH86SVeU7Roz",
+		slug: "webwise",
 		title: "WebWise",
 		text: "An educational website to start learning web development.",
 		tags: [
@@ -42,13 +50,15 @@ export const WorkList = [
 		],
 	},
 	{
-		src: "XLJnqTgGVh2yTrzzRL3djaF5VK7iGR0ZQqIx4Ynk2rvCLESX",
+		src: "XLJnqTgGVh2yLLh3DuQtR1mMShC8LjYcGDTXK6NgyxPla0r4",
+		slug: "techno-odyssey",
 		title: "Techno Odyssey",
 		text: "My entry in CICT Technoday 2024.",
 		tags: ["competition-entry", "innovations", "latest-tech", "static"],
 	},
 	{
-		src: "XLJnqTgGVh2yUPJyuaVykJKLRtwfPhDTQaGnuIdBzNYms2q3",
+		src: "XLJnqTgGVh2yt1n8TXND0iQSlbmO1X26RETMcIZPyBhurYHF",
+		slug: "class-directory",
 		title: "Class Directory",
 		text: "A static website for class information.",
 		tags: [
