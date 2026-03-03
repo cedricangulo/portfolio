@@ -1,0 +1,48 @@
+# Cedric Angulo
+
+Cedric Angulo is a Frontend Developer and 3rd year IT student at NEUST (Nueva Ecija University of Science and Technology) specializing in Web Systems Technology. Based in Nueva Ecija, Philippines. Passionate about building beautiful and functional web interfaces.
+
+## Overview
+
+- **Main Portfolio**: https://cdrcangulo.vercel.app
+- **Bento**: https://bento.me/cedricc
+- **Email**: cdrcangulo@gmail.com
+
+## Main Portfolio Projects
+
+The main portfolio at cdrcangulo.vercel.app showcases the following projects:
+
+### Featured Works
+- **LanceIT** - A freelancing platform designed to help IT students gain real experience and build their portfolio
+- **Pokémon Grading Tool** - A specialized tool for Pokémon card analysis with real-time market data integration and automated price comparison
+- **CA Resources** - An open-source website that boosts productivity in web development and education by offering valuable resources and guides
+- **WebWise** - An educational website to start learning web development
+- **Techno Odyssey** - An entry to CICT Technoday 2024
+- **Class Directory** - A static website for class information with interactive features
+
+## Hidden Projects
+
+These are additional projects that showcase technical work and coursework:
+
+- **Laboratory Outputs** (https://cedricc.vercel.app) - Outputs from major subject laboratory work and coursework
+- **Alternative Portfolio** (https://cedricangulo.is-a.dev) - A simpler version of the main portfolio
+
+## Tech Stack
+
+Cedric specializes in modern web technologies including:
+- Frontend: React, Next.js, TypeScript
+- Styling: Tailwind CSS, CSS-in-JS
+- UI Components: shadcn/ui, Radix UI
+- Development Tools: Vite, ESLint, Biome
+- Animations: Framer Motion
+- Data Visualization & Specialized Tools: Various integrations for project-specific needs
+
+## Social & Contact
+
+- **Bento**: https://bento.me/cedricc
+- **Email**: cdrcangulo@gmail.com
+- **GitHub**: Referenced in main portfolio
+
+## About This File
+
+This file helps AI assistants and visitors understand Cedric's work, projects, and how to find his portfolio. If you're looking for specific information about a project or want to learn more about Cedric's skills, you can refer to the main portfolio or the resources listed above.
